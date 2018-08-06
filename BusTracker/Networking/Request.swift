@@ -7,4 +7,8 @@
 //
 
 import Foundation
+import Alamofire
 
+//class BTRequest: URLRequestConvertible {
+//    
+//}

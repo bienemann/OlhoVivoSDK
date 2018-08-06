@@ -14,6 +14,7 @@
 		9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */; };
 		9DF2EFD12118CC740019342A /* BusTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFD02118CC740019342A /* BusTrackerTests.swift */; };
 		9DF2EFDD2118D2B30019342A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFDC2118D2B30019342A /* Request.swift */; };
+		9DF2EFE02118D5780019342A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF2EFDF2118D5780019342A /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		9DF2EFD02118CC740019342A /* BusTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTrackerTests.swift; sourceTree = "<group>"; };
 		9DF2EFD22118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF2EFDC2118D2B30019342A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9DF2EFDF2118D5780019342A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF2EFE02118D5780019342A /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		9DF2EFBA2118CC720019342A /* BusTracker */ = {
 			isa = PBXGroup;
 			children = (
+				9DF2EFDE2118D5660019342A /* Frameworks */,
 				9DF2EFDB2118D28B0019342A /* Networking */,
 				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
 				9DF2EFBD2118CC720019342A /* ViewController.swift */,
@@ -107,6 +111,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		9DF2EFDE2118D5660019342A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DF2EFDF2118D5780019342A /* Alamofire.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +129,7 @@
 				9DF2EFB42118CC720019342A /* Sources */,
 				9DF2EFB52118CC720019342A /* Frameworks */,
 				9DF2EFB62118CC720019342A /* Resources */,
+				9DF2EFE12118D5F30019342A /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -202,6 +215,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DF2EFE12118D5F30019342A /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DF2EFB42118CC720019342A /* Sources */ = {
@@ -372,6 +404,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BusTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,6 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BusTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
