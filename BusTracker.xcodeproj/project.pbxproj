@@ -13,6 +13,7 @@
 		9DF2EFC32118CC740019342A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC22118CC740019342A /* Assets.xcassets */; };
 		9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */; };
 		9DF2EFD12118CC740019342A /* BusTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFD02118CC740019342A /* BusTrackerTests.swift */; };
+		9DF2EFDD2118D2B30019342A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFDC2118D2B30019342A /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF2EFD02118CC740019342A /* BusTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTrackerTests.swift; sourceTree = "<group>"; };
 		9DF2EFD22118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF2EFDC2118D2B30019342A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		9DF2EFBA2118CC720019342A /* BusTracker */ = {
 			isa = PBXGroup;
 			children = (
+				9DF2EFDB2118D28B0019342A /* Networking */,
 				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
 				9DF2EFBD2118CC720019342A /* ViewController.swift */,
 				9DF2EFBF2118CC720019342A /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				9DF2EFD22118CC740019342A /* Info.plist */,
 			);
 			path = BusTrackerTests;
+			sourceTree = "<group>";
+		};
+		9DF2EFDB2118D28B0019342A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9DF2EFDC2118D2B30019342A /* Request.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */,
+				9DF2EFDD2118D2B30019342A /* Request.swift in Sources */,
 				9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
