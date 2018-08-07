@@ -22,20 +22,33 @@ struct BTNetwork {
 
 class RetryHandler: RequestRetrier {
     
+    var retryCount = 0
     public func should(_ manager: SessionManager, retry request: Request,
                        with error: Error, completion: @escaping RequestRetryCompletion) {
         
         if let response = request.task?.response as? HTTPURLResponse, response.statusCode == 401 {
-            print("log: authenticating...\n")
+            print("log: authenticating...")
             AuthInteractor.authenticate { success in
                 if success {
-                    print("log: authenticated!\n")
-                    completion(true, 0.8)
+                    print("log: authenticated!")
+                    completion(false, 0.0)
+                    return
                 } else {
-                    print("log: failed to authenticate!\n")
                     completion(false, 0.0)
                 }
             }
+        } else if let response = request.task?.response as? HTTPURLResponse, response.statusCode == 200,
+            (error as NSError).code == URLError.userAuthenticationRequired.rawValue {
+            
+            if retryCount > 2 {
+                completion(false, 0.0)
+            } else {
+                self.retryCount += 1
+                print("log: failed to authenticate :(")
+                print("log: retrying... count \(self.retryCount)")
+                completion(true, 0.5)
+            }
+            
         } else {
             DispatchQueue.main.async {
                 
@@ -46,7 +59,7 @@ class RetryHandler: RequestRetrier {
                 }
                 
                 alert.retryHandler = {
-                    completion(true, 0.8)
+                    completion(true, 0.5)
                 }
                 
                 alert.message = error.localizedDescription

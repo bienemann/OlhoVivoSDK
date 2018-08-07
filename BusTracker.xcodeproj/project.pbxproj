@@ -26,7 +26,6 @@
 		9DF2EFC12118CC720019342A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBF2118CC720019342A /* Main.storyboard */; };
 		9DF2EFC32118CC740019342A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC22118CC740019342A /* Assets.xcassets */; };
 		9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */; };
-		9DF2EFD12118CC740019342A /* BusTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFD02118CC740019342A /* BusTrackerTests.swift */; };
 		9DF2EFDD2118D2B30019342A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFDC2118D2B30019342A /* Request.swift */; };
 		9DF2EFE02118D5780019342A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF2EFDF2118D5780019342A /* Alamofire.framework */; };
 		9DF31F33211A1B75009A76DD /* RetryAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F31211A1B74009A76DD /* RetryAlert.swift */; };
@@ -36,6 +35,9 @@
 		9DF31F3A211A1BAA009A76DD /* BTAlertViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F37211A1BAA009A76DD /* BTAlertViewProtocol.swift */; };
 		9DF31F3D211A1BB2009A76DD /* BTLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F3B211A1BB2009A76DD /* BTLoadingView.swift */; };
 		9DF31F3E211A1BB2009A76DD /* BTLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF31F3C211A1BB2009A76DD /* BTLoadingView.xib */; };
+		9DFF3FA1211A25B500251B6E /* authenticate_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA0211A25B500251B6E /* authenticate_success.json */; };
+		9DFF3FA3211A25C600251B6E /* authenticate_fail.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA2211A25C600251B6E /* authenticate_fail.json */; };
+		9DFF3FA5211A295600251B6E /* unauthorized.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA4211A295600251B6E /* unauthorized.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +81,6 @@
 		9DF2EFC52118CC740019342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DF2EFC72118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DF2EFD02118CC740019342A /* BusTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTrackerTests.swift; sourceTree = "<group>"; };
 		9DF2EFD22118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF2EFDC2118D2B30019342A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9DF2EFDF2118D5780019342A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
@@ -90,6 +91,9 @@
 		9DF31F37211A1BAA009A76DD /* BTAlertViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTAlertViewProtocol.swift; sourceTree = "<group>"; };
 		9DF31F3B211A1BB2009A76DD /* BTLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTLoadingView.swift; sourceTree = "<group>"; };
 		9DF31F3C211A1BB2009A76DD /* BTLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTLoadingView.xib; sourceTree = "<group>"; };
+		9DFF3FA0211A25B500251B6E /* authenticate_success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authenticate_success.json; sourceTree = "<group>"; };
+		9DFF3FA2211A25C600251B6E /* authenticate_fail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authenticate_fail.json; sourceTree = "<group>"; };
+		9DFF3FA4211A295600251B6E /* unauthorized.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = unauthorized.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */,
+				9DFF3FA0211A25B500251B6E /* authenticate_success.json */,
+				9DFF3FA2211A25C600251B6E /* authenticate_fail.json */,
+				9DFF3FA4211A295600251B6E /* unauthorized.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -222,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				9D61A54A2119EDA500807168 /* JSON */,
-				9DF2EFD02118CC740019342A /* BusTrackerTests.swift */,
 				9DF2EFD22118CC740019342A /* Info.plist */,
 				9D61A5512119F32700807168 /* BTStubs.swift */,
 				9D61A5552119FF3300807168 /* LineInteractorTests.swift */,
@@ -349,7 +355,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFF3FA1211A25B500251B6E /* authenticate_success.json in Resources */,
+				9DFF3FA3211A25C600251B6E /* authenticate_fail.json in Resources */,
 				9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */,
+				9DFF3FA5211A295600251B6E /* unauthorized.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +408,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DF2EFD12118CC740019342A /* BusTrackerTests.swift in Sources */,
 				9D61A5522119F32700807168 /* BTStubs.swift in Sources */,
 				9D61A5562119FF3300807168 /* LineInteractorTests.swift in Sources */,
 			);

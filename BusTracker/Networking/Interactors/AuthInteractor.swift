@@ -15,7 +15,15 @@ struct AuthInteractor {
 
     static func authenticate(_ completionHandler: @escaping AuthenticationHandler) {
         
-        Alamofire.request(BTRequest.authenticate).responseData { response in
+        BTNetwork.retriableRequest(BTRequest.authenticate).validate({ (request, response, data) -> Request.ValidationResult in
+            if  request?.url?.absoluteString.range(of: "token") != nil, response.statusCode == 200,
+                let data = data, let responseValue = String(data: data, encoding: .utf8),
+                responseValue == "true" {
+                return Request.ValidationResult.success
+            } else {
+                return Request.ValidationResult.failure(NSError(domain: NSURLErrorDomain, code: URLError.userAuthenticationRequired.rawValue, userInfo: nil))
+            }
+        }).responseData { response in
             
             switch response.result {
             case .success:

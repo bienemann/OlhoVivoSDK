@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        BTNetwork.retriableRequest(BTRequest.searchLine(query: "dom pedro")).responseData { response in
-            print(response)
-        }
+//        BTNetwork.retriableRequest(BTRequest.searchLine(query: "dom pedro")).responseData { response in
+//            print(response)
+//        }
     }
 
     override func didReceiveMemoryWarning() {

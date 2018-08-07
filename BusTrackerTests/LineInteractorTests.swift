@@ -25,7 +25,7 @@ class LineInteractorTests: XCTestCase {
         
         BTStubs.stubSearch("8000")
         
-        let searchExpectation = expectation(description: "wait for search response")
+        let searchExpectation = expectation(description: "expectation for search response")
         LineInteractor.search("8000") { (busLines, error) in
             searchExpectation.fulfill()
             XCTAssertNil(error, "Error not nil")
@@ -33,6 +33,20 @@ class LineInteractorTests: XCTestCase {
         }
         
         wait(for: [searchExpectation], timeout: 1.0)
+    }
+    
+    func testSearchUnauthenticated() {
+        
+        BTStubs.stubSearchUnauthorized("not authorized")
+        BTStubs.stubAuthFailure()
+        
+        let unauthorizedExpectation = expectation(description: "expectation for 401 search response")
+        LineInteractor.search("not authorized") { (busLines, error) in
+            unauthorizedExpectation.fulfill()
+            XCTAssert(error != nil)
+        }
+        
+        wait(for: [unauthorizedExpectation], timeout: 5.0)
     }
     
 }
