@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
 		9D7FF7A72118DD2700C9EA17 /* AthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */; };
 		9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBB2118CC720019342A /* AppDelegate.swift */; };
 		9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBD2118CC720019342A /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenticationModel.swift; sourceTree = "<group>"; };
 		9DF2EFB82118CC720019342A /* BusTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF2EFBB2118CC720019342A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 				9DF2EFBA2118CC720019342A /* BusTracker */,
 				9DF2EFCF2118CC740019342A /* BusTrackerTests */,
 				9DF2EFB92118CC720019342A /* Products */,
+				9DF2EFDE2118D5660019342A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +96,6 @@
 		9DF2EFBA2118CC720019342A /* BusTracker */ = {
 			isa = PBXGroup;
 			children = (
-				9DF2EFDE2118D5660019342A /* Frameworks */,
 				9DF2EFDB2118D28B0019342A /* Networking */,
 				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
 				9DF2EFBD2118CC720019342A /* ViewController.swift */,
@@ -125,6 +128,7 @@
 		9DF2EFDE2118D5660019342A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D61A5462119E45200807168 /* OHHTTPStubs.framework */,
 				9DF2EFDF2118D5780019342A /* Alamofire.framework */,
 			);
 			path = Frameworks;
@@ -461,6 +465,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BusTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,6 +490,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BusTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
