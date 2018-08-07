@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
+		9D61A5492119E52300807168 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
 		9D7FF7A72118DD2700C9EA17 /* AthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */; };
 		9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBB2118CC720019342A /* AppDelegate.swift */; };
 		9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBD2118CC720019342A /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
+		9D61A5482119E52300807168 /* BusLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
 		9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenticationModel.swift; sourceTree = "<group>"; };
 		9DF2EFB82118CC720019342A /* BusTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF2EFBB2118CC720019342A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */,
+				9D61A5482119E52300807168 /* BusLine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D61A5492119E52300807168 /* BusLine.swift in Sources */,
 				9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */,
 				9DF2EFDD2118D2B30019342A /* Request.swift in Sources */,
 				9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */,
