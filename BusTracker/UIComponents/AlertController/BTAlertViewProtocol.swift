@@ -17,9 +17,9 @@ public protocol BTAlertViewProtocol: class {
     
     func dismiss(animated: Bool, _ handler: DidFinishDismissingHandler?)
     func show(animated: Bool)
-    init()
     init(nibName: String, bundle: Bundle)
     func localize()
+    init()
 }
 
 extension BTAlertViewProtocol {

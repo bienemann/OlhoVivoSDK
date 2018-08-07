@@ -25,16 +25,17 @@ final class RetryAlert: NSObject, BTAlertViewProtocol {
     
     @IBAction private func retry(sender: UIButton) {
         guard let callback = self.retryHandler else {
+            self.dismiss(animated: true)
             return
         }
         callback()
+        self.dismiss(animated: true)
     }
     
-    func dismiss(animated: Bool, _ handler: DidFinishDismissingHandler?) {
 
-    }
     @IBAction private func close(sender: UIButton) {
         guard let callback = self.closeAlertHandler else {
+            self.dismiss(animated: true)
             return
         }
         callback()

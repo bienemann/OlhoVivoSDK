@@ -14,27 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        Alamofire.request(BTRequest.authenticate).responseData { response in
-            print(response.result)
-            
-            switch response.result {
-            case .success:
-                guard
-                    let data = response.result.value,
-                    let responseString = String(data: data, encoding: .utf8), responseString == "true"
-                else {
-                    print("response false or invalid")
-                    return
-                }
-                print("authenticated")
-                return
-            case .failure(let error):
-                print(error.localizedDescription)
-                return
-            }
+        BTNetwork.retriableRequest(BTRequest.searchLine(query: "dom pedro")).responseData { response in
+            print(response)
         }
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -30,11 +30,6 @@
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="tdd-aV-uk9"/>
                         <constraint firstAttribute="width" priority="250" constant="330" id="yui-fZ-TbV"/>
                     </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
-                            <real key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -46,11 +41,6 @@
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fX7-aU-oNV" secondAttribute="bottom" priority="250" id="WC9-3i-ygu"/>
                 <constraint firstItem="fX7-aU-oNV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mjB-Ty-MrT"/>
             </constraints>
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
-                    <real key="value" value="0.0"/>
-                </userDefinedRuntimeAttribute>
-            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="alertView" destination="fX7-aU-oNV" id="vBq-a2-vDI"/>
                 <outlet property="controller" destination="-1" id="A49-7w-qCu"/>
