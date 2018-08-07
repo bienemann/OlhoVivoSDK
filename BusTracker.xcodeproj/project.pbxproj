@@ -10,6 +10,13 @@
 		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
 		9D61A5492119E52300807168 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
 		9D7FF7A72118DD2700C9EA17 /* AthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */; };
+		9D98DF82211A113600237DA8 /* BTLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D98DF80211A113600237DA8 /* BTLoadingView.xib */; };
+		9D98DF83211A113600237DA8 /* BTLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF81211A113600237DA8 /* BTLoadingView.swift */; };
+		9D98DF88211A118B00237DA8 /* BTAlertViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF85211A118A00237DA8 /* BTAlertViewProtocol.swift */; };
+		9D98DF89211A118B00237DA8 /* BTAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D98DF86211A118A00237DA8 /* BTAlertController.xib */; };
+		9D98DF8A211A118B00237DA8 /* BTAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF87211A118A00237DA8 /* BTAlertController.swift */; };
+		9D98DF8F211A166400237DA8 /* RetryAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF8D211A166400237DA8 /* RetryAlert.swift */; };
+		9D98DF90211A166400237DA8 /* RetryAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D98DF8E211A166400237DA8 /* RetryAlert.xib */; };
 		9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBB2118CC720019342A /* AppDelegate.swift */; };
 		9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBD2118CC720019342A /* ViewController.swift */; };
 		9DF2EFC12118CC720019342A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBF2118CC720019342A /* Main.storyboard */; };
@@ -34,6 +41,13 @@
 		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		9D61A5482119E52300807168 /* BusLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
 		9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenticationModel.swift; sourceTree = "<group>"; };
+		9D98DF80211A113600237DA8 /* BTLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTLoadingView.xib; sourceTree = "<group>"; };
+		9D98DF81211A113600237DA8 /* BTLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTLoadingView.swift; sourceTree = "<group>"; };
+		9D98DF85211A118A00237DA8 /* BTAlertViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTAlertViewProtocol.swift; sourceTree = "<group>"; };
+		9D98DF86211A118A00237DA8 /* BTAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTAlertController.xib; sourceTree = "<group>"; };
+		9D98DF87211A118A00237DA8 /* BTAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTAlertController.swift; sourceTree = "<group>"; };
+		9D98DF8D211A166400237DA8 /* RetryAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryAlert.swift; sourceTree = "<group>"; };
+		9D98DF8E211A166400237DA8 /* RetryAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RetryAlert.xib; sourceTree = "<group>"; };
 		9DF2EFB82118CC720019342A /* BusTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF2EFBB2118CC720019342A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF2EFBD2118CC720019342A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +91,51 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9D98DF7E211A110100237DA8 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF84211A117400237DA8 /* AlertController */,
+				9D98DF7F211A111300237DA8 /* LoadingScreen */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		9D98DF7F211A111300237DA8 /* LoadingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF81211A113600237DA8 /* BTLoadingView.swift */,
+				9D98DF80211A113600237DA8 /* BTLoadingView.xib */,
+			);
+			path = LoadingScreen;
+			sourceTree = "<group>";
+		};
+		9D98DF84211A117400237DA8 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF87211A118A00237DA8 /* BTAlertController.swift */,
+				9D98DF86211A118A00237DA8 /* BTAlertController.xib */,
+				9D98DF85211A118A00237DA8 /* BTAlertViewProtocol.swift */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		9D98DF8B211A15F800237DA8 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF8C211A160200237DA8 /* NetworkAlert */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		9D98DF8C211A160200237DA8 /* NetworkAlert */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF8D211A166400237DA8 /* RetryAlert.swift */,
+				9D98DF8E211A166400237DA8 /* RetryAlert.xib */,
+			);
+			path = NetworkAlert;
+			sourceTree = "<group>";
+		};
 		9DF2EFAF2118CC720019342A = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				9DF2EFDB2118D28B0019342A /* Networking */,
+				9D98DF8B211A15F800237DA8 /* Alerts */,
+				9D98DF7E211A110100237DA8 /* UIComponents */,
 				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
 				9DF2EFBD2118CC720019342A /* ViewController.swift */,
 				9DF2EFBF2118CC720019342A /* Main.storyboard */,
@@ -219,9 +280,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D98DF82211A113600237DA8 /* BTLoadingView.xib in Resources */,
 				9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */,
 				9DF2EFC32118CC740019342A /* Assets.xcassets in Resources */,
 				9DF2EFC12118CC720019342A /* Main.storyboard in Resources */,
+				9D98DF89211A118B00237DA8 /* BTAlertController.xib in Resources */,
+				9D98DF90211A166400237DA8 /* RetryAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,11 +322,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D98DF83211A113600237DA8 /* BTLoadingView.swift in Sources */,
 				9D61A5492119E52300807168 /* BusLine.swift in Sources */,
+				9D98DF88211A118B00237DA8 /* BTAlertViewProtocol.swift in Sources */,
 				9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */,
+				9D98DF8F211A166400237DA8 /* RetryAlert.swift in Sources */,
 				9DF2EFDD2118D2B30019342A /* Request.swift in Sources */,
 				9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */,
 				9D7FF7A72118DD2700C9EA17 /* AthenticationModel.swift in Sources */,
+				9D98DF8A211A118B00237DA8 /* BTAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
