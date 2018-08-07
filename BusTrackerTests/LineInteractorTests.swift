@@ -46,7 +46,7 @@ class LineInteractorTests: XCTestCase {
             XCTAssert(error != nil)
         }
         
-        wait(for: [unauthorizedExpectation], timeout: 5.0)
+        wait(for: [unauthorizedExpectation], timeout: 20.0)
     }
     
 }

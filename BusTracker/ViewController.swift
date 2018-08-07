@@ -14,14 +14,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        BTNetwork.retriableRequest(BTRequest.searchLine(query: "dom pedro")).responseData { response in
-//            print(response)
-//        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func searchExample(_ sender: UIButton) {
+        BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: "dom pedro"), showRetryAlert: true)
+            .responseData { response in
+                print(response)
+        }
     }
 
 

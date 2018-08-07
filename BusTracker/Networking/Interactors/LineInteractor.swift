@@ -13,7 +13,7 @@ struct LineInteractor {
     typealias LineResponseHandler = ([BusLine]?, Error?) -> Void
     
     static func search(_ searchQuery: String, handler: @escaping LineResponseHandler) {
-        BTNetwork.retriableRequest(BTRequest.searchLine(query: searchQuery))
+        BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: searchQuery), showRetryAlert: true)
             .responseData { (response) in
                 
                 switch response.result {

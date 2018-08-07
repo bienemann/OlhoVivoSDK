@@ -12,29 +12,36 @@ import UIKit
 
 struct BTNetwork {
     
-    static func retriableRequest(_ request: URLRequestConvertible) -> DataRequest {
+    static func olhoVivoRequest(_ request: URLRequestConvertible, showRetryAlert: Bool = false) -> DataRequest {
+        
         let manager = Alamofire.SessionManager.default
-        manager.retrier = RetryHandler()
+        manager.retrier = AuthRetrier()
+        
+        if showRetryAlert {
+            return manager.request(request).validate()
+        }
+        
         return manager.request(request).validate()
     }
     
 }
 
-class RetryHandler: RequestRetrier {
+class AuthRetrier: RequestRetrier {
     
     var retryCount = 0
     public func should(_ manager: SessionManager, retry request: Request,
                        with error: Error, completion: @escaping RequestRetryCompletion) {
         
-        if let response = request.task?.response as? HTTPURLResponse, response.statusCode == 401 {
+        if let response = request.task?.response as? HTTPURLResponse,
+        response.statusCode == 401, retryCount == 0 {
             print("log: authenticating...")
             AuthInteractor.authenticate { success in
                 if success {
                     print("log: authenticated!")
-                    completion(false, 0.0)
+                    completion(true, 0.0)
                     return
                 } else {
-                    completion(false, 0.0)
+                    completion(true, 0.0)
                 }
             }
         } else if let response = request.task?.response as? HTTPURLResponse, response.statusCode == 200,
@@ -51,23 +58,15 @@ class RetryHandler: RequestRetrier {
             
         } else {
             DispatchQueue.main.async {
-                
                 let alert = RetryAlert(nibName: "RetryAlert", bundle: Bundle.main)
                 
-                alert.closeAlertHandler = {
-                    completion(false, 0.0)
-                }
-                
-                alert.retryHandler = {
-                    completion(true, 0.5)
-                }
-                
+                alert.closeAlertHandler = { completion(false, 0.0) }
+                alert.retryHandler = { completion(true, 0.5) }
                 alert.message = error.localizedDescription
                 
                 alert.show(animated: true)
-                
             }
-            
+            completion(false, 0.0)
         }
         
     }

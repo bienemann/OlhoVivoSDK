@@ -15,7 +15,7 @@ struct AuthInteractor {
 
     static func authenticate(_ completionHandler: @escaping AuthenticationHandler) {
         
-        BTNetwork.retriableRequest(BTRequest.authenticate).validate({ (request, response, data) -> Request.ValidationResult in
+        BTNetwork.olhoVivoRequest(BTRequest.authenticate).validate({ (request, response, data) -> Request.ValidationResult in
             if  request?.url?.absoluteString.range(of: "token") != nil, response.statusCode == 200,
                 let data = data, let responseValue = String(data: data, encoding: .utf8),
                 responseValue == "true" {

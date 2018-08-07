@@ -94,6 +94,8 @@
 		9DFF3FA0211A25B500251B6E /* authenticate_success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authenticate_success.json; sourceTree = "<group>"; };
 		9DFF3FA2211A25C600251B6E /* authenticate_fail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authenticate_fail.json; sourceTree = "<group>"; };
 		9DFF3FA4211A295600251B6E /* unauthorized.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = unauthorized.json; sourceTree = "<group>"; };
+		9DFF3FAC211A4E1900251B6E /* BusTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTrackerUITests.swift; sourceTree = "<group>"; };
+		9DFF3FAE211A4E1900251B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			children = (
 				9DF2EFBA2118CC720019342A /* BusTracker */,
 				9DF2EFCF2118CC740019342A /* BusTrackerTests */,
+				9DFF3FAB211A4E1900251B6E /* BusTrackerUITests */,
 				9DF2EFB92118CC720019342A /* Products */,
 				9DF2EFDE2118D5660019342A /* Frameworks */,
 			);
@@ -254,6 +257,15 @@
 				9DF2EFDF2118D5780019342A /* Alamofire.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DFF3FAB211A4E1900251B6E /* BusTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9DFF3FAC211A4E1900251B6E /* BusTrackerUITests.swift */,
+				9DFF3FAE211A4E1900251B6E /* Info.plist */,
+			);
+			path = BusTrackerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
