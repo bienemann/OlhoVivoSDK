@@ -10,9 +10,11 @@ import Foundation
 import Alamofire
 import UIKit
 
+typealias ListResponseHandler = ([Decodable]?, Error?) -> Void
+
 struct BTNetwork {
     
-    static func olhoVivoRequest(_ request: URLRequestConvertible, showRetryAlert: Bool = false) -> DataRequest {
+    static func olhoVivoRequest(_ request: BTRequest, showRetryAlert: Bool = false) -> DataRequest {
         
         let manager = Alamofire.SessionManager.default
         manager.retrier = AuthRetrier()

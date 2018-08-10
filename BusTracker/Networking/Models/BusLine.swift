@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 struct BusLine: Decodable {
     
     var lineID: Int

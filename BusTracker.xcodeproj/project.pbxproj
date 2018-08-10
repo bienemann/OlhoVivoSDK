@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1F0F70211E236A00648CEB /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F6F211E236A00648CEB /* BusStop.swift */; };
+		9D1F0F72211E26B400648CEB /* BusStopInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */; };
+		9D1F0F74211E474600648CEB /* DecodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F73211E474600648CEB /* DecodableExtension.swift */; };
 		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
 		9D61A5492119E52300807168 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
 		9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */; };
@@ -65,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D1F0F6F211E236A00648CEB /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopInteractor.swift; sourceTree = "<group>"; };
+		9D1F0F73211E474600648CEB /* DecodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableExtension.swift; sourceTree = "<group>"; };
 		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		9D61A5482119E52300807168 /* BusLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
 		9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscar_termosBusca_8000.json; sourceTree = "<group>"; };
@@ -120,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D1F0F75211E480600648CEB /* FrameworkExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D1F0F73211E474600648CEB /* DecodableExtension.swift */,
+			);
+			path = FrameworkExtensions;
+			sourceTree = "<group>";
+		};
 		9D61A54A2119EDA500807168 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +151,7 @@
 			children = (
 				9D61A54F2119EFA800807168 /* LineInteractor.swift */,
 				9D98DF7A211A065700237DA8 /* AuthInteractor.swift */,
+				9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -146,6 +161,7 @@
 			children = (
 				9D61A5482119E52300807168 /* BusLine.swift */,
 				9D61A557211A00EE00807168 /* Error.swift */,
+				9D1F0F6F211E236A00648CEB /* BusStop.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +237,7 @@
 				9DF2EFDB2118D28B0019342A /* Networking */,
 				9D98DF8B211A15F800237DA8 /* Alerts */,
 				9D98DF7E211A110100237DA8 /* UIComponents */,
+				9D1F0F75211E480600648CEB /* FrameworkExtensions */,
 				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
 				9DF2EFBD2118CC720019342A /* ViewController.swift */,
 				9DF2EFBF2118CC720019342A /* Main.storyboard */,
@@ -404,9 +421,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1F0F72211E26B400648CEB /* BusStopInteractor.swift in Sources */,
 				9D61A5502119EFA800807168 /* LineInteractor.swift in Sources */,
 				9D61A5492119E52300807168 /* BusLine.swift in Sources */,
 				9DF31F38211A1BAA009A76DD /* BTAlertController.swift in Sources */,
+				9D1F0F74211E474600648CEB /* DecodableExtension.swift in Sources */,
 				9D98DF7D211A07F700237DA8 /* BTNetwork.swift in Sources */,
 				9D98DF7B211A065700237DA8 /* AuthInteractor.swift in Sources */,
 				9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */,
@@ -414,6 +433,7 @@
 				9DF31F3A211A1BAA009A76DD /* BTAlertViewProtocol.swift in Sources */,
 				9DF2EFDD2118D2B30019342A /* Request.swift in Sources */,
 				9DF31F33211A1B75009A76DD /* RetryAlert.swift in Sources */,
+				9D1F0F70211E236A00648CEB /* BusStop.swift in Sources */,
 				9DF31F3D211A1BB2009A76DD /* BTLoadingView.swift in Sources */,
 				9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */,
 				9D61A558211A00EE00807168 /* Error.swift in Sources */,

@@ -18,22 +18,13 @@ struct LineInteractor {
         BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: searchQuery, direction: direction),
                                   showRetryAlert: true)
             .responseData { (response) in
-                
                 switch response.result {
                 case .success(let data):
-                    
-                    do {
-                        let json = try JSONDecoder().decode([BusLine].self, from: data)
-                        handler(json, nil)
-                        return
-                    } catch let decodingError {
-                        handler(nil, decodingError)
-                        return
+                    if let lines = BusLine.listFrom(data, { handler(nil, $0) }) {
+                        handler(lines, nil)
                     }
-                    
                 case .failure(let error):
                     handler(nil, error)
-                    return
                 }
         }
     }

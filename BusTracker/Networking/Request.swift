@@ -10,16 +10,25 @@ import Foundation
 import Alamofire
 
 enum BTRequest: URLRequestConvertible {
-    
+     
     static private let base_url = "http://api.olhovivo.sptrans.com.br/"
     static private let api_version = "v2.1"
     
+    enum StopsFilters {
+        case search(_: String)
+        case line(_: BusLine)
+        case corridor(_: AnyObject)
+    }
+    
     case authenticate
     case searchLine(query: String, direction: BusLine.Direction?)
+    case stops(by: StopsFilters)
     
     private var forcedQuery: Bool {
         switch self {
-        case .authenticate, .searchLine:
+        case .authenticate,
+             .searchLine,
+             .stops:
             return true
         }
     }
@@ -33,14 +42,24 @@ enum BTRequest: URLRequestConvertible {
                 return "/Linha/Buscar"
             }
             return "/Linha/BuscarLinhaSentido"
+        case .stops(let filter):
+            switch filter {
+            case .search:
+                return "/Parada/Buscar"
+            case .line:
+                return ""
+            case .corridor:
+                return ""
+            }
         }
+        
     }
     
     private var method: HTTPMethod {
         switch self {
         case .authenticate:
             return .post
-        case .searchLine:
+        case .searchLine, .stops:
             return .get
         }
     }
@@ -55,6 +74,13 @@ enum BTRequest: URLRequestConvertible {
             }
             return  ["termosBusca": searchQuery,
                     "sentido": direction.rawValue]
+        case .stops(let filter):
+            switch filter {
+            case .search(let searchQuery):
+                return ["termosBusca": searchQuery]
+            default:
+                return [:]
+            }
         }
     }
     
