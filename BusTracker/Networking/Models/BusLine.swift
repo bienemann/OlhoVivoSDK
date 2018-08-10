@@ -29,7 +29,7 @@ struct BusLine: Decodable {
     }
     
     enum Direction: Int {
-        case outbount = 1
+        case outbound = 1
         case inbound = 2
     }
     

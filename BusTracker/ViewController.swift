@@ -22,9 +22,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchExample(_ sender: UIButton) {
-        BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: "dom pedro"), showRetryAlert: true)
-            .responseData { response in
-                print(response)
+        LineInteractor.search("dom pedro") { (busList, error) in
+            print(busList?.description ?? error.debugDescription)
         }
     }
 

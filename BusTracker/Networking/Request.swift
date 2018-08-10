@@ -15,7 +15,7 @@ enum BTRequest: URLRequestConvertible {
     static private let api_version = "v2.1"
     
     case authenticate
-    case searchLine(query: String)
+    case searchLine(query: String, direction: BusLine.Direction?)
     
     private var forcedQuery: Bool {
         switch self {
@@ -28,8 +28,11 @@ enum BTRequest: URLRequestConvertible {
         switch self {
         case .authenticate:
             return "/Login/Autenticar"
-        case .searchLine:
-            return "/Linha/Buscar"
+        case .searchLine(_, let direction):
+            guard let _ = direction else {
+                return "/Linha/Buscar"
+            }
+            return "/Linha/BuscarLinhaSentido"
         }
     }
     
@@ -46,8 +49,12 @@ enum BTRequest: URLRequestConvertible {
         switch self {
         case .authenticate:
             return ["token": "e86972bad776dfaaba882db93230bf1b4745a4c9d21ddfcd15c71106d2fa6f79"]
-        case .searchLine(let searchQuery):
-            return ["termosBusca": searchQuery]
+        case .searchLine(let searchQuery, let direction):
+            guard let direction = direction else {
+                return ["termosBusca": searchQuery]
+            }
+            return  ["termosBusca": searchQuery,
+                    "sentido": direction.rawValue]
         }
     }
     

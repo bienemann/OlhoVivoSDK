@@ -49,4 +49,18 @@ class LineInteractorTests: XCTestCase {
         wait(for: [unauthorizedExpectation], timeout: 20.0)
     }
     
+    func testSearchDirection() {
+        
+        BTStubs.stubSearch("8000", direction: .outbound)
+        
+        let searchExpectation = expectation(description: "expectation for search response")
+        LineInteractor.search("8000", direction: .outbound) { (busLines, error) in
+            searchExpectation.fulfill()
+            XCTAssertNil(error, "Error not nil")
+            XCTAssert(busLines?.count == 2, "Wrong number of lines in response")
+        }
+        
+        wait(for: [searchExpectation], timeout: 1.0)
+    }
+    
 }

@@ -14,11 +14,16 @@ import OHHTTPStubs
 
 struct BTStubs {
     
-    static func stubSearch(_ query: String) {
+    static func stubSearch(_ query: String, direction: BusLine.Direction? = nil) {
         
-        let fileName = "linha_buscar_termosBusca_" + query
+        var fileName = "linha_buscar_termosBusca_" + query
+        if let direction = direction {
+            fileName = "linha_buscarLinhaSentido_termosBusca_" + query +
+            "_sentido_\(direction.rawValue)"
+        }
+        
         do {
-            let request = try BTRequest.searchLine(query: query).asURLRequest()
+            let request = try BTRequest.searchLine(query: query, direction: direction).asURLRequest()
             basicStub(request, file: fileName, statusCode: 200)
         } catch {
             return
@@ -29,7 +34,7 @@ struct BTStubs {
     static func stubSearchUnauthorized(_ query: String) {
         
         do {
-            let request = try BTRequest.searchLine(query: query).asURLRequest()
+            let request = try BTRequest.searchLine(query: query, direction: nil).asURLRequest()
             basicStub(request, file: "unauthorized", statusCode: 401)
         } catch {
             return

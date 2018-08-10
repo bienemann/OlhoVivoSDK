@@ -21,6 +21,7 @@
 		9D98DF89211A118B00237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		9D98DF8F211A166400237DA8 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		9D98DF90211A166400237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		9D9A95B4211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D9A95B3211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json */; };
 		9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBB2118CC720019342A /* AppDelegate.swift */; };
 		9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBD2118CC720019342A /* ViewController.swift */; };
 		9DF2EFC12118CC720019342A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBF2118CC720019342A /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		9D61A557211A00EE00807168 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		9D98DF7A211A065700237DA8 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		9D98DF7C211A07F700237DA8 /* BTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNetwork.swift; sourceTree = "<group>"; };
+		9D9A95B3211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json; sourceTree = "<group>"; };
 		9DF2EFB82118CC720019342A /* BusTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF2EFBB2118CC720019342A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF2EFBD2118CC720019342A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */,
+				9D9A95B3211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json */,
 				9DFF3FA0211A25B500251B6E /* authenticate_success.json */,
 				9DFF3FA2211A25C600251B6E /* authenticate_fail.json */,
 				9DFF3FA4211A295600251B6E /* unauthorized.json */,
@@ -371,6 +374,7 @@
 				9DFF3FA3211A25C600251B6E /* authenticate_fail.json in Resources */,
 				9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */,
 				9DFF3FA5211A295600251B6E /* unauthorized.json in Resources */,
+				9D9A95B4211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
