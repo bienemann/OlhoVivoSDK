@@ -1,0 +1,233 @@
+[
+    {
+    "cp": 260016859,
+    "np": "ANTONIA DE QUEIROS B/C",
+    "ed": "R DONA ANTONIA DE QUEIROS/ R PIAUI",
+    "py": -23.549577,
+    "px": -46.653216
+    },
+    {
+    "cp": 260016858,
+    "np": "ANTONIA DE QUEIROS C/B",
+    "ed": "R DONA ANTONIA DE QUEIROS/ R PIAUI",
+    "py": -23.54958,
+    "px": -46.65343
+    },
+    {
+    "cp": 630015008,
+    "np": "BRASIL B/C",
+    "ed": "PC PORTUGAL/ R CONEGO EUGENIO LEITE",
+    "py": -23.564642,
+    "px": -46.678602
+    },
+    {
+    "cp": 440015003,
+    "np": "BRASIL C/B",
+    "ed": "R HENRIQUE SCHAUMANN/ R LISBOA",
+    "py": -23.564096,
+    "px": -46.677671
+    },
+    {
+    "cp": 260016861,
+    "np": "CAIO PRADO B/C",
+    "ed": "R MARQUES DE PARANAGUA/ R MARIA ANTONIA",
+    "py": -23.548174,
+    "px": -46.649565
+    },
+    {
+    "cp": 260016860,
+    "np": "CAIO PRADO C/B",
+    "ed": "R MARQUES DE PARANAGUA/ R MARIA ANTONIA",
+    "py": -23.548312,
+    "px": -46.650406
+    },
+    {
+    "cp": 630015009,
+    "np": "CAP. ANTONIO ROSA B/C",
+    "ed": "R DANTE CARRARO/ R CAPITAO ANTONIO ROSA",
+    "py": -23.567915,
+    "px": -46.684758
+    },
+    {
+    "cp": 630015010,
+    "np": "CAP. ANTONIO ROSA C/B",
+    "ed": "R TECAINDA/ R CAPITAO ANTONIO ROSA",
+    "py": -23.567619,
+    "px": -46.684372
+    },
+    {
+    "cp": 440015006,
+    "np": "CLINICAS B/C",
+    "ed": "R DOUTOR OVIDIO PIRES DE CAMPOS/ R MELO ALVES",
+    "py": -23.558088,
+    "px": -46.667585
+    },
+    {
+    "cp": 440015007,
+    "np": "CLÍNICAS C/B",
+    "ed": "R DOUTOR OVIDIO PIRES DE CAMPOS/ R MELO ALVES",
+    "py": -23.558083,
+    "px": -46.667869
+    },
+    {
+    "cp": 120011360,
+    "np": "DRAUSIO B/C",
+    "ed": "R MIRAGAIA/ R DRAUSIO",
+    "py": -23.576878,
+    "px": -46.707716
+    },
+    {
+    "cp": 120011361,
+    "np": "DRAUSIO C/B",
+    "ed": "R MIRAGAIA/ R DRAUSIO",
+    "py": -23.577175,
+    "px": -46.707933
+    },
+    {
+    "cp": 960011372,
+    "np": "EDEN B/C",
+    "ed": "R CENOBELINO SERRA/ R EDEN",
+    "py": -23.588191,
+    "px": -46.727332
+    },
+    {
+    "cp": 960011373,
+    "np": "EDEN C/B",
+    "ed": "R CENOBELINO SERRA/ R EDEN",
+    "py": -23.588431,
+    "px": -46.727769
+    },
+    {
+    "cp": 630015016,
+    "np": "FARIA LIMA B/C",
+    "ed": "cruzamento Av. Eusébio Matoso e Av. Brig. Faria Lima",
+    "py": -23.571182,
+    "px": -46.691378
+    },
+    {
+    "cp": 630015011,
+    "np": "FARIA LIMA C/B",
+    "ed": "cruzamento Av. Rebouças e Av. Brig. Faria Lima",
+    "py": -23.570905,
+    "px": -46.690499
+    },
+    {
+    "cp": 550011364,
+    "np": "FUND CARLOS CHAGAS B/C",
+    "ed": "R SANHARO/ R LADISLAU ROMAN",
+    "py": -23.582836,
+    "px": -46.713849
+    },
+    {
+    "cp": 550011365,
+    "np": "FUND CARLOS CHAGAS C/B",
+    "ed": "R GENERAL SENA VASCONCELOS/ R SANHARO",
+    "py": -23.582898,
+    "px": -46.71419
+    },
+    {
+    "cp": 960011369,
+    "np": "JORGE JOAO SAAD B/C",
+    "ed": "R DOUTOR ALEXANDRE MARCONDES FILHO/ AV DEPUTADO JACOB SALVADOR ZVEIBI",
+    "py": -23.586951,
+    "px": -46.725216
+    },
+    {
+    "cp": 440015004,
+    "np": "OSCAR FREIRE B/C",
+    "ed": "R OSCAR FREIRE/ R CHABAD",
+    "py": -23.560639,
+    "px": -46.672095
+    },
+    {
+    "cp": 440015005,
+    "np": "OSCAR FREIRE C/B",
+    "ed": "R OSCAR FREIRE/ AL LORENA",
+    "py": -23.560271,
+    "px": -46.671631
+    },
+    {
+    "cp": 630015015,
+    "np": "PARADA  ELDORADO  - B/C",
+    "ed": "R JORGE RIZZO/ R SAO COLUMBANO",
+    "py": -23.571709,
+    "px": -46.696577
+    },
+    {
+    "cp": 630015017,
+    "np": "PARADA 1 - ELDORADO C/B",
+    "ed": "R JORGE RIZZO/ R SAO COLUMBANO",
+    "py": -23.571622,
+    "px": -46.696564
+    },
+    {
+    "cp": 550011358,
+    "np": "PARADA VITAL BRASIL B/C",
+    "ed": "R MMDC/ AV LINEU DE PAULA MACHADO",
+    "py": -23.572987,
+    "px": -46.705031
+    },
+    {
+    "cp": 120011357,
+    "np": "PARADA VITAL BRASIL C/B",
+    "ed": "R MMDC/ AV LINEU DE PAULA MACHADO",
+    "py": -23.573069,
+    "px": -46.705372
+    },
+    {
+    "cp": 260015039,
+    "np": "PAULISTA B/C",
+    "ed": "AV PAULISTA/ AV REBOUCAS",
+    "py": -23.555883,
+    "px": -46.66306
+    },
+    {
+    "cp": 260016855,
+    "np": "PAULISTA C/B",
+    "ed": "AV PAULISTA/ R ANTONIO CARLOS",
+    "py": -23.555176,
+    "px": -46.66237
+    },
+    {
+    "cp": 260016857,
+    "np": "PEDRO TAQUES B/C",
+    "ed": "R CORONEL JOSE EUSEBIO/ R PEDRO TAQUES",
+    "py": -23.551843,
+    "px": -46.657399
+    },
+    {
+    "cp": 260016856,
+    "np": "PEDRO TAQUES C/B",
+    "ed": "R CORONEL JOSE EUSEBIO/ R PEDRO TAQUES",
+    "py": -23.551865,
+    "px": -46.657589
+    },
+    {
+    "cp": 550011362,
+    "np": "ROQUETE PINTO B/C",
+    "ed": "R DOUTOR QUEIROS GUIMARAES/ R PORTO GRANDE",
+    "py": -23.58095,
+    "px": -46.711425
+    },
+    {
+    "cp": 120011363,
+    "np": "ROQUETE PINTO C/B",
+    "ed": "R DOUTOR QUEIROS GUIMARAES/ R PORTO GRANDE",
+    "py": -23.581273,
+    "px": -46.711714
+    },
+    {
+    "cp": 120011366,
+    "np": "TRES IRMAOS B/C",
+    "ed": "R JOSE JANNARELLI/ R TRES IRMAOS",
+    "py": -23.584837,
+    "px": -46.71869
+    },
+    {
+    "cp": 120011367,
+    "np": "TRES IRMAOS C/B",
+    "ed": "R JOSE JANNARELLI/ R TRES IRMAOS",
+    "py": -23.584817,
+    "px": -46.719021
+    }
+]

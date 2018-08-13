@@ -1,0 +1,107 @@
+[
+    {
+    "cp": 7014417,
+    "np": "ANGELICA B/C",
+    "ed": "AV   ANGELICA",
+    "py": -23.53458,
+    "px": -46.65426
+    },
+    {
+    "cp": 60016784,
+    "np": "PARADA PALMEIRAS B/C",
+    "ed": "R PADRE ANTONIO TOMAS/ AV POMPEIA",
+    "py": -23.525834,
+    "px": -46.679254
+    },
+    {
+    "cp": 60016786,
+    "np": "ANTARTICA B/C",
+    "ed": " PC SOUSA ARANHA/ VDTO ANTARTICA ",
+    "py": -23.526523,
+    "px": -46.673588
+    },
+    {
+    "cp": 60016788,
+    "np": "BABY BARIONY B/C",
+    "ed": " R DONA GERMAINE BUCHARD/ R MINISTRO GODOI ",
+    "py": -23.528131,
+    "px": -46.670652
+    },
+    {
+    "cp": 60016790,
+    "np": "PQ. DA ÁGUA BRANCA B/C",
+    "ed": "R MINISTRO GODOI/ R LINCOLN ALBUQUERQUE",
+    "py": -23.530175,
+    "px": -46.666874
+    },
+    {
+    "cp": 480014612,
+    "np": "SCIPIAO B/C",
+    "ed": "R SCIPIAO/ R AURELIA",
+    "py": -23.52494,
+    "px": -46.698995
+    },
+    {
+    "cp": 480014613,
+    "np": "VESPASIANO B/C",
+    "ed": " R VESPASIANO/ R CAIO GRACO ",
+    "py": -23.524994,
+    "px": -46.695297
+    },
+    {
+    "cp": 480014614,
+    "np": "CORNELIA",
+    "ed": "R CLAUDIO/ R CRASSO",
+    "py": -23.525029,
+    "px": -46.690074
+    },
+    {
+    "cp": 480014961,
+    "np": "CATAO B/C",
+    "ed": "R FAUSTOLO/ R ROMA",
+    "py": -23.523409,
+    "px": -46.700503
+    },
+    {
+    "cp": 610014603,
+    "np": "SESC POMPEIA B/C",
+    "ed": "R TURIASSU/ R BARAO DO BANANAL",
+    "py": -23.52517,
+    "px": -46.683408
+    },
+    {
+    "cp": 670010530,
+    "np": "VITORIA B/C",
+    "ed": "R VITORIA/ AL BARAO DE CAMPINAS",
+    "py": -23.540484,
+    "px": -46.643608
+    },
+    {
+    "cp": 700006086,
+    "np": "ROSA E SILVA B/C",
+    "ed": "R OLIMPIA DE ALMEIDA PRADO/ R LOPES DE OLIVEIRA",
+    "py": -23.532824,
+    "px": -46.657392
+    },
+    {
+    "cp": 700016623,
+    "np": "ANA CINTRA B/C",
+    "ed": " R DOUTOR FREDERICO STEIDEL/ AV DUQUE DE CAXIAS ",
+    "py": -23.538763,
+    "px": -46.646925
+    },
+    {
+    "cp": 700016791,
+    "np": "PACAEMBU B/C",
+    "ed": "R FRANCISCO ESTACIO FORTES/ AV PACAEMBU",
+    "py": -23.532068,
+    "px": -46.660957
+    },
+    {
+    "cp": 700016866,
+    "np": "NOTHMANN B/C",
+    "ed": "R GENERAL JULIO MARCONDES SALGADO/ AL NOTHMANN",
+    "py": -23.536296,
+    "px": -46.651181
+    }
+]

@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import UIKit
 
-typealias ListResponseHandler = ([Decodable]?, Error?) -> Void
+typealias ListResponseHandler<T: Decodable> = ([T]?, Error?) -> Void
 
 struct BTNetwork {
     
@@ -36,25 +36,28 @@ class AuthRetrier: RequestRetrier {
         
         if let response = request.task?.response as? HTTPURLResponse,
         response.statusCode == 401, retryCount == 0 {
-            print("log: authenticating...")
+            
+            // Authentication Challenge
+            
             AuthInteractor.authenticate { success in
                 if success {
-                    print("log: authenticated!")
                     completion(true, 0.0)
                     return
                 } else {
                     completion(true, 0.0)
                 }
             }
+            
         } else if let response = request.task?.response as? HTTPURLResponse, response.statusCode == 200,
             (error as NSError).code == URLError.userAuthenticationRequired.rawValue {
+            
+            // Authentication failed
+            // Retry 3 times
             
             if retryCount > 2 {
                 completion(false, 0.0)
             } else {
                 self.retryCount += 1
-                print("log: failed to authenticate :(")
-                print("log: retrying... count \(self.retryCount)")
                 completion(true, 0.5)
             }
             

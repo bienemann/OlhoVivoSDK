@@ -10,10 +10,8 @@ import Foundation
 
 struct LineInteractor {
     
-    typealias LineResponseHandler = ([BusLine]?, Error?) -> Void
-    
     static func search(_ searchQuery: String, direction: BusLine.Direction? = nil,
-                       handler: @escaping LineResponseHandler) {
+                       handler: @escaping ListResponseHandler<BusLine>) {
         
         BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: searchQuery, direction: direction),
                                   showRetryAlert: true)

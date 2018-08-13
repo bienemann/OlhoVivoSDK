@@ -10,6 +10,10 @@
 		9D1F0F70211E236A00648CEB /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F6F211E236A00648CEB /* BusStop.swift */; };
 		9D1F0F72211E26B400648CEB /* BusStopInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */; };
 		9D1F0F74211E474600648CEB /* DecodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F73211E474600648CEB /* DecodableExtension.swift */; };
+		9D1F0F772122379000648CEB /* StopInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F762122379000648CEB /* StopInteractorTests.swift */; };
+		9D1F0F792122382D00648CEB /* parada_buscar_termosBusca_afonso.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F782122382D00648CEB /* parada_buscar_termosBusca_afonso.json */; };
+		9D1F0F7B212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */; };
+		9D1F0F7D2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */; };
 		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
 		9D61A5492119E52300807168 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
 		9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */; };
@@ -71,6 +75,10 @@
 		9D1F0F6F211E236A00648CEB /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
 		9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopInteractor.swift; sourceTree = "<group>"; };
 		9D1F0F73211E474600648CEB /* DecodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableExtension.swift; sourceTree = "<group>"; };
+		9D1F0F762122379000648CEB /* StopInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInteractorTests.swift; sourceTree = "<group>"; };
+		9D1F0F782122382D00648CEB /* parada_buscar_termosBusca_afonso.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscar_termosBusca_afonso.json; sourceTree = "<group>"; };
+		9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscarParadaPorLinha_codigoLinha_1273.json; sourceTree = "<group>"; };
+		9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscarParadasPorCorredor_codigoCorredor_8.json; sourceTree = "<group>"; };
 		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		9D61A5482119E52300807168 /* BusLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
 		9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscar_termosBusca_8000.json; sourceTree = "<group>"; };
@@ -142,6 +150,9 @@
 				9DFF3FA0211A25B500251B6E /* authenticate_success.json */,
 				9DFF3FA2211A25C600251B6E /* authenticate_fail.json */,
 				9DFF3FA4211A295600251B6E /* unauthorized.json */,
+				9D1F0F782122382D00648CEB /* parada_buscar_termosBusca_afonso.json */,
+				9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */,
+				9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -255,6 +266,7 @@
 				9DF2EFD22118CC740019342A /* Info.plist */,
 				9D61A5512119F32700807168 /* BTStubs.swift */,
 				9D61A5552119FF3300807168 /* LineInteractorTests.swift */,
+				9D1F0F762122379000648CEB /* StopInteractorTests.swift */,
 			);
 			path = BusTrackerTests;
 			sourceTree = "<group>";
@@ -388,9 +400,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFF3FA1211A25B500251B6E /* authenticate_success.json in Resources */,
+				9D1F0F792122382D00648CEB /* parada_buscar_termosBusca_afonso.json in Resources */,
 				9DFF3FA3211A25C600251B6E /* authenticate_fail.json in Resources */,
 				9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */,
 				9DFF3FA5211A295600251B6E /* unauthorized.json in Resources */,
+				9D1F0F7D2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */,
+				9D1F0F7B212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json in Resources */,
 				9D9A95B4211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D61A5522119F32700807168 /* BTStubs.swift in Sources */,
+				9D1F0F772122379000648CEB /* StopInteractorTests.swift in Sources */,
 				9D61A5562119FF3300807168 /* LineInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

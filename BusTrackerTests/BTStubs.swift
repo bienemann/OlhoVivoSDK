@@ -12,7 +12,61 @@ import OHHTTPStubs
 
 @testable import BusTracker
 
-struct BTStubs {
+struct BTStubs { // Auth
+    
+    static func basicStub(_ request: URLRequest?, file: String, statusCode: Int32) {
+        
+        stub(condition: { testRequest -> Bool in
+            
+            guard let request = request else {
+                return false
+            }
+            return  testRequest.url == request.url
+            
+        }) { _ in
+            
+            guard
+                let testBundle = Bundle(identifier: "com.aya.BusTrackerTests"),
+                let filePath = testBundle.path(forResource: file, ofType: "json")
+                else {
+                    let error = NSError(domain: NSURLErrorDomain,
+                                        code: NSURLErrorFileDoesNotExist,
+                                        userInfo: nil)
+                    return OHHTTPStubsResponse(error: error)
+            }
+            
+            return OHHTTPStubsResponse(
+                fileAtPath: filePath,
+                statusCode: statusCode,
+                headers: nil)
+        }
+        
+    }
+}
+
+extension BTStubs { // Auth
+    
+    static func stubAuthSuccess() {
+        do {
+            let request = try BTRequest.authenticate.asURLRequest()
+            basicStub(request, file: "authenticate_success", statusCode: 200)
+        } catch {
+            return
+        }
+    }
+    
+    static func stubAuthFailure() {
+        do {
+            let request = try BTRequest.authenticate.asURLRequest()
+            basicStub(request, file: "authenticate_fail", statusCode: 200)
+        } catch {
+            return
+        }
+    }
+    
+}
+
+extension BTStubs { // Lines
     
     static func stubSearch(_ query: String, direction: BusLine.Direction? = nil) {
         
@@ -41,54 +95,44 @@ struct BTStubs {
         }
         
     }
-    
-    static func stubAuthSuccess() {
-        do {
-            let request = try BTRequest.authenticate.asURLRequest()
-            basicStub(request, file: "authenticate_success", statusCode: 200)
-        } catch {
-            return
-        }
-    }
-    
-    static func stubAuthFailure() {
-        do {
-            let request = try BTRequest.authenticate.asURLRequest()
-            basicStub(request, file: "authenticate_fail", statusCode: 200)
-        } catch {
-            return
-        }
-    }
-    
 }
 
-extension BTStubs { // base constructor
-    static func basicStub(_ request: URLRequest?, file: String, statusCode: Int32) {
+extension BTStubs { // Stops
+    
+    static func stubStopsSearch(_ query: String) {
         
-        stub(condition: { testRequest -> Bool in
-            
-            guard let request = request else {
-                return false
-            }
-            return  testRequest.url == request.url
-            
-        }) { _ in
-            
-            guard
-                let testBundle = Bundle(identifier: "com.aya.BusTrackerTests"),
-                let filePath = testBundle.path(forResource: file, ofType: "json")
-                else {
-                    let error = NSError(domain: NSURLErrorDomain,
-                                        code: NSURLErrorFileDoesNotExist,
-                                        userInfo: nil)
-                    return OHHTTPStubsResponse(error: error)
-            }
-            
-            return OHHTTPStubsResponse(
-                fileAtPath: filePath,
-                statusCode: statusCode,
-                headers: nil)
+        var filename = "parada_buscar_termosBusca_"
+        filename += query
+        
+        do {
+            let request = try BTRequest.stops(by: .search(query)).asURLRequest()
+            basicStub(request, file: filename, statusCode: 200)
+        } catch {
+            return
         }
         
+    }
+    
+    static func stubStops(by line: BusLine) {
+        var filename = "parada_buscarParadaPorLinha_codigoLinha_"
+        filename += line.lineID.description
+        do {
+            let request = try BTRequest.stops(by: .line(line)).asURLRequest()
+            basicStub(request, file: filename, statusCode: 200)
+        } catch {
+            return
+        }
+    }
+    
+    static func stubStops(by corridor: Int) {
+        var filename = "parada_buscarParadasPorCorredor_codigoCorredor_"
+        filename += corridor.description
+        do {
+            let request = try BTRequest
+                .stops(by: .corridor(corridor as AnyObject)).asURLRequest()
+            basicStub(request, file: filename, statusCode: 200)
+        } catch {
+            return
+        }
     }
 }

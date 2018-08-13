@@ -7,23 +7,39 @@
 //
 
 import Foundation
+import Alamofire
+
+fileprivate extension DataRequest {
+    func busStops(handler: @escaping ListResponseHandler<BusStop>) -> Self {
+        self.responseData { response in
+            switch response.result {
+            case .success(let data):
+                if let lines = BusStop.listFrom(data, { handler(nil, $0) }) {
+                    handler(lines, nil)
+                }
+            case .failure(let error):
+                handler(nil, error)
+            }
+        }
+        return self
+    }
+}
 
 struct BusStopInteractor {
     
-    static func search(_ searchQuery: String, handler: @escaping ListResponseHandler) {
-        
-        BTNetwork.olhoVivoRequest(.stops(by: .search(searchQuery)), showRetryAlert: true)
-            .responseData { (response) in
-                
-                switch response.result {
-                case .success(let data):
-                    if let lines = BusStop.listFrom(data, { handler(nil, $0) }) {
-                        handler(lines, nil)
-                    }
-                case .failure(let error):
-                    handler(nil, error)
-                }
-        }
+    static func search(_ searchQuery: String, handler: @escaping ListResponseHandler<BusStop>) {
+        _ = BTNetwork.olhoVivoRequest(.stops(by: .search(searchQuery)), showRetryAlert: true)
+            .busStops(handler: handler)
     }
     
+    static func stops(for line: BusLine, handler: @escaping ListResponseHandler<BusStop>) {
+        _ = BTNetwork.olhoVivoRequest(.stops(by: .line(line)), showRetryAlert: true)
+            .busStops(handler: handler)
+    }
+    
+    static func stops(for corridor: [String], handler: @escaping ListResponseHandler<BusStop>) {
+        _ = BTNetwork.olhoVivoRequest(.stops(by: .corridor(corridor as AnyObject)),
+                                      showRetryAlert: true)
+            .busStops(handler: handler)
+    }
 }

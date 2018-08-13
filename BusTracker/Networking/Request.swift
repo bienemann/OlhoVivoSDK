@@ -47,9 +47,9 @@ enum BTRequest: URLRequestConvertible {
             case .search:
                 return "/Parada/Buscar"
             case .line:
-                return ""
+                return "/Parada/BuscarParadasPorLinha"
             case .corridor:
-                return ""
+                return "/Parada/BuscarParadasPorCorredor"
             }
         }
         
@@ -78,8 +78,10 @@ enum BTRequest: URLRequestConvertible {
             switch filter {
             case .search(let searchQuery):
                 return ["termosBusca": searchQuery]
-            default:
-                return [:]
+            case .line(let line):
+                return ["codigoLinha": line.lineID]
+            case .corridor:
+                return ["codigoCorredor": ""]
             }
         }
     }
