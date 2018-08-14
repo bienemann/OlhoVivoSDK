@@ -136,3 +136,20 @@ extension BTStubs { // Stops
         }
     }
 }
+
+extension BTStubs { // Position
+    
+    static func stubPosition(line: BusLine) {
+        
+        let filename = "posicao_linha_codigoLinha_\(line.lineID)"
+        
+        do {
+            let request = try BTRequest.positions(line).asURLRequest()
+            basicStub(request, file: filename, statusCode: 200)
+        } catch {
+            return
+        }
+        
+    }
+    
+}

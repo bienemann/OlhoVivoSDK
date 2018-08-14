@@ -23,12 +23,14 @@ enum BTRequest: URLRequestConvertible {
     case authenticate
     case searchLine(query: String, direction: BusLine.Direction?)
     case stops(by: StopsFilters)
+    case positions(BusLine)
     
     private var forcedQuery: Bool {
         switch self {
         case .authenticate,
              .searchLine,
-             .stops:
+             .stops,
+             .positions:
             return true
         }
     }
@@ -51,6 +53,8 @@ enum BTRequest: URLRequestConvertible {
             case .corridor:
                 return "/Parada/BuscarParadasPorCorredor"
             }
+        case .positions:
+            return "/Posicao/Linha"
         }
         
     }
@@ -59,12 +63,12 @@ enum BTRequest: URLRequestConvertible {
         switch self {
         case .authenticate:
             return .post
-        case .searchLine, .stops:
+        case .searchLine, .stops, .positions:
             return .get
         }
     }
     
-    private var params: Parameters {
+    private var params: Parameters? {
         switch self {
         case .authenticate:
             return ["token": "e86972bad776dfaaba882db93230bf1b4745a4c9d21ddfcd15c71106d2fa6f79"]
@@ -83,6 +87,8 @@ enum BTRequest: URLRequestConvertible {
             case .corridor(let corridor):
                 return ["codigoCorredor": corridor.corridorID]
             }
+        case .positions(let line):
+            return ["codigoLinha": line.lineID]
         }
     }
     

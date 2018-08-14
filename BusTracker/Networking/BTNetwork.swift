@@ -11,6 +11,7 @@ import Alamofire
 import UIKit
 
 typealias ListResponseHandler<T: Decodable> = ([T]?, Error?) -> Void
+typealias ObjectResponseHandler<T: Decodable> = (T?, Error?) -> Void
 
 struct BTNetwork {
     
