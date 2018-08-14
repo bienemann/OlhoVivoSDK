@@ -66,4 +66,31 @@ class StopInteractorTests: XCTestCase {
         
     }
     
+    func testStopsByCorridor() {
+        
+        guard
+            let data = "[{\"cc\":8,\"nc\":\"Campo Limpo\"}]".data(using: .utf8),
+            let corridorList = Corridor.listFrom(data),
+            let corridor = corridorList.first
+        else {
+            XCTFail()
+            return
+        }
+        
+        BTStubs.stubStops(by: corridor)
+        let searchExpectation = expectation(description: "expectation for stops by corridor response")
+        
+        BusStopInteractor.stops(for: corridor) { (stops, error) in
+            searchExpectation.fulfill()
+            XCTAssertNil(error, "Error not nil")
+            XCTAssertNotNil(stops, "No errors but [BusStop] is nil")
+            XCTAssertFalse(stops!.isEmpty, "Stops list is empty")
+            XCTAssert(stops!.first!.stopID == 260016859, "Wrong return value")
+            print("#test: \(stops!.first!.name)")
+        }
+        
+        wait(for: [searchExpectation], timeout: 1.0)
+        
+    }
+    
 }

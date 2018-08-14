@@ -14,6 +14,7 @@
 		9D1F0F792122382D00648CEB /* parada_buscar_termosBusca_afonso.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F782122382D00648CEB /* parada_buscar_termosBusca_afonso.json */; };
 		9D1F0F7B212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */; };
 		9D1F0F7D2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */; };
+		9D2517F5212334E400D47FCA /* Corridor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F4212334E400D47FCA /* Corridor.swift */; };
 		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
 		9D61A5492119E52300807168 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
 		9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */; };
@@ -79,6 +80,7 @@
 		9D1F0F782122382D00648CEB /* parada_buscar_termosBusca_afonso.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscar_termosBusca_afonso.json; sourceTree = "<group>"; };
 		9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscarParadaPorLinha_codigoLinha_1273.json; sourceTree = "<group>"; };
 		9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscarParadasPorCorredor_codigoCorredor_8.json; sourceTree = "<group>"; };
+		9D2517F4212334E400D47FCA /* Corridor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corridor.swift; sourceTree = "<group>"; };
 		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		9D61A5482119E52300807168 /* BusLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
 		9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscar_termosBusca_8000.json; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				9D61A5482119E52300807168 /* BusLine.swift */,
 				9D61A557211A00EE00807168 /* Error.swift */,
 				9D1F0F6F211E236A00648CEB /* BusStop.swift */,
+				9D2517F4212334E400D47FCA /* Corridor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */,
 				9D98DF8F211A166400237DA8 /* (null) in Sources */,
 				9DF31F3A211A1BAA009A76DD /* BTAlertViewProtocol.swift in Sources */,
+				9D2517F5212334E400D47FCA /* Corridor.swift in Sources */,
 				9DF2EFDD2118D2B30019342A /* Request.swift in Sources */,
 				9DF31F33211A1B75009A76DD /* RetryAlert.swift in Sources */,
 				9D1F0F70211E236A00648CEB /* BusStop.swift in Sources */,

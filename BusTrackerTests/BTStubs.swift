@@ -124,12 +124,12 @@ extension BTStubs { // Stops
         }
     }
     
-    static func stubStops(by corridor: Int) {
+    static func stubStops(by corridor: Corridor) {
         var filename = "parada_buscarParadasPorCorredor_codigoCorredor_"
-        filename += corridor.description
+        filename += corridor.corridorID.description
         do {
             let request = try BTRequest
-                .stops(by: .corridor(corridor as AnyObject)).asURLRequest()
+                .stops(by: .corridor(corridor)).asURLRequest()
             basicStub(request, file: filename, statusCode: 200)
         } catch {
             return

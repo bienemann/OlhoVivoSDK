@@ -37,8 +37,8 @@ struct BusStopInteractor {
             .busStops(handler: handler)
     }
     
-    static func stops(for corridor: [String], handler: @escaping ListResponseHandler<BusStop>) {
-        _ = BTNetwork.olhoVivoRequest(.stops(by: .corridor(corridor as AnyObject)),
+    static func stops(for corridor: Corridor, handler: @escaping ListResponseHandler<BusStop>) {
+        _ = BTNetwork.olhoVivoRequest(.stops(by: .corridor(corridor)),
                                       showRetryAlert: true)
             .busStops(handler: handler)
     }

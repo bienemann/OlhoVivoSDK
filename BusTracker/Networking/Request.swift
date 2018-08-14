@@ -17,7 +17,7 @@ enum BTRequest: URLRequestConvertible {
     enum StopsFilters {
         case search(_: String)
         case line(_: BusLine)
-        case corridor(_: AnyObject)
+        case corridor(_: Corridor)
     }
     
     case authenticate
@@ -80,8 +80,8 @@ enum BTRequest: URLRequestConvertible {
                 return ["termosBusca": searchQuery]
             case .line(let line):
                 return ["codigoLinha": line.lineID]
-            case .corridor:
-                return ["codigoCorredor": ""]
+            case .corridor(let corridor):
+                return ["codigoCorredor": corridor.corridorID]
             }
         }
     }
