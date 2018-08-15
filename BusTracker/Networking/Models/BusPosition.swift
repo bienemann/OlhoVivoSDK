@@ -28,6 +28,7 @@ struct BusPosition: Decodable {
     var accessibilityEnabled: Bool
     var date: Date
     var coords: CLLocationCoordinate2D
+    var arrival: String?
     
     private enum CodingKeys: String, CodingKey {
         case prefix = "p"
@@ -35,6 +36,7 @@ struct BusPosition: Decodable {
         case date = "ta"
         case lat = "py"
         case lon = "px"
+        case arrival = "t"
     }
     
     init(from decoder: Decoder) throws {
@@ -49,6 +51,63 @@ struct BusPosition: Decodable {
         let lon = try values.decode(Double.self, forKey: .lon)
         coords = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         
+        if values.contains(.arrival) {
+            arrival = try values.decode(String.self, forKey: .arrival)
+        }
+    }
+    
+    init(testingID: Int) {
+        prefix = "0"
+        accessibilityEnabled = false
+        date = Date()
+        coords = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
+        arrival = "10:30"
+    }
+    
+}
+
+extension BusPosition { // arrival time
+    
+    func nextArrivalDateComponents() -> DateComponents? {
+        guard
+            let arrivalTime = arrival,
+            let arrivalDateTime = CustomFormatter.shared.arrivalDate.date(from: arrivalTime)
+        else {
+            return nil
+        }
+        
+        return DateComponents(
+            hour: CustomFormatter.shared.calendar.component(.hour, from: arrivalDateTime),
+            minute: CustomFormatter.shared.calendar.component(.minute, from: arrivalDateTime)
+        )
+    }
+    
+    func timeIntervalToNextArrival(since: Date = Date()) -> TimeInterval? {
+        
+        guard
+            let arrivalDateComponents = nextArrivalDateComponents(),
+            let arrivalDate = CustomFormatter.shared.calendar.nextDate(
+                after: since, matching: arrivalDateComponents,
+                matchingPolicy: .nextTime, repeatedTimePolicy: .first, direction: .forward
+            )
+        else {
+            return nil
+        }
+        
+        return arrivalDate.timeIntervalSince(since)
+        
+    }
+    
+    func formattedNextArrival(_ referenceDate: Date = Date()) -> String? {
+        
+        guard
+            let interval = timeIntervalToNextArrival(since: referenceDate),
+            let formattedInterval = CustomFormatter.shared.arrivalTime.string(from: interval)
+        else {
+            return nil
+        }
+        
+        return formattedInterval
     }
     
 }

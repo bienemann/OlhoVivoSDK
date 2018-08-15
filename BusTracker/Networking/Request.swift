@@ -24,18 +24,20 @@ enum BTRequest: URLRequestConvertible {
     case searchLine(query: String, direction: BusLine.Direction?)
     case stops(by: StopsFilters)
     case positions(BusLine)
+    case arrivals(of: BusLine?, at: BusStop?)
     
     private var forcedQuery: Bool {
         switch self {
         case .authenticate,
              .searchLine,
              .stops,
-             .positions:
+             .positions,
+             .arrivals:
             return true
         }
     }
     
-    private var endpoint: String {
+    private var endpoint: String? {
         switch self {
         case .authenticate:
             return "/Login/Autenticar"
@@ -55,6 +57,16 @@ enum BTRequest: URLRequestConvertible {
             }
         case .positions:
             return "/Posicao/Linha"
+        case .arrivals(let line, let stop):
+            if let _ = line, let _ = stop { // search both line and stop
+                return "/Previsao"
+            } else if let _ = line { // all arrivals for line
+                return "/Previsao/Linha"
+            } else if let _ = stop { // all arrivals for this stop
+                return "/Previsao/Parada"
+            } else {
+                return nil
+            }
         }
         
     }
@@ -63,7 +75,7 @@ enum BTRequest: URLRequestConvertible {
         switch self {
         case .authenticate:
             return .post
-        case .searchLine, .stops, .positions:
+        case .searchLine, .stops, .positions, .arrivals:
             return .get
         }
     }
@@ -89,10 +101,31 @@ enum BTRequest: URLRequestConvertible {
             }
         case .positions(let line):
             return ["codigoLinha": line.lineID]
+        case .arrivals(let line, let stop):
+            if let line = line, let stop = stop {
+                
+                return ["codigoParada": stop.stopID,
+                        "codigoLinha": line.lineID]
+                
+            } else if let line = line {
+                
+                return ["codigoLinha": line.lineID]
+                
+            } else if let stop = stop {
+                
+                return ["codigoParada": stop.stopID]
+                
+            } else {
+                return nil
+            }
         }
     }
     
     func asURLRequest() throws -> URLRequest {
+        
+        guard let endpoint = endpoint else {
+            throw NSError(domain: URLError.errorDomain, code: URLError.badURL.rawValue, userInfo: nil)
+        }
         
         let url = try (BTRequest.base_url + BTRequest.api_version).asURL()
         var urlRequest = URLRequest(url: url.appendingPathComponent(endpoint))

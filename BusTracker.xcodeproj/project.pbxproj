@@ -24,6 +24,12 @@
 		9D61A5542119F42A00807168 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D61A5562119FF3300807168 /* LineInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5552119FF3300807168 /* LineInteractorTests.swift */; };
 		9D61A558211A00EE00807168 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A557211A00EE00807168 /* Error.swift */; };
+		9D61EDE52124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61EDE42124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json */; };
+		9D61EDE72124766F00451142 /* ArrivalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDE62124766F00451142 /* ArrivalInteractor.swift */; };
+		9D61EDE92124778300451142 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDE82124778300451142 /* Arrival.swift */; };
+		9D61EDEB212479E100451142 /* ArrivalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */; };
+		9D61EDED21247E2400451142 /* BusPositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDEC21247E2400451142 /* BusPositionTests.swift */; };
+		9D9402A321246467004CC98F /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9402A221246467004CC98F /* Formatters.swift */; };
 		9D98DF7B211A065700237DA8 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7A211A065700237DA8 /* AuthInteractor.swift */; };
 		9D98DF7D211A07F700237DA8 /* BTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7C211A07F700237DA8 /* BTNetwork.swift */; };
 		9D98DF82211A113600237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -31,7 +37,7 @@
 		9D98DF8F211A166400237DA8 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		9D98DF90211A166400237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		9D9A95B4211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D9A95B3211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json */; };
-		9DAC1955212367A30030B294 /* LineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC1954212367A30030B294 /* LineDetails.swift */; };
+		9DAC1955212367A30030B294 /* LineSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC1954212367A30030B294 /* LineSummary.swift */; };
 		9DAC195921236CA90030B294 /* PositionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC195821236CA90030B294 /* PositionInteractor.swift */; };
 		9DAC195B212375240030B294 /* posicao_linha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC195A212375240030B294 /* posicao_linha_codigoLinha_1273.json */; };
 		9DB7B4F221237789009B7D22 /* PositionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */; };
@@ -94,10 +100,16 @@
 		9D61A5512119F32700807168 /* BTStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTStubs.swift; sourceTree = "<group>"; };
 		9D61A5552119FF3300807168 /* LineInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineInteractorTests.swift; sourceTree = "<group>"; };
 		9D61A557211A00EE00807168 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		9D61EDE42124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = previsao_codigoParada_670010530_codigoLinha_1273.json; sourceTree = "<group>"; };
+		9D61EDE62124766F00451142 /* ArrivalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalInteractor.swift; sourceTree = "<group>"; };
+		9D61EDE82124778300451142 /* Arrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalInteractorTests.swift; sourceTree = "<group>"; };
+		9D61EDEC21247E2400451142 /* BusPositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusPositionTests.swift; sourceTree = "<group>"; };
+		9D9402A221246467004CC98F /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		9D98DF7A211A065700237DA8 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		9D98DF7C211A07F700237DA8 /* BTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNetwork.swift; sourceTree = "<group>"; };
 		9D9A95B3211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json; sourceTree = "<group>"; };
-		9DAC1954212367A30030B294 /* LineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetails.swift; sourceTree = "<group>"; };
+		9DAC1954212367A30030B294 /* LineSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSummary.swift; sourceTree = "<group>"; };
 		9DAC195821236CA90030B294 /* PositionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInteractor.swift; sourceTree = "<group>"; };
 		9DAC195A212375240030B294 /* posicao_linha_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posicao_linha_codigoLinha_1273.json; sourceTree = "<group>"; };
 		9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInteractorTests.swift; sourceTree = "<group>"; };
@@ -146,12 +158,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D1F0F75211E480600648CEB /* FrameworkExtensions */ = {
+		9D1F0F75211E480600648CEB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				9D1F0F73211E474600648CEB /* DecodableExtension.swift */,
+				9D9402A221246467004CC98F /* Formatters.swift */,
 			);
-			path = FrameworkExtensions;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9D61A54A2119EDA500807168 /* JSON */ = {
@@ -166,6 +179,7 @@
 				9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */,
 				9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */,
 				9DAC195A212375240030B294 /* posicao_linha_codigoLinha_1273.json */,
+				9D61EDE42124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 				9D98DF7A211A065700237DA8 /* AuthInteractor.swift */,
 				9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */,
 				9DAC195821236CA90030B294 /* PositionInteractor.swift */,
+				9D61EDE62124766F00451142 /* ArrivalInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -188,8 +203,9 @@
 				9D61A557211A00EE00807168 /* Error.swift */,
 				9D1F0F6F211E236A00648CEB /* BusStop.swift */,
 				9D2517F4212334E400D47FCA /* Corridor.swift */,
-				9DAC1954212367A30030B294 /* LineDetails.swift */,
+				9DAC1954212367A30030B294 /* LineSummary.swift */,
 				9D2517F621233EE300D47FCA /* BusPosition.swift */,
+				9D61EDE82124778300451142 /* Arrival.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -265,7 +281,7 @@
 				9DF2EFDB2118D28B0019342A /* Networking */,
 				9D98DF8B211A15F800237DA8 /* Alerts */,
 				9D98DF7E211A110100237DA8 /* UIComponents */,
-				9D1F0F75211E480600648CEB /* FrameworkExtensions */,
+				9D1F0F75211E480600648CEB /* Helpers */,
 				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
 				9DF2EFBD2118CC720019342A /* ViewController.swift */,
 				9DF2EFBF2118CC720019342A /* Main.storyboard */,
@@ -285,6 +301,8 @@
 				9D61A5552119FF3300807168 /* LineInteractorTests.swift */,
 				9D1F0F762122379000648CEB /* StopInteractorTests.swift */,
 				9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */,
+				9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */,
+				9D61EDEC21247E2400451142 /* BusPositionTests.swift */,
 			);
 			path = BusTrackerTests;
 			sourceTree = "<group>";
@@ -421,6 +439,7 @@
 				9D1F0F792122382D00648CEB /* parada_buscar_termosBusca_afonso.json in Resources */,
 				9DFF3FA3211A25C600251B6E /* authenticate_fail.json in Resources */,
 				9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */,
+				9D61EDE52124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json in Resources */,
 				9DAC195B212375240030B294 /* posicao_linha_codigoLinha_1273.json in Resources */,
 				9DFF3FA5211A295600251B6E /* unauthorized.json in Resources */,
 				9D1F0F7D2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */,
@@ -456,12 +475,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D1F0F72211E26B400648CEB /* BusStopInteractor.swift in Sources */,
+				9D61EDE92124778300451142 /* Arrival.swift in Sources */,
 				9D2517F721233EE300D47FCA /* BusPosition.swift in Sources */,
 				9D61A5502119EFA800807168 /* LineInteractor.swift in Sources */,
 				9D61A5492119E52300807168 /* BusLine.swift in Sources */,
 				9DF31F38211A1BAA009A76DD /* BTAlertController.swift in Sources */,
 				9D1F0F74211E474600648CEB /* DecodableExtension.swift in Sources */,
-				9DAC1955212367A30030B294 /* LineDetails.swift in Sources */,
+				9D61EDE72124766F00451142 /* ArrivalInteractor.swift in Sources */,
+				9D9402A321246467004CC98F /* Formatters.swift in Sources */,
+				9DAC1955212367A30030B294 /* LineSummary.swift in Sources */,
 				9DAC195921236CA90030B294 /* PositionInteractor.swift in Sources */,
 				9D98DF7D211A07F700237DA8 /* BTNetwork.swift in Sources */,
 				9D98DF7B211A065700237DA8 /* AuthInteractor.swift in Sources */,
@@ -484,6 +506,8 @@
 			files = (
 				9D61A5522119F32700807168 /* BTStubs.swift in Sources */,
 				9D1F0F772122379000648CEB /* StopInteractorTests.swift in Sources */,
+				9D61EDEB212479E100451142 /* ArrivalInteractorTests.swift in Sources */,
+				9D61EDED21247E2400451142 /* BusPositionTests.swift in Sources */,
 				9D61A5562119FF3300807168 /* LineInteractorTests.swift in Sources */,
 				9DB7B4F221237789009B7D22 /* PositionInteractorTests.swift in Sources */,
 			);

@@ -1,8 +1,8 @@
 //
-//  PositionInteractorTests.swift
+//  ArrivalInteractor.swift
 //  BusTrackerTests
 //
-//  Created by Allan Martins on 14/08/18.
+//  Created by Allan Martins on 15/08/18.
 //  Copyright © 2018 Allan Martins. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import XCTest
 import OHHTTPStubs
 @testable import BusTracker
 
-class PositionInteractorTests: XCTestCase {
+class ArrivalInteractorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,21 +21,24 @@ class PositionInteractorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testWithLineID() {
+    func testSpecific() {
         
         let line = BusLine(testingID: 1273)
+        let stop = BusStop(testingID: 670010530)
+        BTStubs.stubSpecificArrivals(line: line, stop: stop)
         
-        BTStubs.stubPosition(line: line)
-        let searchExpectation = expectation(description: "expectation for positions response")
-        PositionInteractor.list(for: line) { (positions, error) in
+        let searchExpectation = expectation(description: "expectation for arrival response")
+        ArrivalInteractor.nextArrivals(of: line, at: stop) { (positions, error) in
             searchExpectation.fulfill()
             XCTAssertNil(error, "Error not nil")
             XCTAssertNotNil(positions, "No errors but [BusPosition] is nil")
             XCTAssertFalse(positions!.isEmpty, "BusPosition list is empty")
-            XCTAssert(positions!.first!.prefix == "11391", "Not the expected bus prefix")
+            XCTAssert(positions!.first!.prefix == "11484", "Not the expected bus prefix")
         }
         
         wait(for: [searchExpectation], timeout: 1.0)
+        
     }
     
 }
+

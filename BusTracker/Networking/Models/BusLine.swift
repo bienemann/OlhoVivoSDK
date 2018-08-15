@@ -53,4 +53,14 @@ struct BusLine: Decodable {
         
     }
     
+    init(testingID: Int) {
+        lineID = testingID
+        loops = false
+        lineNumber = "000"
+        lineNumberModifier = 10
+        direction = .inbound
+        outboundName = "outbound"
+        inboundName = "inbound"
+    }
+    
 }

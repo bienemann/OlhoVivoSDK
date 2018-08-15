@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LineDetails: Decodable {
+struct LineSummary: Decodable {
     
     var lineID: Int
     var direction: BusLine.Direction

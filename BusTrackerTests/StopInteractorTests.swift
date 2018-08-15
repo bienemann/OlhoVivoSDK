@@ -40,20 +40,11 @@ class StopInteractorTests: XCTestCase {
     
     func testStopByLine() {
         
-        BTStubs.stubSearch("8000")
-        var line: BusLine?
-        let lineExpectation = expectation(description: "Waiting for lines search")
-        LineInteractor.search("8000") { (lines, _) in
-            lineExpectation.fulfill()
-            XCTAssertNotNil(lines?.first)
-            line = lines?.first
-        }
-        wait(for: [lineExpectation], timeout: 1.0)
+        let line = BusLine(testingID: 1273)
+        BTStubs.stubStops(by: line)
         
-        line?.lineID = 1273
-        BTStubs.stubStops(by: line!)
         let searchExpectation = expectation(description: "expectation for stops search response")
-        BusStopInteractor.stops(for: line!) { (stops, error) in
+        BusStopInteractor.stops(for: line) { (stops, error) in
             searchExpectation.fulfill()
             XCTAssertNil(error, "Error not nil")
             XCTAssertNotNil(stops, "No errors but [BusStop] is nil")

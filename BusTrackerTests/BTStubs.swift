@@ -153,3 +153,17 @@ extension BTStubs { // Position
     }
     
 }
+
+extension BTStubs { // Arrivals
+    
+    static func stubSpecificArrivals(line: BusLine, stop: BusStop) {
+        let filename = "previsao_codigoParada_\(stop.stopID)_codigoLinha_\(line.lineID)"
+        do {
+            let request = try BTRequest.arrivals(of: line, at: stop).asURLRequest()
+            basicStub(request, file: filename, statusCode: 200)
+        } catch {
+            return
+        }
+    }
+    
+}
