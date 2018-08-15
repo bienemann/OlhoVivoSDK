@@ -35,3 +35,19 @@ struct ArrivalWrapper_Line: Decodable {
         stops = try values.decode([BusStop].self, forKey: .stops)
     }
 }
+
+struct ArrivalWrapper_Stop: Decodable {
+    
+    var lines: [LineSummary]
+    
+    private enum CodingKeys: String, CodingKey {
+        case stops = "p"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        let stop = try values.decode(BusStop.self, forKey: .stops)
+        lines = stop.lines ?? [LineSummary]()
+    }
+}
+

@@ -11,7 +11,7 @@ import Alamofire
 
 struct ArrivalInteractor {
     
-    static func nextArrivals(of line: BusLine,
+    static func nextArrivals(of line: BusLine?,
                              at stop: BusStop,
                              handler: @escaping ListResponseHandler<BusPosition>) {
         
@@ -28,7 +28,6 @@ struct ArrivalInteractor {
                 handler(nil, error)
             }
         }
-        
     }
     
     static func nextArrivals(of line: BusLine, handler: @escaping ListResponseHandler<BusStop>) {
@@ -46,6 +45,22 @@ struct ArrivalInteractor {
                 }
         }
         
+    }
+    
+    static func nextArrivals(at stop: BusStop, handler: @escaping ListResponseHandler<LineSummary>) {
+        
+        _ = BTNetwork.olhoVivoRequest(.arrivals(of: nil, at: stop), showRetryAlert: true)
+            .responseData { response in
+                
+                switch response.result {
+                case .success(let data):
+                    if let wrapper = ArrivalWrapper_Stop.objectFrom(data, { handler(nil, $0) }) {
+                        handler(wrapper.lines, nil)
+                    }
+                case .failure(let error):
+                    handler(nil, error)
+                }
+        }
     }
     
 }
