@@ -21,3 +21,17 @@ struct ArrivalWrapper_Specific: Decodable {
         stop = try values.decode(BusStop.self, forKey: .stop)
     }
 }
+
+struct ArrivalWrapper_Line: Decodable {
+    
+    var stops: BusStop
+    
+    private enum CodingKeys: String, CodingKey {
+        case stops = "ps"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        stops = try values.decode([BusStop].self, forKey: .stops)
+    }
+}
