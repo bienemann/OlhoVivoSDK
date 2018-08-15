@@ -16,6 +16,7 @@ struct BusStop: Decodable {
     var address: String?
     var coords: CLLocationCoordinate2D
     var lines: [LineSummary]?
+    var arrivals: [BusPosition]?
     
     private enum CodingKeys: String, CodingKey {
         case stopID = "cp"
@@ -24,6 +25,7 @@ struct BusStop: Decodable {
         case lat = "py"
         case lon = "px"
         case lines = "l"
+        case arrivals = "vs"
     }
     
     init(from decoder: Decoder) throws {
@@ -43,6 +45,10 @@ struct BusStop: Decodable {
         
         if values.contains(.lines) {
             lines = try values.decode([LineSummary].self, forKey: .lines)
+        }
+        
+        if values.contains(.arrivals) {
+            arrivals = try values.decode([BusPosition].self, forKey: .arrivals)
         }
         
     }

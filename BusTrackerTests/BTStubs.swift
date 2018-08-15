@@ -166,4 +166,14 @@ extension BTStubs { // Arrivals
         }
     }
     
+    static func stubArrivals(of line: BusLine) {
+        let filename = "previsao_linha_codigoLinha_\(line.lineID)"
+        do {
+            let request = try BTRequest.arrivals(of: line, at: nil).asURLRequest()
+            basicStub(request, file: filename, statusCode: 200)
+        } catch {
+            return
+        }
+    }
+    
 }

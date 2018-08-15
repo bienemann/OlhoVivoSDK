@@ -29,6 +29,7 @@
 		9D61EDE92124778300451142 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDE82124778300451142 /* Arrival.swift */; };
 		9D61EDEB212479E100451142 /* ArrivalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */; };
 		9D61EDED21247E2400451142 /* BusPositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDEC21247E2400451142 /* BusPositionTests.swift */; };
+		9D61EDEF2124BA4200451142 /* previsao_linha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61EDEE2124BA4200451142 /* previsao_linha_codigoLinha_1273.json */; };
 		9D9402A321246467004CC98F /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9402A221246467004CC98F /* Formatters.swift */; };
 		9D98DF7B211A065700237DA8 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7A211A065700237DA8 /* AuthInteractor.swift */; };
 		9D98DF7D211A07F700237DA8 /* BTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7C211A07F700237DA8 /* BTNetwork.swift */; };
@@ -105,6 +106,7 @@
 		9D61EDE82124778300451142 /* Arrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalInteractorTests.swift; sourceTree = "<group>"; };
 		9D61EDEC21247E2400451142 /* BusPositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusPositionTests.swift; sourceTree = "<group>"; };
+		9D61EDEE2124BA4200451142 /* previsao_linha_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = previsao_linha_codigoLinha_1273.json; sourceTree = "<group>"; };
 		9D9402A221246467004CC98F /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		9D98DF7A211A065700237DA8 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		9D98DF7C211A07F700237DA8 /* BTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNetwork.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */,
 				9DAC195A212375240030B294 /* posicao_linha_codigoLinha_1273.json */,
 				9D61EDE42124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json */,
+				9D61EDEE2124BA4200451142 /* previsao_linha_codigoLinha_1273.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				9DFF3FA5211A295600251B6E /* unauthorized.json in Resources */,
 				9D1F0F7D2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */,
 				9D1F0F7B212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json in Resources */,
+				9D61EDEF2124BA4200451142 /* previsao_linha_codigoLinha_1273.json in Resources */,
 				9D9A95B4211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

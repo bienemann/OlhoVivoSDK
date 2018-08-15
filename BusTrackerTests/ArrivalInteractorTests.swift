@@ -40,5 +40,24 @@ class ArrivalInteractorTests: XCTestCase {
         
     }
     
+    func testLine() {
+        
+        let line = BusLine(testingID: 1273)
+        BTStubs.stubArrivals(of: line)
+        
+        let searchExpectation = expectation(description: "expectation for arrivals of line response")
+        ArrivalInteractor.nextArrivals(of: line) { (stops, error) in
+            searchExpectation.fulfill()
+            XCTAssertNil(error, "Error not nil")
+            XCTAssertNotNil(stops, "No errors but [BusStop] is nil")
+            XCTAssertFalse(stops!.isEmpty, "BusStop list is empty")
+            XCTAssert(stops!.first!.stopID == 700016623, "Not the expected stop")
+            XCTAssert(stops!.first!.arrivals?.count == 3, "Not the expected number of vehicles")
+        }
+        
+        wait(for: [searchExpectation], timeout: 1.0)
+        
+    }
+    
 }
 

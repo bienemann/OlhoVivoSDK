@@ -31,7 +31,7 @@ struct ArrivalInteractor {
         
     }
     
-    static func nextArrivals(of line: BusLine, handler: @escaping ListResponseHandler<BusPosition>) {
+    static func nextArrivals(of line: BusLine, handler: @escaping ListResponseHandler<BusStop>) {
         
         _ = BTNetwork.olhoVivoRequest(.arrivals(of: line, at: nil), showRetryAlert: true)
             .responseData { response in
@@ -39,8 +39,7 @@ struct ArrivalInteractor {
                 switch response.result {
                 case .success(let data):
                     if let wrapper = ArrivalWrapper_Line.objectFrom(data, { handler(nil, $0) }) {
-//                        let positions = wrapper.stop.lines?.map { $0.positionList }.flatMap { $0 }
-//                        handler(positions, nil)
+                        handler(wrapper.stops, nil)
                     }
                 case .failure(let error):
                     handler(nil, error)

@@ -24,7 +24,7 @@ struct ArrivalWrapper_Specific: Decodable {
 
 struct ArrivalWrapper_Line: Decodable {
     
-    var stops: BusStop
+    var stops: [BusStop]
     
     private enum CodingKeys: String, CodingKey {
         case stops = "ps"
