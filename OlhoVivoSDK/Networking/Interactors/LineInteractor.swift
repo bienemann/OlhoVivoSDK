@@ -13,8 +13,7 @@ struct LineInteractor {
     static func search(_ searchQuery: String, direction: BusLine.Direction? = nil,
                        handler: @escaping ListResponseHandler<BusLine>) {
         
-        BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: searchQuery, direction: direction),
-                                  showRetryAlert: true)
+        BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: searchQuery, direction: direction))
             .responseData { (response) in
                 switch response.result {
                 case .success(let data):

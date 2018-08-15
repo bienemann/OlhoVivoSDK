@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+import OlhoVivoSDK
 
 class ViewController: UIViewController {
 
@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchExample(_ sender: UIButton) {
-        LineInteractor.search("dom pedro") { (busList, error) in
-            print(busList?.description ?? error.debugDescription)
-        }
+//        LineInteractor.search("dom pedro") { (busList, error) in
+//            print(busList?.description ?? error.debugDescription)
+//        }
     }
 
 

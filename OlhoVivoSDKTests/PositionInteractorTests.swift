@@ -8,7 +8,7 @@
 
 import XCTest
 import OHHTTPStubs
-@testable import BusTracker
+@testable import OlhoVivoSDK
 
 class PositionInteractorTests: XCTestCase {
     

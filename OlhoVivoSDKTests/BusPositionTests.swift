@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import BusTracker
+@testable import OlhoVivoSDK
 
 class BusPositionTests: XCTestCase {
     

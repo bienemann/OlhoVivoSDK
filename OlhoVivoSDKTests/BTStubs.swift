@@ -10,7 +10,7 @@ import XCTest
 import Foundation
 import OHHTTPStubs
 
-@testable import BusTracker
+@testable import OlhoVivoSDK
 
 struct BTStubs { // Auth
     
@@ -26,7 +26,7 @@ struct BTStubs { // Auth
         }) { _ in
             
             guard
-                let testBundle = Bundle(identifier: "com.aya.BusTrackerTests"),
+                let testBundle = Bundle(identifier: "com.aya.OlhoVivoSDKTests"),
                 let filePath = testBundle.path(forResource: file, ofType: "json")
                 else {
                     let error = NSError(domain: NSURLErrorDomain,

@@ -28,18 +28,17 @@ fileprivate extension DataRequest {
 struct BusStopInteractor {
     
     static func search(_ searchQuery: String, handler: @escaping ListResponseHandler<BusStop>) {
-        _ = BTNetwork.olhoVivoRequest(.stops(by: .search(searchQuery)), showRetryAlert: true)
+        _ = BTNetwork.olhoVivoRequest(.stops(by: .search(searchQuery)))
             .busStops(handler: handler)
     }
     
     static func stops(for line: BusLine, handler: @escaping ListResponseHandler<BusStop>) {
-        _ = BTNetwork.olhoVivoRequest(.stops(by: .line(line)), showRetryAlert: true)
+        _ = BTNetwork.olhoVivoRequest(.stops(by: .line(line)))
             .busStops(handler: handler)
     }
     
     static func stops(for corridor: Corridor, handler: @escaping ListResponseHandler<BusStop>) {
-        _ = BTNetwork.olhoVivoRequest(.stops(by: .corridor(corridor)),
-                                      showRetryAlert: true)
+        _ = BTNetwork.olhoVivoRequest(.stops(by: .corridor(corridor)))
             .busStops(handler: handler)
     }
 }

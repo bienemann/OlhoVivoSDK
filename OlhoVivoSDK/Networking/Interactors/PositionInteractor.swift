@@ -12,7 +12,7 @@ import Alamofire
 struct PositionInteractor {
     
     static func list(for line: BusLine, handler: @escaping ListResponseHandler<BusPosition>) {
-        _ = BTNetwork.olhoVivoRequest(.positions(line), showRetryAlert: true)
+        _ = BTNetwork.olhoVivoRequest(.positions(line))
             .responseData { response in
                 switch response.result {
                 case .success(let data):

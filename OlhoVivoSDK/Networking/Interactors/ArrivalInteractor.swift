@@ -15,7 +15,7 @@ struct ArrivalInteractor {
                              at stop: BusStop,
                              handler: @escaping ListResponseHandler<BusPosition>) {
         
-        _ = BTNetwork.olhoVivoRequest(.arrivals(of: line, at: stop), showRetryAlert: true)
+        _ = BTNetwork.olhoVivoRequest(.arrivals(of: line, at: stop))
         .responseData { response in
             
             switch response.result {
@@ -32,7 +32,7 @@ struct ArrivalInteractor {
     
     static func nextArrivals(of line: BusLine, handler: @escaping ListResponseHandler<BusStop>) {
         
-        _ = BTNetwork.olhoVivoRequest(.arrivals(of: line, at: nil), showRetryAlert: true)
+        _ = BTNetwork.olhoVivoRequest(.arrivals(of: line, at: nil))
             .responseData { response in
                 
                 switch response.result {
@@ -49,7 +49,7 @@ struct ArrivalInteractor {
     
     static func nextArrivals(at stop: BusStop, handler: @escaping ListResponseHandler<LineSummary>) {
         
-        _ = BTNetwork.olhoVivoRequest(.arrivals(of: nil, at: stop), showRetryAlert: true)
+        _ = BTNetwork.olhoVivoRequest(.arrivals(of: nil, at: stop))
             .responseData { response in
                 
                 switch response.result {

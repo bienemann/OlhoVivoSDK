@@ -7,49 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D1F0F70211E236A00648CEB /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F6F211E236A00648CEB /* BusStop.swift */; };
-		9D1F0F72211E26B400648CEB /* BusStopInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */; };
-		9D1F0F74211E474600648CEB /* DecodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F73211E474600648CEB /* DecodableExtension.swift */; };
-		9D1F0F772122379000648CEB /* StopInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F762122379000648CEB /* StopInteractorTests.swift */; };
-		9D1F0F792122382D00648CEB /* parada_buscar_termosBusca_afonso.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F782122382D00648CEB /* parada_buscar_termosBusca_afonso.json */; };
-		9D1F0F7B212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */; };
-		9D1F0F7D2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */; };
-		9D2517F5212334E400D47FCA /* Corridor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F4212334E400D47FCA /* Corridor.swift */; };
-		9D2517F721233EE300D47FCA /* BusPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F621233EE300D47FCA /* BusPosition.swift */; };
 		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
-		9D61A5492119E52300807168 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
-		9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */; };
-		9D61A5502119EFA800807168 /* LineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A54F2119EFA800807168 /* LineInteractor.swift */; };
-		9D61A5522119F32700807168 /* BTStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5512119F32700807168 /* BTStubs.swift */; };
 		9D61A5542119F42A00807168 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9D61A5562119FF3300807168 /* LineInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5552119FF3300807168 /* LineInteractorTests.swift */; };
-		9D61A558211A00EE00807168 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A557211A00EE00807168 /* Error.swift */; };
-		9D61EDE52124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61EDE42124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json */; };
-		9D61EDE72124766F00451142 /* ArrivalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDE62124766F00451142 /* ArrivalInteractor.swift */; };
-		9D61EDE92124778300451142 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDE82124778300451142 /* Arrival.swift */; };
-		9D61EDEB212479E100451142 /* ArrivalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */; };
-		9D61EDED21247E2400451142 /* BusPositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDEC21247E2400451142 /* BusPositionTests.swift */; };
-		9D61EDEF2124BA4200451142 /* previsao_linha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61EDEE2124BA4200451142 /* previsao_linha_codigoLinha_1273.json */; };
-		9D61EDF12124BD8B00451142 /* previsao_parada_codigoParada_700016623.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61EDF02124BD8B00451142 /* previsao_parada_codigoParada_700016623.json */; };
-		9D9402A321246467004CC98F /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9402A221246467004CC98F /* Formatters.swift */; };
-		9D98DF7B211A065700237DA8 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7A211A065700237DA8 /* AuthInteractor.swift */; };
-		9D98DF7D211A07F700237DA8 /* BTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7C211A07F700237DA8 /* BTNetwork.swift */; };
+		9D9231152124C50700850928 /* OlhoVivoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */; };
+		9D92311E2124C50700850928 /* OlhoVivoSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D92310E2124C50700850928 /* OlhoVivoSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D9231212124C50700850928 /* OlhoVivoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */; };
+		9D9231222124C50700850928 /* OlhoVivoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D92312B2124C55A00850928 /* OlhoVivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D92312A2124C55A00850928 /* OlhoVivo.swift */; };
+		9D92312C2124C62D00850928 /* LineInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5552119FF3300807168 /* LineInteractorTests.swift */; };
+		9D92312D2124C62D00850928 /* PositionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */; };
+		9D92312E2124C62D00850928 /* BusPositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDEC21247E2400451142 /* BusPositionTests.swift */; };
+		9D92312F2124C62D00850928 /* ArrivalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */; };
+		9D9231302124C62D00850928 /* BTStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5512119F32700807168 /* BTStubs.swift */; };
+		9D9231312124C62D00850928 /* StopInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F762122379000648CEB /* StopInteractorTests.swift */; };
+		9D9231322124C69800850928 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFDC2118D2B30019342A /* Request.swift */; };
+		9D9231332124C69800850928 /* BTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7C211A07F700237DA8 /* BTNetwork.swift */; };
+		9D9231342124C6A000850928 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
+		9D9231352124C6A000850928 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A557211A00EE00807168 /* Error.swift */; };
+		9D9231362124C6A000850928 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F6F211E236A00648CEB /* BusStop.swift */; };
+		9D9231372124C6A000850928 /* Corridor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F4212334E400D47FCA /* Corridor.swift */; };
+		9D9231382124C6A000850928 /* LineSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC1954212367A30030B294 /* LineSummary.swift */; };
+		9D9231392124C6A000850928 /* BusPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F621233EE300D47FCA /* BusPosition.swift */; };
+		9D92313A2124C6A000850928 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDE82124778300451142 /* Arrival.swift */; };
+		9D92313B2124C6A700850928 /* LineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A54F2119EFA800807168 /* LineInteractor.swift */; };
+		9D92313C2124C6A700850928 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7A211A065700237DA8 /* AuthInteractor.swift */; };
+		9D92313D2124C6A700850928 /* BusStopInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */; };
+		9D92313E2124C6A700850928 /* PositionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC195821236CA90030B294 /* PositionInteractor.swift */; };
+		9D92313F2124C6A700850928 /* ArrivalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDE62124766F00451142 /* ArrivalInteractor.swift */; };
+		9D9231402124C6AF00850928 /* DecodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F73211E474600648CEB /* DecodableExtension.swift */; };
+		9D9231412124C6AF00850928 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9402A221246467004CC98F /* Formatters.swift */; };
+		9D9231422124C6C200850928 /* linha_buscar_termosBusca_8000.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */; };
+		9D9231432124C6C200850928 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D9A95B3211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json */; };
+		9D9231442124C6C200850928 /* authenticate_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA0211A25B500251B6E /* authenticate_success.json */; };
+		9D9231452124C6C200850928 /* authenticate_fail.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA2211A25C600251B6E /* authenticate_fail.json */; };
+		9D9231462124C6C200850928 /* unauthorized.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA4211A295600251B6E /* unauthorized.json */; };
+		9D9231472124C6C200850928 /* parada_buscar_termosBusca_afonso.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F782122382D00648CEB /* parada_buscar_termosBusca_afonso.json */; };
+		9D9231482124C6C200850928 /* parada_buscarParadaPorLinha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */; };
+		9D9231492124C6C200850928 /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */; };
+		9D92314A2124C6C200850928 /* posicao_linha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC195A212375240030B294 /* posicao_linha_codigoLinha_1273.json */; };
+		9D92314B2124C6C200850928 /* previsao_codigoParada_670010530_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61EDE42124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json */; };
+		9D92314C2124C6C200850928 /* previsao_linha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61EDEE2124BA4200451142 /* previsao_linha_codigoLinha_1273.json */; };
+		9D92314D2124C6C200850928 /* previsao_parada_codigoParada_700016623.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61EDF02124BD8B00451142 /* previsao_parada_codigoParada_700016623.json */; };
+		9D92314F2124C74400850928 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF2EFDF2118D5780019342A /* Alamofire.framework */; };
+		9D9231502124D50800850928 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
+		9D9231542124D76A00850928 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D98DF82211A113600237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		9D98DF89211A118B00237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		9D98DF8F211A166400237DA8 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		9D98DF90211A166400237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		9D9A95B4211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D9A95B3211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json */; };
-		9DAC1955212367A30030B294 /* LineSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC1954212367A30030B294 /* LineSummary.swift */; };
-		9DAC195921236CA90030B294 /* PositionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC195821236CA90030B294 /* PositionInteractor.swift */; };
-		9DAC195B212375240030B294 /* posicao_linha_codigoLinha_1273.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC195A212375240030B294 /* posicao_linha_codigoLinha_1273.json */; };
-		9DB7B4F221237789009B7D22 /* PositionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */; };
 		9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBB2118CC720019342A /* AppDelegate.swift */; };
 		9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBD2118CC720019342A /* ViewController.swift */; };
 		9DF2EFC12118CC720019342A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBF2118CC720019342A /* Main.storyboard */; };
 		9DF2EFC32118CC740019342A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC22118CC740019342A /* Assets.xcassets */; };
 		9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */; };
-		9DF2EFDD2118D2B30019342A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFDC2118D2B30019342A /* Request.swift */; };
-		9DF2EFE02118D5780019342A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF2EFDF2118D5780019342A /* Alamofire.framework */; };
 		9DF31F33211A1B75009A76DD /* RetryAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F31211A1B74009A76DD /* RetryAlert.swift */; };
 		9DF31F34211A1B75009A76DD /* RetryAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF31F32211A1B74009A76DD /* RetryAlert.xib */; };
 		9DF31F38211A1BAA009A76DD /* BTAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F35211A1BAA009A76DD /* BTAlertController.swift */; };
@@ -57,12 +67,30 @@
 		9DF31F3A211A1BAA009A76DD /* BTAlertViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F37211A1BAA009A76DD /* BTAlertViewProtocol.swift */; };
 		9DF31F3D211A1BB2009A76DD /* BTLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F3B211A1BB2009A76DD /* BTLoadingView.swift */; };
 		9DF31F3E211A1BB2009A76DD /* BTLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF31F3C211A1BB2009A76DD /* BTLoadingView.xib */; };
-		9DFF3FA1211A25B500251B6E /* authenticate_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA0211A25B500251B6E /* authenticate_success.json */; };
-		9DFF3FA3211A25C600251B6E /* authenticate_fail.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA2211A25C600251B6E /* authenticate_fail.json */; };
-		9DFF3FA5211A295600251B6E /* unauthorized.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF3FA4211A295600251B6E /* unauthorized.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9D9231162124C50700850928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DF2EFB02118CC720019342A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D92310B2124C50700850928;
+			remoteInfo = OlhoVivoSDK;
+		};
+		9D92311F2124C50700850928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DF2EFB02118CC720019342A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D92310B2124C50700850928;
+			remoteInfo = OlhoVivoSDK;
+		};
+		9D9231512124D63A00850928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DF2EFB02118CC720019342A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DF2EFB72118CC720019342A;
+			remoteInfo = BusTracker;
+		};
 		9DF2EFCD2118CC740019342A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9DF2EFB02118CC720019342A /* Project object */;
@@ -80,6 +108,27 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9D61A5542119F42A00807168 /* OHHTTPStubs.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9231282124C50700850928 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D9231222124C50700850928 /* OlhoVivoSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9D9231532124D75C00850928 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D9231542124D76A00850928 /* OHHTTPStubs.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +158,12 @@
 		9D61EDEC21247E2400451142 /* BusPositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusPositionTests.swift; sourceTree = "<group>"; };
 		9D61EDEE2124BA4200451142 /* previsao_linha_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = previsao_linha_codigoLinha_1273.json; sourceTree = "<group>"; };
 		9D61EDF02124BD8B00451142 /* previsao_parada_codigoParada_700016623.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = previsao_parada_codigoParada_700016623.json; sourceTree = "<group>"; };
+		9D92310C2124C50700850928 /* OlhoVivoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OlhoVivoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D92310E2124C50700850928 /* OlhoVivoSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OlhoVivoSDK.h; sourceTree = "<group>"; };
+		9D92310F2124C50700850928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlhoVivoSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D92311D2124C50700850928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D92312A2124C55A00850928 /* OlhoVivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlhoVivo.swift; sourceTree = "<group>"; };
 		9D9402A221246467004CC98F /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		9D98DF7A211A065700237DA8 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		9D98DF7C211A07F700237DA8 /* BTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNetwork.swift; sourceTree = "<group>"; };
@@ -138,16 +193,31 @@
 		9DFF3FA0211A25B500251B6E /* authenticate_success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authenticate_success.json; sourceTree = "<group>"; };
 		9DFF3FA2211A25C600251B6E /* authenticate_fail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authenticate_fail.json; sourceTree = "<group>"; };
 		9DFF3FA4211A295600251B6E /* unauthorized.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = unauthorized.json; sourceTree = "<group>"; };
-		9DFF3FAC211A4E1900251B6E /* BusTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTrackerUITests.swift; sourceTree = "<group>"; };
-		9DFF3FAE211A4E1900251B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9D9231082124C50700850928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D92314F2124C74400850928 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9231112124C50700850928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D9231152124C50700850928 /* OlhoVivoSDK.framework in Frameworks */,
+				9D9231502124D50800850928 /* OHHTTPStubs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DF2EFB52118CC720019342A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DF2EFE02118D5780019342A /* Alamofire.framework in Frameworks */,
+				9D9231212124C50700850928 /* OlhoVivoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +286,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9D92310D2124C50700850928 /* OlhoVivoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9DF2EFDB2118D28B0019342A /* Networking */,
+				9D1F0F75211E480600648CEB /* Helpers */,
+				9D92310E2124C50700850928 /* OlhoVivoSDK.h */,
+				9D92310F2124C50700850928 /* Info.plist */,
+				9D92312A2124C55A00850928 /* OlhoVivo.swift */,
+			);
+			path = OlhoVivoSDK;
+			sourceTree = "<group>";
+		};
+		9D92311A2124C50700850928 /* OlhoVivoSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D61A54A2119EDA500807168 /* JSON */,
+				9D61A5512119F32700807168 /* BTStubs.swift */,
+				9D61A5552119FF3300807168 /* LineInteractorTests.swift */,
+				9D1F0F762122379000648CEB /* StopInteractorTests.swift */,
+				9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */,
+				9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */,
+				9D61EDEC21247E2400451142 /* BusPositionTests.swift */,
+				9D92311D2124C50700850928 /* Info.plist */,
+			);
+			path = OlhoVivoSDKTests;
+			sourceTree = "<group>";
+		};
 		9D98DF7E211A110100237DA8 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,7 +363,8 @@
 			children = (
 				9DF2EFBA2118CC720019342A /* BusTracker */,
 				9DF2EFCF2118CC740019342A /* BusTrackerTests */,
-				9DFF3FAB211A4E1900251B6E /* BusTrackerUITests */,
+				9D92310D2124C50700850928 /* OlhoVivoSDK */,
+				9D92311A2124C50700850928 /* OlhoVivoSDKTests */,
 				9DF2EFB92118CC720019342A /* Products */,
 				9DF2EFDE2118D5660019342A /* Frameworks */,
 			);
@@ -277,6 +375,8 @@
 			children = (
 				9DF2EFB82118CC720019342A /* BusTracker.app */,
 				9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */,
+				9D92310C2124C50700850928 /* OlhoVivoSDK.framework */,
+				9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,10 +384,8 @@
 		9DF2EFBA2118CC720019342A /* BusTracker */ = {
 			isa = PBXGroup;
 			children = (
-				9DF2EFDB2118D28B0019342A /* Networking */,
 				9D98DF8B211A15F800237DA8 /* Alerts */,
 				9D98DF7E211A110100237DA8 /* UIComponents */,
-				9D1F0F75211E480600648CEB /* Helpers */,
 				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
 				9DF2EFBD2118CC720019342A /* ViewController.swift */,
 				9DF2EFBF2118CC720019342A /* Main.storyboard */,
@@ -301,14 +399,7 @@
 		9DF2EFCF2118CC740019342A /* BusTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D61A54A2119EDA500807168 /* JSON */,
 				9DF2EFD22118CC740019342A /* Info.plist */,
-				9D61A5512119F32700807168 /* BTStubs.swift */,
-				9D61A5552119FF3300807168 /* LineInteractorTests.swift */,
-				9D1F0F762122379000648CEB /* StopInteractorTests.swift */,
-				9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */,
-				9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */,
-				9D61EDEC21247E2400451142 /* BusPositionTests.swift */,
 			);
 			path = BusTrackerTests;
 			sourceTree = "<group>";
@@ -333,18 +424,59 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		9DFF3FAB211A4E1900251B6E /* BusTrackerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9DFF3FAC211A4E1900251B6E /* BusTrackerUITests.swift */,
-				9DFF3FAE211A4E1900251B6E /* Info.plist */,
-			);
-			path = BusTrackerUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9D9231092124C50700850928 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D92311E2124C50700850928 /* OlhoVivoSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9D92310B2124C50700850928 /* OlhoVivoSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D9231272124C50700850928 /* Build configuration list for PBXNativeTarget "OlhoVivoSDK" */;
+			buildPhases = (
+				9D9231072124C50700850928 /* Sources */,
+				9D9231082124C50700850928 /* Frameworks */,
+				9D9231092124C50700850928 /* Headers */,
+				9D92310A2124C50700850928 /* Resources */,
+				9D92314E2124C6FB00850928 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OlhoVivoSDK;
+			productName = OlhoVivoSDK;
+			productReference = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D9231132124C50700850928 /* OlhoVivoSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D9231292124C50700850928 /* Build configuration list for PBXNativeTarget "OlhoVivoSDKTests" */;
+			buildPhases = (
+				9D9231102124C50700850928 /* Sources */,
+				9D9231112124C50700850928 /* Frameworks */,
+				9D9231122124C50700850928 /* Resources */,
+				9D9231532124D75C00850928 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D9231172124C50700850928 /* PBXTargetDependency */,
+				9D9231522124D63A00850928 /* PBXTargetDependency */,
+			);
+			name = OlhoVivoSDKTests;
+			productName = OlhoVivoSDKTests;
+			productReference = 9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9DF2EFB72118CC720019342A /* BusTracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "BusTracker" */;
@@ -352,11 +484,12 @@
 				9DF2EFB42118CC720019342A /* Sources */,
 				9DF2EFB52118CC720019342A /* Frameworks */,
 				9DF2EFB62118CC720019342A /* Resources */,
-				9DF2EFE12118D5F30019342A /* Carthage */,
+				9D9231282124C50700850928 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D9231202124C50700850928 /* PBXTargetDependency */,
 			);
 			name = BusTracker;
 			productName = BusTracker;
@@ -392,6 +525,14 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Allan Martins";
 				TargetAttributes = {
+					9D92310B2124C50700850928 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					9D9231132124C50700850928 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9DF2EFB72118CC720019342A;
+					};
 					9DF2EFB72118CC720019342A = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -416,11 +557,39 @@
 			targets = (
 				9DF2EFB72118CC720019342A /* BusTracker */,
 				9DF2EFCB2118CC740019342A /* BusTrackerTests */,
+				9D92310B2124C50700850928 /* OlhoVivoSDK */,
+				9D9231132124C50700850928 /* OlhoVivoSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9D92310A2124C50700850928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9231122124C50700850928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D92314A2124C6C200850928 /* posicao_linha_codigoLinha_1273.json in Resources */,
+				9D9231452124C6C200850928 /* authenticate_fail.json in Resources */,
+				9D9231472124C6C200850928 /* parada_buscar_termosBusca_afonso.json in Resources */,
+				9D9231432124C6C200850928 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */,
+				9D92314B2124C6C200850928 /* previsao_codigoParada_670010530_codigoLinha_1273.json in Resources */,
+				9D9231422124C6C200850928 /* linha_buscar_termosBusca_8000.json in Resources */,
+				9D9231462124C6C200850928 /* unauthorized.json in Resources */,
+				9D9231492124C6C200850928 /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */,
+				9D9231482124C6C200850928 /* parada_buscarParadaPorLinha_codigoLinha_1273.json in Resources */,
+				9D92314D2124C6C200850928 /* previsao_parada_codigoParada_700016623.json in Resources */,
+				9D92314C2124C6C200850928 /* previsao_linha_codigoLinha_1273.json in Resources */,
+				9D9231442124C6C200850928 /* authenticate_success.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DF2EFB62118CC720019342A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,25 +610,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DFF3FA1211A25B500251B6E /* authenticate_success.json in Resources */,
-				9D1F0F792122382D00648CEB /* parada_buscar_termosBusca_afonso.json in Resources */,
-				9DFF3FA3211A25C600251B6E /* authenticate_fail.json in Resources */,
-				9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */,
-				9D61EDE52124764200451142 /* previsao_codigoParada_670010530_codigoLinha_1273.json in Resources */,
-				9DAC195B212375240030B294 /* posicao_linha_codigoLinha_1273.json in Resources */,
-				9DFF3FA5211A295600251B6E /* unauthorized.json in Resources */,
-				9D1F0F7D2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json in Resources */,
-				9D1F0F7B212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json in Resources */,
-				9D61EDF12124BD8B00451142 /* previsao_parada_codigoParada_700016623.json in Resources */,
-				9D61EDEF2124BA4200451142 /* previsao_linha_codigoLinha_1273.json in Resources */,
-				9D9A95B4211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9DF2EFE12118D5F30019342A /* Carthage */ = {
+		9D92314E2124C6FB00850928 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -478,33 +635,54 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9D9231072124C50700850928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D9231362124C6A000850928 /* BusStop.swift in Sources */,
+				9D9231392124C6A000850928 /* BusPosition.swift in Sources */,
+				9D92313F2124C6A700850928 /* ArrivalInteractor.swift in Sources */,
+				9D9231402124C6AF00850928 /* DecodableExtension.swift in Sources */,
+				9D9231372124C6A000850928 /* Corridor.swift in Sources */,
+				9D9231382124C6A000850928 /* LineSummary.swift in Sources */,
+				9D92313B2124C6A700850928 /* LineInteractor.swift in Sources */,
+				9D9231332124C69800850928 /* BTNetwork.swift in Sources */,
+				9D92312B2124C55A00850928 /* OlhoVivo.swift in Sources */,
+				9D92313E2124C6A700850928 /* PositionInteractor.swift in Sources */,
+				9D9231342124C6A000850928 /* BusLine.swift in Sources */,
+				9D92313C2124C6A700850928 /* AuthInteractor.swift in Sources */,
+				9D92313A2124C6A000850928 /* Arrival.swift in Sources */,
+				9D92313D2124C6A700850928 /* BusStopInteractor.swift in Sources */,
+				9D9231352124C6A000850928 /* Error.swift in Sources */,
+				9D9231322124C69800850928 /* Request.swift in Sources */,
+				9D9231412124C6AF00850928 /* Formatters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9231102124C50700850928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D92312C2124C62D00850928 /* LineInteractorTests.swift in Sources */,
+				9D92312F2124C62D00850928 /* ArrivalInteractorTests.swift in Sources */,
+				9D92312D2124C62D00850928 /* PositionInteractorTests.swift in Sources */,
+				9D92312E2124C62D00850928 /* BusPositionTests.swift in Sources */,
+				9D9231302124C62D00850928 /* BTStubs.swift in Sources */,
+				9D9231312124C62D00850928 /* StopInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DF2EFB42118CC720019342A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1F0F72211E26B400648CEB /* BusStopInteractor.swift in Sources */,
-				9D61EDE92124778300451142 /* Arrival.swift in Sources */,
-				9D2517F721233EE300D47FCA /* BusPosition.swift in Sources */,
-				9D61A5502119EFA800807168 /* LineInteractor.swift in Sources */,
-				9D61A5492119E52300807168 /* BusLine.swift in Sources */,
 				9DF31F38211A1BAA009A76DD /* BTAlertController.swift in Sources */,
-				9D1F0F74211E474600648CEB /* DecodableExtension.swift in Sources */,
-				9D61EDE72124766F00451142 /* ArrivalInteractor.swift in Sources */,
-				9D9402A321246467004CC98F /* Formatters.swift in Sources */,
-				9DAC1955212367A30030B294 /* LineSummary.swift in Sources */,
-				9DAC195921236CA90030B294 /* PositionInteractor.swift in Sources */,
-				9D98DF7D211A07F700237DA8 /* BTNetwork.swift in Sources */,
-				9D98DF7B211A065700237DA8 /* AuthInteractor.swift in Sources */,
 				9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */,
 				9D98DF8F211A166400237DA8 /* (null) in Sources */,
 				9DF31F3A211A1BAA009A76DD /* BTAlertViewProtocol.swift in Sources */,
-				9D2517F5212334E400D47FCA /* Corridor.swift in Sources */,
-				9DF2EFDD2118D2B30019342A /* Request.swift in Sources */,
 				9DF31F33211A1B75009A76DD /* RetryAlert.swift in Sources */,
-				9D1F0F70211E236A00648CEB /* BusStop.swift in Sources */,
 				9DF31F3D211A1BB2009A76DD /* BTLoadingView.swift in Sources */,
 				9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */,
-				9D61A558211A00EE00807168 /* Error.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,18 +690,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D61A5522119F32700807168 /* BTStubs.swift in Sources */,
-				9D1F0F772122379000648CEB /* StopInteractorTests.swift in Sources */,
-				9D61EDEB212479E100451142 /* ArrivalInteractorTests.swift in Sources */,
-				9D61EDED21247E2400451142 /* BusPositionTests.swift in Sources */,
-				9D61A5562119FF3300807168 /* LineInteractorTests.swift in Sources */,
-				9DB7B4F221237789009B7D22 /* PositionInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9D9231172124C50700850928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D92310B2124C50700850928 /* OlhoVivoSDK */;
+			targetProxy = 9D9231162124C50700850928 /* PBXContainerItemProxy */;
+		};
+		9D9231202124C50700850928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D92310B2124C50700850928 /* OlhoVivoSDK */;
+			targetProxy = 9D92311F2124C50700850928 /* PBXContainerItemProxy */;
+		};
+		9D9231522124D63A00850928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DF2EFB72118CC720019342A /* BusTracker */;
+			targetProxy = 9D9231512124D63A00850928 /* PBXContainerItemProxy */;
+		};
 		9DF2EFCE2118CC740019342A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9DF2EFB72118CC720019342A /* BusTracker */;
@@ -551,6 +738,123 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9D9231232124C50700850928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R8MYP56C5V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OlhoVivoSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aya.OlhoVivoSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D9231242124C50700850928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R8MYP56C5V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OlhoVivoSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aya.OlhoVivoSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D9231252124C50700850928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OlhoVivoSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aya.OlhoVivoSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTracker.app/BusTracker";
+			};
+			name = Debug;
+		};
+		9D9231262124C50700850928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OlhoVivoSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aya.OlhoVivoSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTracker.app/BusTracker";
+			};
+			name = Release;
+		};
 		9DF2EFD32118CC740019342A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -668,6 +972,7 @@
 		9DF2EFD62118CC740019342A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R8MYP56C5V;
@@ -690,6 +995,7 @@
 		9DF2EFD72118CC740019342A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R8MYP56C5V;
@@ -762,6 +1068,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9D9231272124C50700850928 /* Build configuration list for PBXNativeTarget "OlhoVivoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9231232124C50700850928 /* Debug */,
+				9D9231242124C50700850928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D9231292124C50700850928 /* Build configuration list for PBXNativeTarget "OlhoVivoSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9231252124C50700850928 /* Debug */,
+				9D9231262124C50700850928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "BusTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
