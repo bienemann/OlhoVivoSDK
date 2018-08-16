@@ -23,7 +23,7 @@ class PositionInteractorTests: XCTestCase {
     
     func testWithLineID() {
         
-        let line = BusLine(testingID: 1273)
+        let line = OVLine(testingID: 1273)
         
         BTStubs.stubPosition(line: line)
         let searchExpectation = expectation(description: "expectation for positions response")

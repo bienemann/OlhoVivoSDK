@@ -9,22 +9,14 @@
 import Foundation
 import Alamofire
 
-struct OVRetryHelper {
-    
-    typealias RetryHelperBlock = (Error) -> (Bool, TimeInterval)
-    var retry: RetryHelperBlock
-    
-    init(_ retry: @escaping RetryHelperBlock) {
-        self.retry = retry
-    }
-}
+public typealias RetryHelperBlock = (Error) -> (Bool, TimeInterval)
 
 class OVRetrier: RequestRetrier {
     
     static let shared = OVRetrier()
-    private var retryTable = RetrierTable<Request, OVRetryHelper>()
+    private var retryTable = RetrierTable<Request, RetryHelperBlock>()
     
-    func addCustomHandler(_ handler: OVRetryHelper?, for request: DataRequest) -> DataRequest {
+    func addCustomHandler(_ handler: RetryHelperBlock?, for request: DataRequest) -> DataRequest {
         if let handler = handler {
             retryTable[request] = handler
         }
@@ -39,7 +31,7 @@ class OVRetrier: RequestRetrier {
             
             // Authentication Challenge
             
-            AuthInteractor.authenticate { success in
+            AuthInteractor.shared.authenticate { success in
                 completion(true, 0.0)
             }
             
@@ -66,7 +58,7 @@ class OVRetrier: RequestRetrier {
                 return
             }
             
-            let result: (retry: Bool, after: TimeInterval) = handler.retry(error)
+            let result: (retry: Bool, after: TimeInterval) = handler(error)
             if result.retry {
                 completion(true, result.after)
             } else {

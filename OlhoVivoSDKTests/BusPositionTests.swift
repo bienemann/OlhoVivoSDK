@@ -34,7 +34,7 @@ class BusPositionTests: XCTestCase {
     
     func testInvalidArrivalTime() {
         
-        var testPosition = BusPosition(testingID: 0)
+        var testPosition = OVPosition(testingID: 0)
         testPosition.arrival = "dgshja"
         let interval = testPosition.formattedNextArrival(referenceDate)
         
@@ -49,7 +49,7 @@ class BusPositionTests: XCTestCase {
             bySettingHour: 4, minute: 30, second: 0, of: Date()
         )!
         
-        let testPosition = BusPosition(testingID: 0)
+        let testPosition = OVPosition(testingID: 0)
         let interval = testPosition.formattedNextArrival(referenceDate)
         
         XCTAssert(interval == "5 horas e 0 minuto")
@@ -57,7 +57,7 @@ class BusPositionTests: XCTestCase {
     
     func testSameDayArrival() {
         
-        let testPosition = BusPosition(testingID: 0)
+        let testPosition = OVPosition(testingID: 0)
         let interval = testPosition.timeIntervalToNextArrival(since: referenceDate)
         XCTAssertNotNil(interval)
         XCTAssert(interval! == 18000.0)
@@ -68,7 +68,7 @@ class BusPositionTests: XCTestCase {
         let referenceDate = CustomFormatter.shared.calendar.date(
             bySettingHour: 11, minute: 30, second: 0, of: Date()
         )!
-        let testPosition = BusPosition(testingID: 0)
+        let testPosition = OVPosition(testingID: 0)
         let interval = testPosition.timeIntervalToNextArrival(since: referenceDate)
         XCTAssertNotNil(interval)
         XCTAssert(interval! == 79200.0)

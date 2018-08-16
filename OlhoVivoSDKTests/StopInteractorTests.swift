@@ -40,7 +40,7 @@ class StopInteractorTests: XCTestCase {
     
     func testStopByLine() {
         
-        let line = BusLine(testingID: 1273)
+        let line = OVLine(testingID: 1273)
         BTStubs.stubStops(by: line)
         
         let searchExpectation = expectation(description: "expectation for stops search response")
@@ -61,7 +61,7 @@ class StopInteractorTests: XCTestCase {
         
         guard
             let data = "[{\"cc\":8,\"nc\":\"Campo Limpo\"}]".data(using: .utf8),
-            let corridorList = Corridor.listFrom(data),
+            let corridorList = OVCorridor.listFrom(data),
             let corridor = corridorList.first
         else {
             XCTFail()

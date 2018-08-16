@@ -21,13 +21,13 @@
 		9D9231302124C62D00850928 /* BTStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5512119F32700807168 /* BTStubs.swift */; };
 		9D9231312124C62D00850928 /* StopInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F762122379000648CEB /* StopInteractorTests.swift */; };
 		9D9231322124C69800850928 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFDC2118D2B30019342A /* Request.swift */; };
-		9D9231332124C69800850928 /* BTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7C211A07F700237DA8 /* BTNetwork.swift */; };
-		9D9231342124C6A000850928 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
+		9D9231332124C69800850928 /* OVNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7C211A07F700237DA8 /* OVNetwork.swift */; };
+		9D9231342124C6A000850928 /* OVLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* OVLine.swift */; };
 		9D9231352124C6A000850928 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A557211A00EE00807168 /* Error.swift */; };
-		9D9231362124C6A000850928 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F6F211E236A00648CEB /* BusStop.swift */; };
-		9D9231372124C6A000850928 /* Corridor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F4212334E400D47FCA /* Corridor.swift */; };
+		9D9231362124C6A000850928 /* OVStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F0F6F211E236A00648CEB /* OVStop.swift */; };
+		9D9231372124C6A000850928 /* OVCorridor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F4212334E400D47FCA /* OVCorridor.swift */; };
 		9D9231382124C6A000850928 /* LineSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC1954212367A30030B294 /* LineSummary.swift */; };
-		9D9231392124C6A000850928 /* BusPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F621233EE300D47FCA /* BusPosition.swift */; };
+		9D9231392124C6A000850928 /* OVPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2517F621233EE300D47FCA /* OVPosition.swift */; };
 		9D92313A2124C6A000850928 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61EDE82124778300451142 /* Arrival.swift */; };
 		9D92313B2124C6A700850928 /* LineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A54F2119EFA800807168 /* LineInteractor.swift */; };
 		9D92313C2124C6A700850928 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7A211A065700237DA8 /* AuthInteractor.swift */; };
@@ -119,19 +119,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D1F0F6F211E236A00648CEB /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		9D1F0F6F211E236A00648CEB /* OVStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVStop.swift; sourceTree = "<group>"; };
 		9D1F0F71211E26B400648CEB /* BusStopInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopInteractor.swift; sourceTree = "<group>"; };
 		9D1F0F73211E474600648CEB /* DecodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableExtension.swift; sourceTree = "<group>"; };
 		9D1F0F762122379000648CEB /* StopInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInteractorTests.swift; sourceTree = "<group>"; };
 		9D1F0F782122382D00648CEB /* parada_buscar_termosBusca_afonso.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscar_termosBusca_afonso.json; sourceTree = "<group>"; };
 		9D1F0F7A212238A600648CEB /* parada_buscarParadaPorLinha_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscarParadaPorLinha_codigoLinha_1273.json; sourceTree = "<group>"; };
 		9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscarParadasPorCorredor_codigoCorredor_8.json; sourceTree = "<group>"; };
-		9D2517F4212334E400D47FCA /* Corridor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corridor.swift; sourceTree = "<group>"; };
-		9D2517F621233EE300D47FCA /* BusPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusPosition.swift; sourceTree = "<group>"; };
+		9D2517F4212334E400D47FCA /* OVCorridor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVCorridor.swift; sourceTree = "<group>"; };
+		9D2517F621233EE300D47FCA /* OVPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVPosition.swift; sourceTree = "<group>"; };
 		9D32DF262125D2DA006C785D /* RetrierTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrierTable.swift; sourceTree = "<group>"; };
 		9D32DF282125D3AB006C785D /* OVRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVRetrier.swift; sourceTree = "<group>"; };
 		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
-		9D61A5482119E52300807168 /* BusLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
+		9D61A5482119E52300807168 /* OVLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVLine.swift; sourceTree = "<group>"; };
 		9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscar_termosBusca_8000.json; sourceTree = "<group>"; };
 		9D61A54F2119EFA800807168 /* LineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineInteractor.swift; sourceTree = "<group>"; };
 		9D61A5512119F32700807168 /* BTStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTStubs.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		9D923155212504F500850928 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		9D9402A221246467004CC98F /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		9D98DF7A211A065700237DA8 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
-		9D98DF7C211A07F700237DA8 /* BTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNetwork.swift; sourceTree = "<group>"; };
+		9D98DF7C211A07F700237DA8 /* OVNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVNetwork.swift; sourceTree = "<group>"; };
 		9D9A95B3211E11480055BA52 /* linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscarLinhaSentido_termosBusca_8000_sentido_1.json; sourceTree = "<group>"; };
 		9DAC1954212367A30030B294 /* LineSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSummary.swift; sourceTree = "<group>"; };
 		9DAC195821236CA90030B294 /* PositionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInteractor.swift; sourceTree = "<group>"; };
@@ -254,12 +254,12 @@
 		9D7FF7A52118DD0700C9EA17 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9D61A5482119E52300807168 /* BusLine.swift */,
+				9D61A5482119E52300807168 /* OVLine.swift */,
 				9D61A557211A00EE00807168 /* Error.swift */,
-				9D1F0F6F211E236A00648CEB /* BusStop.swift */,
-				9D2517F4212334E400D47FCA /* Corridor.swift */,
+				9D1F0F6F211E236A00648CEB /* OVStop.swift */,
+				9D2517F4212334E400D47FCA /* OVCorridor.swift */,
 				9DAC1954212367A30030B294 /* LineSummary.swift */,
-				9D2517F621233EE300D47FCA /* BusPosition.swift */,
+				9D2517F621233EE300D47FCA /* OVPosition.swift */,
 				9D61EDE82124778300451142 /* Arrival.swift */,
 			);
 			path = Models;
@@ -268,11 +268,11 @@
 		9D92310D2124C50700850928 /* OlhoVivoSDK */ = {
 			isa = PBXGroup;
 			children = (
+				9D92312A2124C55A00850928 /* OlhoVivo.swift */,
 				9DF2EFDB2118D28B0019342A /* Networking */,
 				9D1F0F75211E480600648CEB /* Helpers */,
 				9D92310E2124C50700850928 /* OlhoVivoSDK.h */,
 				9D92310F2124C50700850928 /* Info.plist */,
-				9D92312A2124C55A00850928 /* OlhoVivo.swift */,
 			);
 			path = OlhoVivoSDK;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				9D61A54E2119EF8D00807168 /* Interactors */,
 				9D7FF7A52118DD0700C9EA17 /* Models */,
 				9DF2EFDC2118D2B30019342A /* Request.swift */,
-				9D98DF7C211A07F700237DA8 /* BTNetwork.swift */,
+				9D98DF7C211A07F700237DA8 /* OVNetwork.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -578,18 +578,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D9231362124C6A000850928 /* BusStop.swift in Sources */,
-				9D9231392124C6A000850928 /* BusPosition.swift in Sources */,
+				9D9231362124C6A000850928 /* OVStop.swift in Sources */,
+				9D9231392124C6A000850928 /* OVPosition.swift in Sources */,
 				9D92313F2124C6A700850928 /* ArrivalInteractor.swift in Sources */,
 				9D9231402124C6AF00850928 /* DecodableExtension.swift in Sources */,
-				9D9231372124C6A000850928 /* Corridor.swift in Sources */,
+				9D9231372124C6A000850928 /* OVCorridor.swift in Sources */,
 				9D9231382124C6A000850928 /* LineSummary.swift in Sources */,
 				9D92313B2124C6A700850928 /* LineInteractor.swift in Sources */,
 				9D32DF292125D3AB006C785D /* OVRetrier.swift in Sources */,
-				9D9231332124C69800850928 /* BTNetwork.swift in Sources */,
+				9D9231332124C69800850928 /* OVNetwork.swift in Sources */,
 				9D92312B2124C55A00850928 /* OlhoVivo.swift in Sources */,
 				9D92313E2124C6A700850928 /* PositionInteractor.swift in Sources */,
-				9D9231342124C6A000850928 /* BusLine.swift in Sources */,
+				9D9231342124C6A000850928 /* OVLine.swift in Sources */,
 				9D92313C2124C6A700850928 /* AuthInteractor.swift in Sources */,
 				9D92313A2124C6A000850928 /* Arrival.swift in Sources */,
 				9D92313D2124C6A700850928 /* BusStopInteractor.swift in Sources */,

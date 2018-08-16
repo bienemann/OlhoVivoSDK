@@ -1,5 +1,5 @@
 //
-//  BusPosition.swift
+//  OVPosition.swift
 //  BusTracker
 //
 //  Created by Allan Martins on 14/08/18.
@@ -9,26 +9,26 @@
 import Foundation
 import CoreLocation
 
-struct PositionWrapper: Decodable {
-    var positions: [BusPosition]
+internal struct PositionWrapper: Decodable {
+    var positions: [OVPosition]
     
-    private enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case positions = "vs"
     }
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        positions = try values.decode([BusPosition].self, forKey: .positions)
+        positions = try values.decode([OVPosition].self, forKey: .positions)
     }
 }
 
-struct BusPosition: Decodable {
+public struct OVPosition: Decodable {
     
-    var prefix: String
-    var accessibilityEnabled: Bool
-    var date: Date
-    var coords: CLLocationCoordinate2D
-    var arrival: String?
+    public var prefix: String
+    public var accessibilityEnabled: Bool
+    public var date: Date
+    public var coords: CLLocationCoordinate2D
+    public var arrival: String?
     
     private enum CodingKeys: String, CodingKey {
         case prefix = "p"
@@ -39,7 +39,7 @@ struct BusPosition: Decodable {
         case arrival = "t"
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -66,7 +66,7 @@ struct BusPosition: Decodable {
     
 }
 
-extension BusPosition { // arrival time
+extension OVPosition { // arrival time
     
     func nextArrivalDateComponents() -> DateComponents? {
         guard
@@ -82,7 +82,7 @@ extension BusPosition { // arrival time
         )
     }
     
-    func timeIntervalToNextArrival(since: Date = Date()) -> TimeInterval? {
+    public func timeIntervalToNextArrival(since: Date = Date()) -> TimeInterval? {
         
         guard
             let arrivalDateComponents = nextArrivalDateComponents(),
@@ -98,7 +98,7 @@ extension BusPosition { // arrival time
         
     }
     
-    func formattedNextArrival(_ referenceDate: Date = Date()) -> String? {
+    public func formattedNextArrival(_ referenceDate: Date = Date()) -> String? {
         
         guard
             let interval = timeIntervalToNextArrival(since: referenceDate),

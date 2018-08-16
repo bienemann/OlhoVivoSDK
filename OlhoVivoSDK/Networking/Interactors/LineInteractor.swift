@@ -8,17 +8,17 @@
 
 import Foundation
 
-struct LineInteractor {
+internal struct LineInteractor {
     
-    static func search(_ searchQuery: String, direction: BusLine.Direction? = nil,
-                       _ retryHelper: OVRetryHelper? = nil,
-                       handler: @escaping ListResponseHandler<BusLine>) {
+    static func search(_ searchQuery: String, direction: OVLine.Direction? = nil,
+                       _ retryHelper: RetryHelperBlock? = nil,
+                       handler: @escaping ListResponseHandler<OVLine>) {
         
-        BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: searchQuery, direction: direction))
+        OVNetwork.olhoVivoRequest(OVRequest.searchLine(query: searchQuery, direction: direction))
             .responseData { (response) in
                 switch response.result {
                 case .success(let data):
-                    if let lines = BusLine.listFrom(data, { handler(nil, $0) }) {
+                    if let lines = OVLine.listFrom(data, { handler(nil, $0) }) {
                         handler(lines, nil)
                     }
                 case .failure(let error):

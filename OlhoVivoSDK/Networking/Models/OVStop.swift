@@ -1,5 +1,5 @@
 //
-//  BusStop.swift
+//  OVStop.swift
 //  BusTracker
 //
 //  Created by Allan Martins on 10/08/18.
@@ -9,14 +9,14 @@
 import Foundation
 import CoreLocation
 
-struct BusStop: Decodable {
+public struct OVStop: Decodable {
 
-    var stopID: Int
-    var name: String
-    var address: String?
-    var coords: CLLocationCoordinate2D
-    var lines: [LineSummary]?
-    var arrivals: [BusPosition]?
+    public var stopID: Int
+    public var name: String
+    public var address: String?
+    public var coords: CLLocationCoordinate2D
+    public var lines: [LineSummary]?
+    public var arrivals: [OVPosition]?
     
     private enum CodingKeys: String, CodingKey {
         case stopID = "cp"
@@ -28,7 +28,7 @@ struct BusStop: Decodable {
         case arrivals = "vs"
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -48,7 +48,7 @@ struct BusStop: Decodable {
         }
         
         if values.contains(.arrivals) {
-            arrivals = try values.decode([BusPosition].self, forKey: .arrivals)
+            arrivals = try values.decode([OVPosition].self, forKey: .arrivals)
         }
         
     }

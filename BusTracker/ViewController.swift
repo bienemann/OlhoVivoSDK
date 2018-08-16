@@ -11,6 +11,8 @@ import OlhoVivoSDK
 
 class ViewController: UIViewController {
 
+    let api = OlhoVivo(token: "e86972bad776dfaaba882db93230bf1b4745a4c9d21ddfcd15c71106d2fa6f79")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,9 +24,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchExample(_ sender: UIButton) {
-//        LineInteractor.search("dom pedro") { (busList, error) in
-//            print(busList?.description ?? error.debugDescription)
-//        }
+        
     }
 
 

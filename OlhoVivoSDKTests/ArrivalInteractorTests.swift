@@ -23,8 +23,8 @@ class ArrivalInteractorTests: XCTestCase {
     
     func testSpecific() {
         
-        let line = BusLine(testingID: 1273)
-        let stop = BusStop(testingID: 670010530)
+        let line = OVLine(testingID: 1273)
+        let stop = OVStop(testingID: 670010530)
         BTStubs.stubSpecificArrivals(line: line, stop: stop)
         
         let searchExpectation = expectation(description: "expectation for arrival response")
@@ -42,7 +42,7 @@ class ArrivalInteractorTests: XCTestCase {
     
     func testLine() {
         
-        let line = BusLine(testingID: 1273)
+        let line = OVLine(testingID: 1273)
         BTStubs.stubArrivals(of: line)
         
         let searchExpectation = expectation(description: "expectation for arrivals of line response")
@@ -61,7 +61,7 @@ class ArrivalInteractorTests: XCTestCase {
     
     func testStop() {
         
-        let stop = BusStop(testingID: 700016623)
+        let stop = OVStop(testingID: 700016623)
         BTStubs.stubArrivals(stop: stop)
         
         let searchExpectation = expectation(description: "expectation for arrivals of line response")

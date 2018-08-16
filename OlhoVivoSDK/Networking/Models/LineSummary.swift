@@ -8,15 +8,15 @@
 
 import Foundation
 
-struct LineSummary: Decodable {
+public struct LineSummary: Decodable {
     
-    var lineID: Int
-    var direction: BusLine.Direction
-    var lineNumber: String
-    var nameDestination: String
-    var nameOrigin: String
-    var busQuantity: Int
-    var positionList: [BusPosition]
+    public var lineID: Int
+    public var direction: OVLine.Direction
+    public var lineNumber: String
+    public var nameDestination: String
+    public var nameOrigin: String
+    public var busQuantity: Int
+    public var positionList: [OVPosition]
     
     private enum CodingKeys: String, CodingKey {
         case lineID = "cl"
@@ -28,11 +28,11 @@ struct LineSummary: Decodable {
         case positionList = "vs"
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
-        guard let preDirection = BusLine.Direction(rawValue: try values.decode(Int.self, forKey: .direction))
+        guard let preDirection = OVLine.Direction(rawValue: try values.decode(Int.self, forKey: .direction))
             else {
                 let errorContext = DecodingError
                     .Context(codingPath: [CodingKeys.direction],
@@ -47,7 +47,7 @@ struct LineSummary: Decodable {
         nameDestination = try values.decode(String.self, forKey: .nameDestination)
         nameOrigin = try values.decode(String.self, forKey: .nameOrigin)
         busQuantity = try values.decode(Int.self, forKey: .busQuantity)
-        positionList = try values.decode([BusPosition].self, forKey: .positionList)
+        positionList = try values.decode([OVPosition].self, forKey: .positionList)
         
     }
     

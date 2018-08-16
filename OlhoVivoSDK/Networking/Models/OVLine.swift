@@ -1,5 +1,5 @@
 //
-//  BusLine.swift
+//  OVLine.swift
 //  BusTracker
 //
 //  Created by Allan Martins on 07/08/18.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-struct BusLine: Decodable {
+public struct OVLine: Decodable {
     
-    var lineID: Int
-    var loops: Bool
-    var lineNumber: String
-    var lineNumberModifier: Int
-    var direction: Direction
-    var outboundName: String
-    var inboundName: String
+    public var lineID: Int
+    public var loops: Bool
+    public var lineNumber: String
+    public var lineNumberModifier: Int
+    public var direction: Direction
+    public var outboundName: String
+    public var inboundName: String
     
     private enum CodingKeys: String, CodingKey {
         case lineID = "cl"
@@ -28,12 +28,12 @@ struct BusLine: Decodable {
         case inboundName = "ts"
     }
     
-    enum Direction: Int {
+    public enum Direction: Int {
         case outbound = 1
         case inbound = 2
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         

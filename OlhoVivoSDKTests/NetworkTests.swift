@@ -24,13 +24,13 @@ class NetworkTests: XCTestCase {
     func testRetrier() {
         
         BTStubs.stubFailedRequest(id: 0)
-        let stop = BusStop(testingID: 0)
+        let stop = OVStop(testingID: 0)
         var count = 0
         
         let requestExpectation = expectation(description: "expectation for failed response")
         let counterExpectation = expectation(description: "expectation for counter to reach 3")
         
-        let helper = OVRetryHelper { (error) -> (Bool, TimeInterval) in
+        let helper: RetryHelperBlock = { (error) -> (Bool, TimeInterval) in
             count += 1
             if count == 3 {
                 counterExpectation.fulfill()
@@ -52,15 +52,15 @@ class NetworkTests: XCTestCase {
         BTStubs.stubFailedRequest(id: 0)
         BTStubs.stubFailedRequest(id: 1)
         
-        let firstStop = BusStop(testingID: 0)
-        let secondStop = BusStop(testingID: 1)
+        let firstStop = OVStop(testingID: 0)
+        let secondStop = OVStop(testingID: 1)
         var count_01 = 0
         var count_02 = 0
         
         let firstRequestExpectation = expectation(description: "expectation for failed response")
         let secondRequestExpectation = expectation(description: "expectation for second failed response")
         
-        let firstHelper = OVRetryHelper { (error) -> (Bool, TimeInterval) in
+        let firstHelper: RetryHelperBlock = { (error) -> (Bool, TimeInterval) in
             count_01 += 1
             if count_01 == 2 {
                 return (false, 0.0)
@@ -68,7 +68,7 @@ class NetworkTests: XCTestCase {
             return(true, 0.15)
         }
         
-        let secondHelper = OVRetryHelper { (error) -> (Bool, TimeInterval) in
+        let secondHelper: RetryHelperBlock = { (error) -> (Bool, TimeInterval) in
             count_02 += 1
             if count_02 == 5 {
                 return (false, 0.0)
@@ -86,7 +86,7 @@ class NetworkTests: XCTestCase {
             XCTAssertNotNil(error, "Error should not be nil")
         }
         
-        wait(for: [firstRequestExpectation, secondRequestExpectation], timeout: 999.0*999)
+        wait(for: [firstRequestExpectation, secondRequestExpectation], timeout: 2)
         
         XCTAssert(count_01 == 2, "count was \(count_01)")
         XCTAssert(count_02 == 5, "count was \(count_02)")

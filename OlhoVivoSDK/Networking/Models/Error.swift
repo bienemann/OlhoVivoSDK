@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct APIError: Decodable {
+public struct APIError: Decodable {
     
     var message: String
     

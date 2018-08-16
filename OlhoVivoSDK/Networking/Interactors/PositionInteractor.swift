@@ -9,11 +9,11 @@
 import Foundation
 import Alamofire
 
-struct PositionInteractor {
+internal struct PositionInteractor {
     
-    static func list(for line: BusLine, _ retryHelper: OVRetryHelper? = nil,
-                     handler: @escaping ListResponseHandler<BusPosition>) {
-        _ = BTNetwork.olhoVivoRequest(.positions(line), retryHelper)
+    static func list(for line: OVLine, _ retryHelper: RetryHelperBlock? = nil,
+                     handler: @escaping ListResponseHandler<OVPosition>) {
+        _ = OVNetwork.olhoVivoRequest(.positions(line), retryHelper)
             .responseData { response in
                 switch response.result {
                 case .success(let data):

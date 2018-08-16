@@ -9,14 +9,14 @@
 import Foundation
 import Alamofire
 
-struct ArrivalInteractor {
+internal struct ArrivalInteractor {
     
-    static func nextArrivals(of line: BusLine?,
-                             at stop: BusStop,
-                             _ retryHelper: OVRetryHelper? = nil,
-                             handler: @escaping ListResponseHandler<BusPosition>) {
+    static func nextArrivals(of line: OVLine?,
+                             at stop: OVStop,
+                             _ retryHelper: RetryHelperBlock? = nil,
+                             handler: @escaping ListResponseHandler<OVPosition>) {
         
-        _ = BTNetwork.olhoVivoRequest(.arrivals(of: line, at: stop), retryHelper)
+        _ = OVNetwork.olhoVivoRequest(.arrivals(of: line, at: stop), retryHelper)
         .responseData { response in
             
             switch response.result {
@@ -31,10 +31,10 @@ struct ArrivalInteractor {
         }
     }
     
-    static func nextArrivals(of line: BusLine, _ retryHelper: OVRetryHelper? = nil,
-                             handler: @escaping ListResponseHandler<BusStop>) {
+    static func nextArrivals(of line: OVLine, _ retryHelper: RetryHelperBlock? = nil,
+                             handler: @escaping ListResponseHandler<OVStop>) {
         
-        _ = BTNetwork.olhoVivoRequest(.arrivals(of: line, at: nil), retryHelper)
+        _ = OVNetwork.olhoVivoRequest(.arrivals(of: line, at: nil), retryHelper)
             .responseData { response in
                 
                 switch response.result {
@@ -49,10 +49,10 @@ struct ArrivalInteractor {
         
     }
     
-    static func nextArrivals(at stop: BusStop, _ retryHelper: OVRetryHelper? = nil,
+    static func nextArrivals(at stop: OVStop, _ retryHelper: RetryHelperBlock? = nil,
                              handler: @escaping ListResponseHandler<LineSummary>) {
         
-        _ = BTNetwork.olhoVivoRequest(.arrivals(of: nil, at: stop), retryHelper)
+        _ = OVNetwork.olhoVivoRequest(.arrivals(of: nil, at: stop), retryHelper)
             .responseData { response in
                 
                 switch response.result {

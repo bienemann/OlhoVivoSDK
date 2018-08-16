@@ -1,5 +1,5 @@
 //
-//  BTNetwork.swift
+//  OVNetwork.swift
 //  BusTracker
 //
 //  Created by Allan Martins on 07/08/18.
@@ -10,19 +10,19 @@ import Foundation
 import Alamofire
 import UIKit
 
-typealias ListResponseHandler<T: Decodable> = ([T]?, Error?) -> Void
-typealias ObjectResponseHandler<T: Decodable> = (T?, Error?) -> Void
+public typealias ListResponseHandler<T: Decodable> = ([T]?, Error?) -> Void
+public typealias ObjectResponseHandler<T: Decodable> = (T?, Error?) -> Void
 
-struct BTNetwork {
+internal struct OVNetwork {
     
-    static func olhoVivoRequest(_ request: BTRequest,
-                                _ retryHelper: OVRetryHelper? = nil) -> DataRequest {
+    static func olhoVivoRequest(_ request: OVRequest,
+                                _ retryHelper: RetryHelperBlock? = nil) -> DataRequest {
         
         SessionManager.default.retrier = OVRetrier.shared
         return OVRetrier.shared.addCustomHandler(
             retryHelper,
             for: SessionManager.default.request(request)
-        )
+        ).validate()
     }
     
 }

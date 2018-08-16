@@ -9,22 +9,22 @@
 import Foundation
 import Alamofire
 
-enum BTRequest: URLRequestConvertible {
+internal enum OVRequest: URLRequestConvertible {
      
-    static private let base_url = "http://api.olhovivo.sptrans.com.br/"
-    static private let api_version = "v2.1"
+    static internal let base_url = "http://api.olhovivo.sptrans.com.br/"
+    static internal let api_version = "v2.1"
     
     enum StopsFilters {
         case search(_: String)
-        case line(_: BusLine)
-        case corridor(_: Corridor)
+        case line(_: OVLine)
+        case corridor(_: OVCorridor)
     }
     
-    case authenticate
-    case searchLine(query: String, direction: BusLine.Direction?)
+    case authenticate(token: String)
+    case searchLine(query: String, direction: OVLine.Direction?)
     case stops(by: StopsFilters)
-    case positions(BusLine)
-    case arrivals(of: BusLine?, at: BusStop?)
+    case positions(OVLine)
+    case arrivals(of: OVLine?, at: OVStop?)
     
     private var forcedQuery: Bool {
         switch self {
@@ -82,8 +82,8 @@ enum BTRequest: URLRequestConvertible {
     
     private var params: Parameters? {
         switch self {
-        case .authenticate:
-            return ["token": "e86972bad776dfaaba882db93230bf1b4745a4c9d21ddfcd15c71106d2fa6f79"]
+        case .authenticate(let token):
+            return ["token": token]
         case .searchLine(let searchQuery, let direction):
             guard let direction = direction else {
                 return ["termosBusca": searchQuery]
@@ -127,7 +127,7 @@ enum BTRequest: URLRequestConvertible {
             throw NSError(domain: URLError.errorDomain, code: URLError.badURL.rawValue, userInfo: nil)
         }
         
-        let url = try (BTRequest.base_url + BTRequest.api_version).asURL()
+        let url = try (OVRequest.base_url + OVRequest.api_version).asURL()
         var urlRequest = URLRequest(url: url.appendingPathComponent(endpoint))
         urlRequest.httpMethod = method.rawValue
         if forcedQuery {

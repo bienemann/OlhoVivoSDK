@@ -9,20 +9,25 @@
 import Foundation
 import Alamofire
 
-struct AuthInteractor {
+internal typealias AuthenticationHandler = (Bool) -> Void
+internal class AuthInteractor {
     
-    typealias AuthenticationHandler = (Bool) -> Void
-
-    static func authenticate(_ completionHandler: @escaping AuthenticationHandler) {
+    static let shared = AuthInteractor()
+    internal var token: String?
+    
+    func authenticate(_ completionHandler: @escaping AuthenticationHandler) {
         
-        BTNetwork.olhoVivoRequest(BTRequest.authenticate).validate({ (request, response, data) -> Request.ValidationResult in
-            if  request?.url?.absoluteString.range(of: "token") != nil, response.statusCode == 200,
-                let data = data, let responseValue = String(data: data, encoding: .utf8),
-                responseValue == "true" {
-                return Request.ValidationResult.success
-            } else {
-                return Request.ValidationResult.failure(NSError(domain: NSURLErrorDomain, code: URLError.userAuthenticationRequired.rawValue, userInfo: nil))
-            }
+        guard let token = token else { return }
+        
+        OVNetwork.olhoVivoRequest(OVRequest.authenticate(token: token))
+            .validate({ (request, response, data) -> Request.ValidationResult in
+                if  request?.url?.absoluteString.range(of: "token") != nil, response.statusCode == 200,
+                    let data = data, let responseValue = String(data: data, encoding: .utf8),
+                    responseValue == "true" {
+                    return Request.ValidationResult.success
+                } else {
+                    return Request.ValidationResult.failure(NSError(domain: NSURLErrorDomain, code: URLError.userAuthenticationRequired.rawValue, userInfo: nil))
+                }
         }).responseData { response in
             
             switch response.result {

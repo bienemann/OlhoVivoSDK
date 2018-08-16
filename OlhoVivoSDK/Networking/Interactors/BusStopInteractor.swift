@@ -10,11 +10,11 @@ import Foundation
 import Alamofire
 
 fileprivate extension DataRequest {
-    func busStops(handler: @escaping ListResponseHandler<BusStop>) -> Self {
+    func busStops(handler: @escaping ListResponseHandler<OVStop>) -> Self {
         self.responseData { response in
             switch response.result {
             case .success(let data):
-                if let lines = BusStop.listFrom(data, { handler(nil, $0) }) {
+                if let lines = OVStop.listFrom(data, { handler(nil, $0) }) {
                     handler(lines, nil)
                 }
             case .failure(let error):
@@ -25,23 +25,23 @@ fileprivate extension DataRequest {
     }
 }
 
-struct BusStopInteractor {
+internal struct BusStopInteractor {
     
-    static func search(_ searchQuery: String, _ retryHelper: OVRetryHelper? = nil,
-                       handler: @escaping ListResponseHandler<BusStop>) {
-        _ = BTNetwork.olhoVivoRequest(.stops(by: .search(searchQuery)), retryHelper)
+    static func search(_ searchQuery: String, _ retryHelper: RetryHelperBlock? = nil,
+                       handler: @escaping ListResponseHandler<OVStop>) {
+        _ = OVNetwork.olhoVivoRequest(.stops(by: .search(searchQuery)), retryHelper)
             .busStops(handler: handler)
     }
     
-    static func stops(for line: BusLine, _ retryHelper: OVRetryHelper? = nil,
-                      handler: @escaping ListResponseHandler<BusStop>) {
-        _ = BTNetwork.olhoVivoRequest(.stops(by: .line(line)), retryHelper)
+    static func stops(for line: OVLine, _ retryHelper: RetryHelperBlock? = nil,
+                      handler: @escaping ListResponseHandler<OVStop>) {
+        _ = OVNetwork.olhoVivoRequest(.stops(by: .line(line)), retryHelper)
             .busStops(handler: handler)
     }
     
-    static func stops(for corridor: Corridor, _ retryHelper: OVRetryHelper? = nil,
-                      handler: @escaping ListResponseHandler<BusStop>) {
-        _ = BTNetwork.olhoVivoRequest(.stops(by: .corridor(corridor)), retryHelper)
+    static func stops(for corridor: OVCorridor, _ retryHelper: RetryHelperBlock? = nil,
+                      handler: @escaping ListResponseHandler<OVStop>) {
+        _ = OVNetwork.olhoVivoRequest(.stops(by: .corridor(corridor)), retryHelper)
             .busStops(handler: handler)
     }
 }

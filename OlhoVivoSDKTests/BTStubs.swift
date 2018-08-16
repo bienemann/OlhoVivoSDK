@@ -48,7 +48,7 @@ extension BTStubs { // Auth
     
     static func stubAuthSuccess() {
         do {
-            let request = try BTRequest.authenticate.asURLRequest()
+            let request = try OVRequest.authenticate(token: "").asURLRequest()
             basicStub(request, file: "authenticate_success", statusCode: 200)
         } catch {
             return
@@ -57,7 +57,7 @@ extension BTStubs { // Auth
     
     static func stubAuthFailure() {
         do {
-            let request = try BTRequest.authenticate.asURLRequest()
+            let request = try OVRequest.authenticate(token: "").asURLRequest()
             basicStub(request, file: "authenticate_fail", statusCode: 200)
         } catch {
             return
@@ -68,7 +68,7 @@ extension BTStubs { // Auth
 
 extension BTStubs { // Lines
     
-    static func stubSearch(_ query: String, direction: BusLine.Direction? = nil) {
+    static func stubSearch(_ query: String, direction: OVLine.Direction? = nil) {
         
         var fileName = "linha_buscar_termosBusca_" + query
         if let direction = direction {
@@ -77,7 +77,7 @@ extension BTStubs { // Lines
         }
         
         do {
-            let request = try BTRequest.searchLine(query: query, direction: direction).asURLRequest()
+            let request = try OVRequest.searchLine(query: query, direction: direction).asURLRequest()
             basicStub(request, file: fileName, statusCode: 200)
         } catch {
             return
@@ -88,7 +88,7 @@ extension BTStubs { // Lines
     static func stubSearchUnauthorized(_ query: String) {
         
         do {
-            let request = try BTRequest.searchLine(query: query, direction: nil).asURLRequest()
+            let request = try OVRequest.searchLine(query: query, direction: nil).asURLRequest()
             basicStub(request, file: "unauthorized", statusCode: 401)
         } catch {
             return
@@ -105,7 +105,7 @@ extension BTStubs { // Stops
         filename += query
         
         do {
-            let request = try BTRequest.stops(by: .search(query)).asURLRequest()
+            let request = try OVRequest.stops(by: .search(query)).asURLRequest()
             basicStub(request, file: filename, statusCode: 200)
         } catch {
             return
@@ -113,22 +113,22 @@ extension BTStubs { // Stops
         
     }
     
-    static func stubStops(by line: BusLine) {
+    static func stubStops(by line: OVLine) {
         var filename = "parada_buscarParadaPorLinha_codigoLinha_"
         filename += line.lineID.description
         do {
-            let request = try BTRequest.stops(by: .line(line)).asURLRequest()
+            let request = try OVRequest.stops(by: .line(line)).asURLRequest()
             basicStub(request, file: filename, statusCode: 200)
         } catch {
             return
         }
     }
     
-    static func stubStops(by corridor: Corridor) {
+    static func stubStops(by corridor: OVCorridor) {
         var filename = "parada_buscarParadasPorCorredor_codigoCorredor_"
         filename += corridor.corridorID.description
         do {
-            let request = try BTRequest
+            let request = try OVRequest
                 .stops(by: .corridor(corridor)).asURLRequest()
             basicStub(request, file: filename, statusCode: 200)
         } catch {
@@ -139,12 +139,12 @@ extension BTStubs { // Stops
 
 extension BTStubs { // Position
     
-    static func stubPosition(line: BusLine) {
+    static func stubPosition(line: OVLine) {
         
         let filename = "posicao_linha_codigoLinha_\(line.lineID)"
         
         do {
-            let request = try BTRequest.positions(line).asURLRequest()
+            let request = try OVRequest.positions(line).asURLRequest()
             basicStub(request, file: filename, statusCode: 200)
         } catch {
             return
@@ -156,30 +156,30 @@ extension BTStubs { // Position
 
 extension BTStubs { // Arrivals
     
-    static func stubSpecificArrivals(line: BusLine, stop: BusStop) {
+    static func stubSpecificArrivals(line: OVLine, stop: OVStop) {
         let filename = "previsao_codigoParada_\(stop.stopID)_codigoLinha_\(line.lineID)"
         do {
-            let request = try BTRequest.arrivals(of: line, at: stop).asURLRequest()
+            let request = try OVRequest.arrivals(of: line, at: stop).asURLRequest()
             basicStub(request, file: filename, statusCode: 200)
         } catch {
             return
         }
     }
     
-    static func stubArrivals(of line: BusLine) {
+    static func stubArrivals(of line: OVLine) {
         let filename = "previsao_linha_codigoLinha_\(line.lineID)"
         do {
-            let request = try BTRequest.arrivals(of: line, at: nil).asURLRequest()
+            let request = try OVRequest.arrivals(of: line, at: nil).asURLRequest()
             basicStub(request, file: filename, statusCode: 200)
         } catch {
             return
         }
     }
     
-    static func stubArrivals(stop: BusStop) {
+    static func stubArrivals(stop: OVStop) {
         let filename = "previsao_parada_codigoParada_\(stop.stopID)"
         do {
-            let request = try BTRequest.arrivals(of: nil, at: stop).asURLRequest()
+            let request = try OVRequest.arrivals(of: nil, at: stop).asURLRequest()
             basicStub(request, file: filename, statusCode: 200)
         } catch {
             return
@@ -194,8 +194,8 @@ extension BTStubs { // Retrier
         
         let filename = "previsao_parada_codigoParada_someWrongNumber"
         do {
-            let stop = BusStop(testingID: id)
-            let request = try BTRequest.arrivals(of: nil, at: stop).asURLRequest()
+            let stop = OVStop(testingID: id)
+            let request = try OVRequest.arrivals(of: nil, at: stop).asURLRequest()
             basicStub(request, file: filename, statusCode: 500)
         } catch {
             return

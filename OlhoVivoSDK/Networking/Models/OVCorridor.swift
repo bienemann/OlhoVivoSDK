@@ -8,17 +8,17 @@
 
 import Foundation
 
-struct Corridor: Decodable {
+public struct OVCorridor: Decodable {
     
-    var corridorID: Int
-    var name: String
+    public var corridorID: Int
+    public var name: String
     
     private enum CodingKeys: String, CodingKey {
         case corridorID = "cc"
         case name = "nc"
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         corridorID = try values.decode(Int.self, forKey: .corridorID)
