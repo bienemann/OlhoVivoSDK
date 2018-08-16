@@ -11,8 +11,6 @@
 		9D32DF292125D3AB006C785D /* OVRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32DF282125D3AB006C785D /* OVRetrier.swift */; };
 		9D9231152124C50700850928 /* OlhoVivoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */; };
 		9D92311E2124C50700850928 /* OlhoVivoSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D92310E2124C50700850928 /* OlhoVivoSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D9231212124C50700850928 /* OlhoVivoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */; };
-		9D9231222124C50700850928 /* OlhoVivoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D92312B2124C55A00850928 /* OlhoVivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D92312A2124C55A00850928 /* OlhoVivo.swift */; };
 		9D92312C2124C62D00850928 /* LineInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5552119FF3300807168 /* LineInteractorTests.swift */; };
 		9D92312D2124C62D00850928 /* PositionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */; };
@@ -52,22 +50,6 @@
 		9D9231502124D50800850928 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
 		9D9231542124D76A00850928 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D923156212504F500850928 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D923155212504F500850928 /* NetworkTests.swift */; };
-		9D98DF82211A113600237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		9D98DF89211A118B00237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		9D98DF8F211A166400237DA8 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		9D98DF90211A166400237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBB2118CC720019342A /* AppDelegate.swift */; };
-		9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBD2118CC720019342A /* ViewController.swift */; };
-		9DF2EFC12118CC720019342A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBF2118CC720019342A /* Main.storyboard */; };
-		9DF2EFC32118CC740019342A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC22118CC740019342A /* Assets.xcassets */; };
-		9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */; };
-		9DF31F33211A1B75009A76DD /* RetryAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F31211A1B74009A76DD /* RetryAlert.swift */; };
-		9DF31F34211A1B75009A76DD /* RetryAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF31F32211A1B74009A76DD /* RetryAlert.xib */; };
-		9DF31F38211A1BAA009A76DD /* BTAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F35211A1BAA009A76DD /* BTAlertController.swift */; };
-		9DF31F39211A1BAA009A76DD /* BTAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF31F36211A1BAA009A76DD /* BTAlertController.xib */; };
-		9DF31F3A211A1BAA009A76DD /* BTAlertViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F37211A1BAA009A76DD /* BTAlertViewProtocol.swift */; };
-		9DF31F3D211A1BB2009A76DD /* BTLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF31F3B211A1BB2009A76DD /* BTLoadingView.swift */; };
-		9DF31F3E211A1BB2009A76DD /* BTLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF31F3C211A1BB2009A76DD /* BTLoadingView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,34 +60,9 @@
 			remoteGlobalIDString = 9D92310B2124C50700850928;
 			remoteInfo = OlhoVivoSDK;
 		};
-		9D92311F2124C50700850928 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DF2EFB02118CC720019342A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D92310B2124C50700850928;
-			remoteInfo = OlhoVivoSDK;
-		};
-		9D9231512124D63A00850928 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DF2EFB02118CC720019342A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9DF2EFB72118CC720019342A;
-			remoteInfo = BusTracker;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9D9231282124C50700850928 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9D9231222124C50700850928 /* OlhoVivoSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		9D9231532124D75C00850928 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,22 +116,8 @@
 		9DAC195821236CA90030B294 /* PositionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInteractor.swift; sourceTree = "<group>"; };
 		9DAC195A212375240030B294 /* posicao_linha_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posicao_linha_codigoLinha_1273.json; sourceTree = "<group>"; };
 		9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInteractorTests.swift; sourceTree = "<group>"; };
-		9DF2EFB82118CC720019342A /* OlhoVivo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OlhoVivo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DF2EFBB2118CC720019342A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DF2EFBD2118CC720019342A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9DF2EFC02118CC720019342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9DF2EFC22118CC740019342A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DF2EFC52118CC740019342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9DF2EFC72118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF2EFDC2118D2B30019342A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9DF2EFDF2118D5780019342A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		9DF31F31211A1B74009A76DD /* RetryAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryAlert.swift; sourceTree = "<group>"; };
-		9DF31F32211A1B74009A76DD /* RetryAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RetryAlert.xib; sourceTree = "<group>"; };
-		9DF31F35211A1BAA009A76DD /* BTAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTAlertController.swift; sourceTree = "<group>"; };
-		9DF31F36211A1BAA009A76DD /* BTAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTAlertController.xib; sourceTree = "<group>"; };
-		9DF31F37211A1BAA009A76DD /* BTAlertViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTAlertViewProtocol.swift; sourceTree = "<group>"; };
-		9DF31F3B211A1BB2009A76DD /* BTLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTLoadingView.swift; sourceTree = "<group>"; };
-		9DF31F3C211A1BB2009A76DD /* BTLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTLoadingView.xib; sourceTree = "<group>"; };
 		9DFF3FA0211A25B500251B6E /* authenticate_success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authenticate_success.json; sourceTree = "<group>"; };
 		9DFF3FA2211A25C600251B6E /* authenticate_fail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authenticate_fail.json; sourceTree = "<group>"; };
 		9DFF3FA4211A295600251B6E /* unauthorized.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = unauthorized.json; sourceTree = "<group>"; };
@@ -195,14 +138,6 @@
 			files = (
 				9D9231152124C50700850928 /* OlhoVivoSDK.framework in Frameworks */,
 				9D9231502124D50800850928 /* OHHTTPStubs.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DF2EFB52118CC720019342A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D9231212124C50700850928 /* OlhoVivoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,55 +228,9 @@
 			path = OlhoVivoSDKTests;
 			sourceTree = "<group>";
 		};
-		9D98DF7E211A110100237DA8 /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-				9D98DF84211A117400237DA8 /* AlertController */,
-				9D98DF7F211A111300237DA8 /* LoadingScreen */,
-			);
-			path = UIComponents;
-			sourceTree = "<group>";
-		};
-		9D98DF7F211A111300237DA8 /* LoadingScreen */ = {
-			isa = PBXGroup;
-			children = (
-				9DF31F3B211A1BB2009A76DD /* BTLoadingView.swift */,
-				9DF31F3C211A1BB2009A76DD /* BTLoadingView.xib */,
-			);
-			path = LoadingScreen;
-			sourceTree = "<group>";
-		};
-		9D98DF84211A117400237DA8 /* AlertController */ = {
-			isa = PBXGroup;
-			children = (
-				9DF31F35211A1BAA009A76DD /* BTAlertController.swift */,
-				9DF31F36211A1BAA009A76DD /* BTAlertController.xib */,
-				9DF31F37211A1BAA009A76DD /* BTAlertViewProtocol.swift */,
-			);
-			path = AlertController;
-			sourceTree = "<group>";
-		};
-		9D98DF8B211A15F800237DA8 /* Alerts */ = {
-			isa = PBXGroup;
-			children = (
-				9D98DF8C211A160200237DA8 /* NetworkAlert */,
-			);
-			path = Alerts;
-			sourceTree = "<group>";
-		};
-		9D98DF8C211A160200237DA8 /* NetworkAlert */ = {
-			isa = PBXGroup;
-			children = (
-				9DF31F31211A1B74009A76DD /* RetryAlert.swift */,
-				9DF31F32211A1B74009A76DD /* RetryAlert.xib */,
-			);
-			path = NetworkAlert;
-			sourceTree = "<group>";
-		};
 		9DF2EFAF2118CC720019342A = {
 			isa = PBXGroup;
 			children = (
-				9DF2EFBA2118CC720019342A /* OlhoVivo */,
 				9D92310D2124C50700850928 /* OlhoVivoSDK */,
 				9D92311A2124C50700850928 /* OlhoVivoSDKTests */,
 				9DF2EFB92118CC720019342A /* Products */,
@@ -352,26 +241,10 @@
 		9DF2EFB92118CC720019342A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DF2EFB82118CC720019342A /* OlhoVivo.app */,
 				9D92310C2124C50700850928 /* OlhoVivoSDK.framework */,
 				9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9DF2EFBA2118CC720019342A /* OlhoVivo */ = {
-			isa = PBXGroup;
-			children = (
-				9D98DF8B211A15F800237DA8 /* Alerts */,
-				9D98DF7E211A110100237DA8 /* UIComponents */,
-				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
-				9DF2EFBD2118CC720019342A /* ViewController.swift */,
-				9DF2EFBF2118CC720019342A /* Main.storyboard */,
-				9DF2EFC22118CC740019342A /* Assets.xcassets */,
-				9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */,
-				9DF2EFC72118CC740019342A /* Info.plist */,
-			);
-			path = OlhoVivo;
 			sourceTree = "<group>";
 		};
 		9DF2EFDB2118D28B0019342A /* Networking */ = {
@@ -440,31 +313,11 @@
 			);
 			dependencies = (
 				9D9231172124C50700850928 /* PBXTargetDependency */,
-				9D9231522124D63A00850928 /* PBXTargetDependency */,
 			);
 			name = OlhoVivoSDKTests;
 			productName = OlhoVivoSDKTests;
 			productReference = 9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9DF2EFB72118CC720019342A /* OlhoVivo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "OlhoVivo" */;
-			buildPhases = (
-				9DF2EFB42118CC720019342A /* Sources */,
-				9DF2EFB52118CC720019342A /* Frameworks */,
-				9DF2EFB62118CC720019342A /* Resources */,
-				9D9231282124C50700850928 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9D9231202124C50700850928 /* PBXTargetDependency */,
-			);
-			name = OlhoVivo;
-			productName = BusTracker;
-			productReference = 9DF2EFB82118CC720019342A /* OlhoVivo.app */;
-			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -484,9 +337,6 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 9DF2EFB72118CC720019342A;
 					};
-					9DF2EFB72118CC720019342A = {
-						CreatedOnToolsVersion = 9.4.1;
-					};
 				};
 			};
 			buildConfigurationList = 9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "OlhoVivo" */;
@@ -502,7 +352,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DF2EFB72118CC720019342A /* OlhoVivo */,
 				9D92310B2124C50700850928 /* OlhoVivoSDK */,
 				9D9231132124C50700850928 /* OlhoVivoSDKTests */,
 			);
@@ -533,22 +382,6 @@
 				9D92314D2124C6C200850928 /* previsao_parada_codigoParada_700016623.json in Resources */,
 				9D92314C2124C6C200850928 /* previsao_linha_codigoLinha_1273.json in Resources */,
 				9D9231442124C6C200850928 /* authenticate_success.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DF2EFB62118CC720019342A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DF31F39211A1BAA009A76DD /* BTAlertController.xib in Resources */,
-				9DF31F34211A1B75009A76DD /* RetryAlert.xib in Resources */,
-				9D98DF82211A113600237DA8 /* (null) in Resources */,
-				9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */,
-				9DF31F3E211A1BB2009A76DD /* BTLoadingView.xib in Resources */,
-				9DF2EFC32118CC740019342A /* Assets.xcassets in Resources */,
-				9DF2EFC12118CC720019342A /* Main.storyboard in Resources */,
-				9D98DF89211A118B00237DA8 /* (null) in Resources */,
-				9D98DF90211A166400237DA8 /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,20 +447,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DF2EFB42118CC720019342A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DF31F38211A1BAA009A76DD /* BTAlertController.swift in Sources */,
-				9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */,
-				9D98DF8F211A166400237DA8 /* (null) in Sources */,
-				9DF31F3A211A1BAA009A76DD /* BTAlertViewProtocol.swift in Sources */,
-				9DF31F33211A1B75009A76DD /* RetryAlert.swift in Sources */,
-				9DF31F3D211A1BB2009A76DD /* BTLoadingView.swift in Sources */,
-				9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -636,36 +455,7 @@
 			target = 9D92310B2124C50700850928 /* OlhoVivoSDK */;
 			targetProxy = 9D9231162124C50700850928 /* PBXContainerItemProxy */;
 		};
-		9D9231202124C50700850928 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9D92310B2124C50700850928 /* OlhoVivoSDK */;
-			targetProxy = 9D92311F2124C50700850928 /* PBXContainerItemProxy */;
-		};
-		9D9231522124D63A00850928 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9DF2EFB72118CC720019342A /* OlhoVivo */;
-			targetProxy = 9D9231512124D63A00850928 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9DF2EFBF2118CC720019342A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DF2EFC02118CC720019342A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DF2EFC52118CC740019342A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9D9231232124C50700850928 /* Debug */ = {
@@ -899,52 +689,6 @@
 			};
 			name = Release;
 		};
-		9DF2EFD62118CC740019342A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R8MYP56C5V;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = OlhoVivo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aya.BusTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9DF2EFD72118CC740019342A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R8MYP56C5V;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = OlhoVivo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aya.BusTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -971,15 +715,6 @@
 			buildConfigurations = (
 				9DF2EFD32118CC740019342A /* Debug */,
 				9DF2EFD42118CC740019342A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "OlhoVivo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9DF2EFD62118CC740019342A /* Debug */,
-				9DF2EFD72118CC740019342A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
