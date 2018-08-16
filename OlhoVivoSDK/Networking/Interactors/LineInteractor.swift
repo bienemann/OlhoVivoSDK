@@ -11,6 +11,7 @@ import Foundation
 struct LineInteractor {
     
     static func search(_ searchQuery: String, direction: BusLine.Direction? = nil,
+                       _ retryHelper: OVRetryHelper? = nil,
                        handler: @escaping ListResponseHandler<BusLine>) {
         
         BTNetwork.olhoVivoRequest(BTRequest.searchLine(query: searchQuery, direction: direction))

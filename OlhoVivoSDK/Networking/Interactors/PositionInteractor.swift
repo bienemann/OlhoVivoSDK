@@ -11,8 +11,9 @@ import Alamofire
 
 struct PositionInteractor {
     
-    static func list(for line: BusLine, handler: @escaping ListResponseHandler<BusPosition>) {
-        _ = BTNetwork.olhoVivoRequest(.positions(line))
+    static func list(for line: BusLine, _ retryHelper: OVRetryHelper? = nil,
+                     handler: @escaping ListResponseHandler<BusPosition>) {
+        _ = BTNetwork.olhoVivoRequest(.positions(line), retryHelper)
             .responseData { response in
                 switch response.result {
                 case .success(let data):
