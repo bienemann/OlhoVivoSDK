@@ -187,3 +187,19 @@ extension BTStubs { // Arrivals
     }
     
 }
+
+extension BTStubs { // Retrier
+    
+    static func stubFailedRequest(id: Int) {
+        
+        let filename = "previsao_parada_codigoParada_someWrongNumber"
+        do {
+            let stop = BusStop(testingID: id)
+            let request = try BTRequest.arrivals(of: nil, at: stop).asURLRequest()
+            basicStub(request, file: filename, statusCode: 500)
+        } catch {
+            return
+        }
+    }
+    
+}

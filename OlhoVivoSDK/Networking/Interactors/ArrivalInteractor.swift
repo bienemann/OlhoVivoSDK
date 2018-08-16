@@ -47,9 +47,10 @@ struct ArrivalInteractor {
         
     }
     
-    static func nextArrivals(at stop: BusStop, handler: @escaping ListResponseHandler<LineSummary>) {
+    static func nextArrivals(at stop: BusStop, _ retryHelper: OVRetryHelper? = nil,
+                             handler: @escaping ListResponseHandler<LineSummary>) {
         
-        _ = BTNetwork.olhoVivoRequest(.arrivals(of: nil, at: stop))
+        _ = BTNetwork.olhoVivoRequest(.arrivals(of: nil, at: stop), retryHelper)
             .responseData { response in
                 
                 switch response.result {

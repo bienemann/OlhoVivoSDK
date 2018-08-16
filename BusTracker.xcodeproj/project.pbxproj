@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
-		9D61A5542119F42A00807168 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D32DF272125D2DA006C785D /* RetrierTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32DF262125D2DA006C785D /* RetrierTable.swift */; };
+		9D32DF292125D3AB006C785D /* OVRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32DF282125D3AB006C785D /* OVRetrier.swift */; };
 		9D9231152124C50700850928 /* OlhoVivoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */; };
 		9D92311E2124C50700850928 /* OlhoVivoSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D92310E2124C50700850928 /* OlhoVivoSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D9231212124C50700850928 /* OlhoVivoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D92310C2124C50700850928 /* OlhoVivoSDK.framework */; };
@@ -51,6 +51,7 @@
 		9D92314F2124C74400850928 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF2EFDF2118D5780019342A /* Alamofire.framework */; };
 		9D9231502124D50800850928 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
 		9D9231542124D76A00850928 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D923156212504F500850928 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D923155212504F500850928 /* NetworkTests.swift */; };
 		9D98DF82211A113600237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		9D98DF89211A118B00237DA8 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		9D98DF8F211A166400237DA8 /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -91,26 +92,9 @@
 			remoteGlobalIDString = 9DF2EFB72118CC720019342A;
 			remoteInfo = BusTracker;
 		};
-		9DF2EFCD2118CC740019342A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DF2EFB02118CC720019342A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9DF2EFB72118CC720019342A;
-			remoteInfo = BusTracker;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9D61A5532119F41C00807168 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9D61A5542119F42A00807168 /* OHHTTPStubs.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9D9231282124C50700850928 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
@@ -144,6 +128,8 @@
 		9D1F0F7C2122392100648CEB /* parada_buscarParadasPorCorredor_codigoCorredor_8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parada_buscarParadasPorCorredor_codigoCorredor_8.json; sourceTree = "<group>"; };
 		9D2517F4212334E400D47FCA /* Corridor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corridor.swift; sourceTree = "<group>"; };
 		9D2517F621233EE300D47FCA /* BusPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusPosition.swift; sourceTree = "<group>"; };
+		9D32DF262125D2DA006C785D /* RetrierTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrierTable.swift; sourceTree = "<group>"; };
+		9D32DF282125D3AB006C785D /* OVRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVRetrier.swift; sourceTree = "<group>"; };
 		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		9D61A5482119E52300807168 /* BusLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
 		9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscar_termosBusca_8000.json; sourceTree = "<group>"; };
@@ -164,6 +150,7 @@
 		9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlhoVivoSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D92311D2124C50700850928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D92312A2124C55A00850928 /* OlhoVivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlhoVivo.swift; sourceTree = "<group>"; };
+		9D923155212504F500850928 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		9D9402A221246467004CC98F /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		9D98DF7A211A065700237DA8 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		9D98DF7C211A07F700237DA8 /* BTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNetwork.swift; sourceTree = "<group>"; };
@@ -179,8 +166,6 @@
 		9DF2EFC22118CC740019342A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DF2EFC52118CC740019342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DF2EFC72118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DF2EFD22118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF2EFDC2118D2B30019342A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9DF2EFDF2118D5780019342A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		9DF31F31211A1B74009A76DD /* RetryAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryAlert.swift; sourceTree = "<group>"; };
@@ -221,14 +206,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DF2EFC92118CC740019342A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -237,6 +214,8 @@
 			children = (
 				9D1F0F73211E474600648CEB /* DecodableExtension.swift */,
 				9D9402A221246467004CC98F /* Formatters.swift */,
+				9D32DF262125D2DA006C785D /* RetrierTable.swift */,
+				9D32DF282125D3AB006C785D /* OVRetrier.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -308,6 +287,7 @@
 				9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */,
 				9D61EDEA212479E100451142 /* ArrivalInteractorTests.swift */,
 				9D61EDEC21247E2400451142 /* BusPositionTests.swift */,
+				9D923155212504F500850928 /* NetworkTests.swift */,
 				9D92311D2124C50700850928 /* Info.plist */,
 			);
 			path = OlhoVivoSDKTests;
@@ -362,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				9DF2EFBA2118CC720019342A /* BusTracker */,
-				9DF2EFCF2118CC740019342A /* BusTrackerTests */,
 				9D92310D2124C50700850928 /* OlhoVivoSDK */,
 				9D92311A2124C50700850928 /* OlhoVivoSDKTests */,
 				9DF2EFB92118CC720019342A /* Products */,
@@ -374,7 +353,6 @@
 			isa = PBXGroup;
 			children = (
 				9DF2EFB82118CC720019342A /* BusTracker.app */,
-				9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */,
 				9D92310C2124C50700850928 /* OlhoVivoSDK.framework */,
 				9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */,
 			);
@@ -394,14 +372,6 @@
 				9DF2EFC72118CC740019342A /* Info.plist */,
 			);
 			path = BusTracker;
-			sourceTree = "<group>";
-		};
-		9DF2EFCF2118CC740019342A /* BusTrackerTests */ = {
-			isa = PBXGroup;
-			children = (
-				9DF2EFD22118CC740019342A /* Info.plist */,
-			);
-			path = BusTrackerTests;
 			sourceTree = "<group>";
 		};
 		9DF2EFDB2118D28B0019342A /* Networking */ = {
@@ -496,25 +466,6 @@
 			productReference = 9DF2EFB82118CC720019342A /* BusTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9DF2EFCB2118CC740019342A /* BusTrackerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF2EFD82118CC740019342A /* Build configuration list for PBXNativeTarget "BusTrackerTests" */;
-			buildPhases = (
-				9DF2EFC82118CC740019342A /* Sources */,
-				9DF2EFC92118CC740019342A /* Frameworks */,
-				9DF2EFCA2118CC740019342A /* Resources */,
-				9D61A5532119F41C00807168 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9DF2EFCE2118CC740019342A /* PBXTargetDependency */,
-			);
-			name = BusTrackerTests;
-			productName = BusTrackerTests;
-			productReference = 9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -536,10 +487,6 @@
 					9DF2EFB72118CC720019342A = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					9DF2EFCB2118CC740019342A = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 9DF2EFB72118CC720019342A;
-					};
 				};
 			};
 			buildConfigurationList = 9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "BusTracker" */;
@@ -556,7 +503,6 @@
 			projectRoot = "";
 			targets = (
 				9DF2EFB72118CC720019342A /* BusTracker */,
-				9DF2EFCB2118CC740019342A /* BusTrackerTests */,
 				9D92310B2124C50700850928 /* OlhoVivoSDK */,
 				9D9231132124C50700850928 /* OlhoVivoSDKTests */,
 			);
@@ -606,13 +552,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DF2EFCA2118CC740019342A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -646,6 +585,7 @@
 				9D9231372124C6A000850928 /* Corridor.swift in Sources */,
 				9D9231382124C6A000850928 /* LineSummary.swift in Sources */,
 				9D92313B2124C6A700850928 /* LineInteractor.swift in Sources */,
+				9D32DF292125D3AB006C785D /* OVRetrier.swift in Sources */,
 				9D9231332124C69800850928 /* BTNetwork.swift in Sources */,
 				9D92312B2124C55A00850928 /* OlhoVivo.swift in Sources */,
 				9D92313E2124C6A700850928 /* PositionInteractor.swift in Sources */,
@@ -653,6 +593,7 @@
 				9D92313C2124C6A700850928 /* AuthInteractor.swift in Sources */,
 				9D92313A2124C6A000850928 /* Arrival.swift in Sources */,
 				9D92313D2124C6A700850928 /* BusStopInteractor.swift in Sources */,
+				9D32DF272125D2DA006C785D /* RetrierTable.swift in Sources */,
 				9D9231352124C6A000850928 /* Error.swift in Sources */,
 				9D9231322124C69800850928 /* Request.swift in Sources */,
 				9D9231412124C6AF00850928 /* Formatters.swift in Sources */,
@@ -663,6 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D923156212504F500850928 /* NetworkTests.swift in Sources */,
 				9D92312C2124C62D00850928 /* LineInteractorTests.swift in Sources */,
 				9D92312F2124C62D00850928 /* ArrivalInteractorTests.swift in Sources */,
 				9D92312D2124C62D00850928 /* PositionInteractorTests.swift in Sources */,
@@ -686,13 +628,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DF2EFC82118CC740019342A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -710,11 +645,6 @@
 			isa = PBXTargetDependency;
 			target = 9DF2EFB72118CC720019342A /* BusTracker */;
 			targetProxy = 9D9231512124D63A00850928 /* PBXContainerItemProxy */;
-		};
-		9DF2EFCE2118CC740019342A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9DF2EFB72118CC720019342A /* BusTracker */;
-			targetProxy = 9DF2EFCD2118CC740019342A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1015,56 +945,6 @@
 			};
 			name = Release;
 		};
-		9DF2EFD92118CC740019342A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R8MYP56C5V;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = BusTrackerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aya.BusTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTracker.app/BusTracker";
-			};
-			name = Debug;
-		};
-		9DF2EFDA2118CC740019342A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R8MYP56C5V;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = BusTrackerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aya.BusTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTracker.app/BusTracker";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1100,15 +980,6 @@
 			buildConfigurations = (
 				9DF2EFD62118CC740019342A /* Debug */,
 				9DF2EFD72118CC740019342A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9DF2EFD82118CC740019342A /* Build configuration list for PBXNativeTarget "BusTrackerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9DF2EFD92118CC740019342A /* Debug */,
-				9DF2EFDA2118CC740019342A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

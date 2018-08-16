@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import OHHTTPStubs
 @testable import OlhoVivoSDK
 
 class BusPositionTests: XCTestCase {
@@ -24,6 +25,11 @@ class BusPositionTests: XCTestCase {
         referenceDate = CustomFormatter.shared.calendar.date(
             bySettingHour: 4, minute: 30, second: 0, of: Date()
         )!
+    }
+    
+    override func tearDown() {
+        OHHTTPStubs.removeAllStubs()
+        super.tearDown()
     }
     
     func testInvalidArrivalTime() {
