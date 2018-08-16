@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; };
+		9D61A5492119E52300807168 /* BusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5482119E52300807168 /* BusLine.swift */; };
+<<<<<<< Updated upstream
+		9D7FF7A72118DD2700C9EA17 /* AthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */; };
+		9D98DF82211A113600237DA8 /* BTLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D98DF80211A113600237DA8 /* BTLoadingView.xib */; };
+		9D98DF83211A113600237DA8 /* BTLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF81211A113600237DA8 /* BTLoadingView.swift */; };
+		9D98DF88211A118B00237DA8 /* BTAlertViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF85211A118A00237DA8 /* BTAlertViewProtocol.swift */; };
+		9D98DF89211A118B00237DA8 /* BTAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D98DF86211A118A00237DA8 /* BTAlertController.xib */; };
+		9D98DF8A211A118B00237DA8 /* BTAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF87211A118A00237DA8 /* BTAlertController.swift */; };
+		9D98DF8F211A166400237DA8 /* RetryAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF8D211A166400237DA8 /* RetryAlert.swift */; };
+		9D98DF90211A166400237DA8 /* RetryAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D98DF8E211A166400237DA8 /* RetryAlert.xib */; };
+=======
+		9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */; };
+		9D61A5502119EFA800807168 /* LineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A54F2119EFA800807168 /* LineInteractor.swift */; };
+		9D61A5522119F32700807168 /* BTStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5512119F32700807168 /* BTStubs.swift */; };
+		9D61A5542119F42A00807168 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D61A5462119E45200807168 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D61A5562119FF3300807168 /* LineInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A5552119FF3300807168 /* LineInteractorTests.swift */; };
+		9D61A558211A00EE00807168 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61A557211A00EE00807168 /* Error.swift */; };
+		9D98DF7B211A065700237DA8 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7A211A065700237DA8 /* AuthInteractor.swift */; };
+		9D98DF7D211A07F700237DA8 /* BTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98DF7C211A07F700237DA8 /* BTNetwork.swift */; };
+>>>>>>> Stashed changes
+		9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBB2118CC720019342A /* AppDelegate.swift */; };
+		9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBD2118CC720019342A /* ViewController.swift */; };
+		9DF2EFC12118CC720019342A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFBF2118CC720019342A /* Main.storyboard */; };
+		9DF2EFC32118CC740019342A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC22118CC740019342A /* Assets.xcassets */; };
+		9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */; };
+		9DF2EFD12118CC740019342A /* BusTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFD02118CC740019342A /* BusTrackerTests.swift */; };
+		9DF2EFDD2118D2B30019342A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2EFDC2118D2B30019342A /* Request.swift */; };
+		9DF2EFE02118D5780019342A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF2EFDF2118D5780019342A /* Alamofire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DF2EFCD2118CC740019342A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DF2EFB02118CC720019342A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DF2EFB72118CC720019342A;
+			remoteInfo = BusTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D61A5532119F41C00807168 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D61A5542119F42A00807168 /* OHHTTPStubs.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D61A5462119E45200807168 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
+		9D61A5482119E52300807168 /* BusLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLine.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+		9D7FF7A62118DD2700C9EA17 /* AthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenticationModel.swift; sourceTree = "<group>"; };
+		9D98DF80211A113600237DA8 /* BTLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTLoadingView.xib; sourceTree = "<group>"; };
+		9D98DF81211A113600237DA8 /* BTLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTLoadingView.swift; sourceTree = "<group>"; };
+		9D98DF85211A118A00237DA8 /* BTAlertViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTAlertViewProtocol.swift; sourceTree = "<group>"; };
+		9D98DF86211A118A00237DA8 /* BTAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTAlertController.xib; sourceTree = "<group>"; };
+		9D98DF87211A118A00237DA8 /* BTAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTAlertController.swift; sourceTree = "<group>"; };
+		9D98DF8D211A166400237DA8 /* RetryAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryAlert.swift; sourceTree = "<group>"; };
+		9D98DF8E211A166400237DA8 /* RetryAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RetryAlert.xib; sourceTree = "<group>"; };
+=======
+		9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linha_buscar_termosBusca_8000.json; sourceTree = "<group>"; };
+		9D61A54F2119EFA800807168 /* LineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineInteractor.swift; sourceTree = "<group>"; };
+		9D61A5512119F32700807168 /* BTStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTStubs.swift; sourceTree = "<group>"; };
+		9D61A5552119FF3300807168 /* LineInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineInteractorTests.swift; sourceTree = "<group>"; };
+		9D61A557211A00EE00807168 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		9D98DF7A211A065700237DA8 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		9D98DF7C211A07F700237DA8 /* BTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNetwork.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
+		9DF2EFB82118CC720019342A /* BusTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF2EFBB2118CC720019342A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DF2EFBD2118CC720019342A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DF2EFC02118CC720019342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DF2EFC22118CC740019342A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DF2EFC52118CC740019342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DF2EFC72118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF2EFD02118CC740019342A /* BusTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTrackerTests.swift; sourceTree = "<group>"; };
+		9DF2EFD22118CC740019342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF2EFDC2118D2B30019342A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9DF2EFDF2118D5780019342A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DF2EFB52118CC720019342A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF2EFE02118D5780019342A /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF2EFC92118CC740019342A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D61A5472119E45200807168 /* OHHTTPStubs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D61A54A2119EDA500807168 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9D61A54B2119EE8B00807168 /* linha_buscar_termosBusca_8000.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		9D61A54E2119EF8D00807168 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9D61A54F2119EFA800807168 /* LineInteractor.swift */,
+				9D98DF7A211A065700237DA8 /* AuthInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9D7FF7A52118DD0700C9EA17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D61A5482119E52300807168 /* BusLine.swift */,
+				9D61A557211A00EE00807168 /* Error.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D98DF7E211A110100237DA8 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF84211A117400237DA8 /* AlertController */,
+				9D98DF7F211A111300237DA8 /* LoadingScreen */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		9D98DF7F211A111300237DA8 /* LoadingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF81211A113600237DA8 /* BTLoadingView.swift */,
+				9D98DF80211A113600237DA8 /* BTLoadingView.xib */,
+			);
+			path = LoadingScreen;
+			sourceTree = "<group>";
+		};
+		9D98DF84211A117400237DA8 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF87211A118A00237DA8 /* BTAlertController.swift */,
+				9D98DF86211A118A00237DA8 /* BTAlertController.xib */,
+				9D98DF85211A118A00237DA8 /* BTAlertViewProtocol.swift */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		9D98DF8B211A15F800237DA8 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF8C211A160200237DA8 /* NetworkAlert */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		9D98DF8C211A160200237DA8 /* NetworkAlert */ = {
+			isa = PBXGroup;
+			children = (
+				9D98DF8D211A166400237DA8 /* RetryAlert.swift */,
+				9D98DF8E211A166400237DA8 /* RetryAlert.xib */,
+			);
+			path = NetworkAlert;
+			sourceTree = "<group>";
+		};
+		9DF2EFAF2118CC720019342A = {
+			isa = PBXGroup;
+			children = (
+				9DF2EFBA2118CC720019342A /* BusTracker */,
+				9DF2EFCF2118CC740019342A /* BusTrackerTests */,
+				9DF2EFB92118CC720019342A /* Products */,
+				9DF2EFDE2118D5660019342A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9DF2EFB92118CC720019342A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DF2EFB82118CC720019342A /* BusTracker.app */,
+				9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DF2EFBA2118CC720019342A /* BusTracker */ = {
+			isa = PBXGroup;
+			children = (
+				9DF2EFDB2118D28B0019342A /* Networking */,
+				9D98DF8B211A15F800237DA8 /* Alerts */,
+				9D98DF7E211A110100237DA8 /* UIComponents */,
+				9DF2EFBB2118CC720019342A /* AppDelegate.swift */,
+				9DF2EFBD2118CC720019342A /* ViewController.swift */,
+				9DF2EFBF2118CC720019342A /* Main.storyboard */,
+				9DF2EFC22118CC740019342A /* Assets.xcassets */,
+				9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */,
+				9DF2EFC72118CC740019342A /* Info.plist */,
+			);
+			path = BusTracker;
+			sourceTree = "<group>";
+		};
+		9DF2EFCF2118CC740019342A /* BusTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D61A54A2119EDA500807168 /* JSON */,
+				9DF2EFD02118CC740019342A /* BusTrackerTests.swift */,
+				9DF2EFD22118CC740019342A /* Info.plist */,
+				9D61A5512119F32700807168 /* BTStubs.swift */,
+				9D61A5552119FF3300807168 /* LineInteractorTests.swift */,
+			);
+			path = BusTrackerTests;
+			sourceTree = "<group>";
+		};
+		9DF2EFDB2118D28B0019342A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9D61A54E2119EF8D00807168 /* Interactors */,
+				9D7FF7A52118DD0700C9EA17 /* Models */,
+				9DF2EFDC2118D2B30019342A /* Request.swift */,
+				9D98DF7C211A07F700237DA8 /* BTNetwork.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9DF2EFDE2118D5660019342A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D61A5462119E45200807168 /* OHHTTPStubs.framework */,
+				9DF2EFDF2118D5780019342A /* Alamofire.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DF2EFB72118CC720019342A /* BusTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "BusTracker" */;
+			buildPhases = (
+				9DF2EFB42118CC720019342A /* Sources */,
+				9DF2EFB52118CC720019342A /* Frameworks */,
+				9DF2EFB62118CC720019342A /* Resources */,
+				9DF2EFE12118D5F30019342A /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusTracker;
+			productName = BusTracker;
+			productReference = 9DF2EFB82118CC720019342A /* BusTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DF2EFCB2118CC740019342A /* BusTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF2EFD82118CC740019342A /* Build configuration list for PBXNativeTarget "BusTrackerTests" */;
+			buildPhases = (
+				9DF2EFC82118CC740019342A /* Sources */,
+				9DF2EFC92118CC740019342A /* Frameworks */,
+				9DF2EFCA2118CC740019342A /* Resources */,
+				9D61A5532119F41C00807168 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DF2EFCE2118CC740019342A /* PBXTargetDependency */,
+			);
+			name = BusTrackerTests;
+			productName = BusTrackerTests;
+			productReference = 9DF2EFCC2118CC740019342A /* BusTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DF2EFB02118CC720019342A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Allan Martins";
+				TargetAttributes = {
+					9DF2EFB72118CC720019342A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					9DF2EFCB2118CC740019342A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9DF2EFB72118CC720019342A;
+					};
+				};
+			};
+			buildConfigurationList = 9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "BusTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DF2EFAF2118CC720019342A;
+			productRefGroup = 9DF2EFB92118CC720019342A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DF2EFB72118CC720019342A /* BusTracker */,
+				9DF2EFCB2118CC740019342A /* BusTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DF2EFB62118CC720019342A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D98DF82211A113600237DA8 /* BTLoadingView.xib in Resources */,
+				9DF2EFC62118CC740019342A /* LaunchScreen.storyboard in Resources */,
+				9DF2EFC32118CC740019342A /* Assets.xcassets in Resources */,
+				9DF2EFC12118CC720019342A /* Main.storyboard in Resources */,
+				9D98DF89211A118B00237DA8 /* BTAlertController.xib in Resources */,
+				9D98DF90211A166400237DA8 /* RetryAlert.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF2EFCA2118CC740019342A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D61A54C2119EE8B00807168 /* linha_buscar_termosBusca_8000.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DF2EFE12118D5F30019342A /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DF2EFB42118CC720019342A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+<<<<<<< Updated upstream
+				9D98DF83211A113600237DA8 /* BTLoadingView.swift in Sources */,
+				9D61A5492119E52300807168 /* BusLine.swift in Sources */,
+				9D98DF88211A118B00237DA8 /* BTAlertViewProtocol.swift in Sources */,
+=======
+				9D61A5502119EFA800807168 /* LineInteractor.swift in Sources */,
+				9D61A5492119E52300807168 /* BusLine.swift in Sources */,
+				9D98DF7D211A07F700237DA8 /* BTNetwork.swift in Sources */,
+				9D98DF7B211A065700237DA8 /* AuthInteractor.swift in Sources */,
+>>>>>>> Stashed changes
+				9DF2EFBE2118CC720019342A /* ViewController.swift in Sources */,
+				9D98DF8F211A166400237DA8 /* RetryAlert.swift in Sources */,
+				9DF2EFDD2118D2B30019342A /* Request.swift in Sources */,
+				9DF2EFBC2118CC720019342A /* AppDelegate.swift in Sources */,
+<<<<<<< Updated upstream
+				9D7FF7A72118DD2700C9EA17 /* AthenticationModel.swift in Sources */,
+				9D98DF8A211A118B00237DA8 /* BTAlertController.swift in Sources */,
+=======
+				9D61A558211A00EE00807168 /* Error.swift in Sources */,
+>>>>>>> Stashed changes
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF2EFC82118CC740019342A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF2EFD12118CC740019342A /* BusTrackerTests.swift in Sources */,
+				9D61A5522119F32700807168 /* BTStubs.swift in Sources */,
+				9D61A5562119FF3300807168 /* LineInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DF2EFCE2118CC740019342A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DF2EFB72118CC720019342A /* BusTracker */;
+			targetProxy = 9DF2EFCD2118CC740019342A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DF2EFBF2118CC720019342A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DF2EFC02118CC720019342A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DF2EFC52118CC740019342A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DF2EFD32118CC740019342A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DF2EFD42118CC740019342A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DF2EFD62118CC740019342A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BusTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aya.BusTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DF2EFD72118CC740019342A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BusTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aya.BusTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DF2EFD92118CC740019342A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BusTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aya.BusTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTracker.app/BusTracker";
+			};
+			name = Debug;
+		};
+		9DF2EFDA2118CC740019342A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8MYP56C5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BusTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aya.BusTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTracker.app/BusTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "BusTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF2EFD32118CC740019342A /* Debug */,
+				9DF2EFD42118CC740019342A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "BusTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF2EFD62118CC740019342A /* Debug */,
+				9DF2EFD72118CC740019342A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF2EFD82118CC740019342A /* Build configuration list for PBXNativeTarget "BusTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF2EFD92118CC740019342A /* Debug */,
+				9DF2EFDA2118CC740019342A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DF2EFB02118CC720019342A /* Project object */;
+}

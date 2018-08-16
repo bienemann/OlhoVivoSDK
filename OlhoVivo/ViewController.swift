@@ -25,6 +25,10 @@ class ViewController: UIViewController {
     
     @IBAction func searchExample(_ sender: UIButton) {
         
+        api.lines("campo limpo") { (lines, error) in
+            _ = lines?.compactMap{ print($0.outboundName) }
+        }
+        
     }
 
 

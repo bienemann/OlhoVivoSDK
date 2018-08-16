@@ -159,7 +159,7 @@
 		9DAC195821236CA90030B294 /* PositionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInteractor.swift; sourceTree = "<group>"; };
 		9DAC195A212375240030B294 /* posicao_linha_codigoLinha_1273.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posicao_linha_codigoLinha_1273.json; sourceTree = "<group>"; };
 		9DB7B4F121237789009B7D22 /* PositionInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInteractorTests.swift; sourceTree = "<group>"; };
-		9DF2EFB82118CC720019342A /* BusTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF2EFB82118CC720019342A /* OlhoVivo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OlhoVivo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF2EFBB2118CC720019342A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF2EFBD2118CC720019342A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DF2EFC02118CC720019342A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -341,7 +341,7 @@
 		9DF2EFAF2118CC720019342A = {
 			isa = PBXGroup;
 			children = (
-				9DF2EFBA2118CC720019342A /* BusTracker */,
+				9DF2EFBA2118CC720019342A /* OlhoVivo */,
 				9D92310D2124C50700850928 /* OlhoVivoSDK */,
 				9D92311A2124C50700850928 /* OlhoVivoSDKTests */,
 				9DF2EFB92118CC720019342A /* Products */,
@@ -352,14 +352,14 @@
 		9DF2EFB92118CC720019342A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DF2EFB82118CC720019342A /* BusTracker.app */,
+				9DF2EFB82118CC720019342A /* OlhoVivo.app */,
 				9D92310C2124C50700850928 /* OlhoVivoSDK.framework */,
 				9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DF2EFBA2118CC720019342A /* BusTracker */ = {
+		9DF2EFBA2118CC720019342A /* OlhoVivo */ = {
 			isa = PBXGroup;
 			children = (
 				9D98DF8B211A15F800237DA8 /* Alerts */,
@@ -371,7 +371,7 @@
 				9DF2EFC42118CC740019342A /* LaunchScreen.storyboard */,
 				9DF2EFC72118CC740019342A /* Info.plist */,
 			);
-			path = BusTracker;
+			path = OlhoVivo;
 			sourceTree = "<group>";
 		};
 		9DF2EFDB2118D28B0019342A /* Networking */ = {
@@ -447,9 +447,9 @@
 			productReference = 9D9231142124C50700850928 /* OlhoVivoSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9DF2EFB72118CC720019342A /* BusTracker */ = {
+		9DF2EFB72118CC720019342A /* OlhoVivo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "BusTracker" */;
+			buildConfigurationList = 9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "OlhoVivo" */;
 			buildPhases = (
 				9DF2EFB42118CC720019342A /* Sources */,
 				9DF2EFB52118CC720019342A /* Frameworks */,
@@ -461,9 +461,9 @@
 			dependencies = (
 				9D9231202124C50700850928 /* PBXTargetDependency */,
 			);
-			name = BusTracker;
+			name = OlhoVivo;
 			productName = BusTracker;
-			productReference = 9DF2EFB82118CC720019342A /* BusTracker.app */;
+			productReference = 9DF2EFB82118CC720019342A /* OlhoVivo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -489,7 +489,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "BusTracker" */;
+			buildConfigurationList = 9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "OlhoVivo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -502,7 +502,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DF2EFB72118CC720019342A /* BusTracker */,
+				9DF2EFB72118CC720019342A /* OlhoVivo */,
 				9D92310B2124C50700850928 /* OlhoVivoSDK */,
 				9D9231132124C50700850928 /* OlhoVivoSDKTests */,
 			);
@@ -643,7 +643,7 @@
 		};
 		9D9231522124D63A00850928 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9DF2EFB72118CC720019342A /* BusTracker */;
+			target = 9DF2EFB72118CC720019342A /* OlhoVivo */;
 			targetProxy = 9D9231512124D63A00850928 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -756,7 +756,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTracker.app/BusTracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OlhoVivo.app/OlhoVivo";
 			};
 			name = Debug;
 		};
@@ -781,7 +781,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTracker.app/BusTracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OlhoVivo.app/OlhoVivo";
 			};
 			name = Release;
 		};
@@ -910,7 +910,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = BusTracker/Info.plist;
+				INFOPLIST_FILE = OlhoVivo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -933,7 +933,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = BusTracker/Info.plist;
+				INFOPLIST_FILE = OlhoVivo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -966,7 +966,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "BusTracker" */ = {
+		9DF2EFB32118CC720019342A /* Build configuration list for PBXProject "OlhoVivo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DF2EFD32118CC740019342A /* Debug */,
@@ -975,7 +975,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "BusTracker" */ = {
+		9DF2EFD52118CC740019342A /* Build configuration list for PBXNativeTarget "OlhoVivo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DF2EFD62118CC740019342A /* Debug */,
