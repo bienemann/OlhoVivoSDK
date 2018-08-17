@@ -85,8 +85,8 @@ Retorna as posições e estimativa de chegada de todos os veículos de uma linha
 Além dessas pesquisas, os próprios objetos de resposta contém métodos que retornam pesquisas relacionadas a si mesmo, como por exemplo _todos os veículos rodando nesta linha_ ou _todas as paradas que atendem essa linha_.  
 Esses métodos tem uma assinatura similar aos descritos acima.  
 
-#### Paradas:
-##### - Próximas chegadas
+### Paradas:
+#### - Próximas chegadas
 ```swift
 func getNextArrivals(_ retryHandler: RetryHelperBlock? = nil,
                      _ responseHandler: @escaping ListResponseHandler<LineSummary>)
@@ -116,8 +116,8 @@ _Output:_
 `"O veículo nº 3412 chegará aqui em: 0 hora e 55 minutos"`  
 `"O veículo nº 4590 chegará aqui em: 0 hora e 12 minutos"`  
 
-#### Linhas:
-##### - Próximas chegadas
+### Linhas:
+#### - Próximas chegadas
 ```swift
 func getNextArrivals(_ retryHandler: RetryHelperBlock? = nil,
                      _ responseHandler: @escaping ListResponseHandler<OVStop>)
@@ -149,7 +149,7 @@ _Output:_
 `"Próxima chegada em ANA CINTRA B/C será 3412 em 1 hora e 34 minutos"`  
 `"Próxima chegada em PARADA ROBERTO SELMI DEI B/C será 4590 em 0 hora e 49 minutos"`  
 
-##### - Posição dos veículos
+#### - Posição dos veículos
 ```swift
 func getPositions(_ retryHandler: RetryHelperBlock? = nil,
                   _ responseHandler: @escaping ListResponseHandler<OVPosition>)
@@ -172,7 +172,7 @@ _Output:_
 `"9867 está em CLLocationCoordinate2D(latitude: -9.0, longitude: 67.909090000000006)"`  
 `"..."`  
 
-##### - Paradas
+#### - Paradas
 ```swift
 func getStops(_ retryHandler: RetryHelperBlock? = nil,
               _ responseHandler: @escaping ListResponseHandler<OVStop>)
